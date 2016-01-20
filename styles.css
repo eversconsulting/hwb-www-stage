@@ -21,6 +21,17 @@ html {
 	
 }
 
+.hamburger {
+	width: 63px;
+	height: 63px;
+	background-color: transparent;
+	border: solid;
+	border-color: white;
+	border-width: 2px;
+	float: right;
+	display: none;
+}
+
 
 .navbar-title {
 	float: left;
@@ -32,6 +43,9 @@ html {
 }
 
 .navbar-items {
+
+	
+
 	color: white;
 	float: right;
 	height: 65px;
@@ -110,6 +124,11 @@ html {
 	color: transparent;
 }
 
+.slide-menu {
+	width: 100%;
+	height: 0;
+}
+
 
 /*Phone*/
 @media only screen and (max-device-width : 480px) {
@@ -122,6 +141,9 @@ html {
 
 .navbar-title {
 	padding: 0;
+}
+
+.slide-menu {
 }
 
 .section {
@@ -155,6 +177,10 @@ html {
 	float: right;
 }
 
+.hamburger {
+	display: inline;
+}
+
 }
 
 
@@ -163,6 +189,10 @@ html {
 @media only screen and (min-device-width : 481px) and (max-device-width : 1024px) {
 
 /* Styles */
+
+.hamburger {
+	display: inline;
+}
 
 .navbar-items {
 	display: none;

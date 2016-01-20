@@ -2,6 +2,7 @@ $(document).ready(function(){
 	$sec1Clicked = false;
 	$sec2Clicked = false;
 	$sec3Clicked = false;
+	$slideClicked = false;
    $("#sec1").click(function() {
    		
    		if($sec1Clicked == false){
@@ -105,4 +106,25 @@ $(document).ready(function(){
    			$sec3Clicked = false;
    		}
 	});
+
+   $(".hamburger").click(function() {
+   		if($slideClicked == false) {
+   			$(".slide-menu").animate({
+				    height: "300"
+				  }, 500, function() {
+				    // Animation complete.
+				});
+
+   			$slideClicked = true;
+   		}
+   		else{
+   			$(".slide-menu").animate({
+				    height: "0"
+				  }, 500, function() {
+				    // Animation complete.
+				});
+
+   			$slideClicked = false;
+   		}
+   });
 }); 
