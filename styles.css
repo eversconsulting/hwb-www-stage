@@ -43,9 +43,6 @@ html {
 }
 
 .navbar-items {
-
-	
-
 	color: white;
 	float: right;
 	height: 65px;
@@ -80,19 +77,10 @@ html {
 }
 
 .section-title {
-	
 	padding-top: 150px;
 	font-size: 35px;
 }
 
-.section-body {
-	
-	padding-top: 10px;
-}
-
-.section-arrow {
-
-}
 
 .button {
 	transition: border-color 0.5s linear,
@@ -144,8 +132,7 @@ html {
 	padding: 0;
 }
 
-.slide-menu {
-}
+
 
 .section {
 	background-color: white;
@@ -156,17 +143,13 @@ html {
 .section-inner {
 	padding: 0;
 }
-
 .section-title {
-	
 	padding: 0;
 	font-size: 20px;
 	text-indent: 5px;
-	
 	margin-top: 20px;
 	width: 70%;
 	float: left;
-
 }
 
 
@@ -176,18 +159,8 @@ html {
 	text-align: center;
 	
 
-	
-	float: left;
-
 }
 
-.section-arrow {
-	width: 75px;
-	height: 75px;
-	
-	background-color: blue;
-	float: right;
-}
 
 .hamburger {
 	display: inline;
@@ -202,10 +175,6 @@ html {
 
 /* Styles */
 
-.hamburger {
-	display: inline;
-}
-
 .navbar-items {
 	display: none;
 }
@@ -213,16 +182,39 @@ html {
 .navbar-title {
 	padding: 0;
 }
-.section {
-	background-color: white;
-	height: 100px;
 
+
+
+.section {
+	height: 600px;
+	width: 100%;
 }
 
 .section-inner {
 	padding: 0;
 }
+.section-title {
+	padding: 0;
+	font-size: 25px;
+	text-indent: 5px;
+	margin-top: 20px;
+	width: 70%;
+	float: left;
+}
 
+
+.section-title-main {
+	padding-top: 300px;
+	font-size: 25px;
+	text-align: center;
+	
+
+}
+
+
+.hamburger {
+	display: inline;
+}
 }
 
 @font-face {
