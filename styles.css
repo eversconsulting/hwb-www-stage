@@ -149,9 +149,8 @@ html {
 
 .section {
 	background-color: white;
-	height: 75px;
-	margin: 5px;
-	width: auto;
+	height: 400px;
+	width: 100%;
 }
 
 .section-inner {
@@ -161,11 +160,23 @@ html {
 .section-title {
 	
 	padding: 0;
-	font-size: 15px;
+	font-size: 20px;
 	text-indent: 5px;
 	
 	margin-top: 20px;
 	width: 70%;
+	float: left;
+
+}
+
+
+.section-title-main {
+	padding-top: 200px;
+	font-size: 20px;
+	text-align: center;
+	
+
+	
 	float: left;
 
 }
