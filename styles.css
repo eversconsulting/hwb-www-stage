@@ -13,12 +13,21 @@ html {
 	
 }
 
+.logo {
+	float: left;
+	margin-left: 200px;
+	margin-top: 25px;
+	background-image: url("assets/hwb.png");
+	width: 150px;
+	height: 68px;
+}
+
 .navbar {
 	width: 100%;
 	height: 65px;
 	margin: 0;
 	padding: 0;
-	background-color: #7A8B8B;
+	background-color: black;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -28,10 +37,11 @@ html {
 
 .footer {
 	width: 100%;
-	height: 200px;
-	background-color: #7A8B8B;
+	height: 50px;
+	background-color: black;
 	color: white;
 	text-align: center;
+	font-size: 20px;
 }
 .hamburger {
 	width: 63px;
