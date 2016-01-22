@@ -8,14 +8,32 @@ html {
 	font-family: mainFont;
 }
 
-
+.spacer {
+	width: 100%;
+	height: 100px;
+	background-color: transparent;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 100px;
+	font-size: 30px;
+}
+.main-image {
+	width: 100%;
+	height: 400px;
+	
+	}
 #sec1 {
 	
 }
 
+.img-top {
+	width: 100%;
+	height: 400px;
+}
+
 .logo {
 	float: left;
-	margin-left: 200px;
+	margin-left: 100px;
 	margin-top: 25px;
 	background-image: url("assets/hwb.png");
 	width: 150px;
@@ -235,6 +253,8 @@ html {
 
 /* Styles */
 
+
+
 .shop-inner {
 	display: none;
 }
@@ -261,6 +281,17 @@ html {
 	background-color: white;
 	height: 400px;
 	width: 100%;
+}
+
+.spacer {
+	width: 100%;
+	height: 50px;
+	line-height: 20px;
+
+}
+.img-top {
+	width: 100%;
+	height: 300px;
 }
 
 .section-inner {
@@ -377,7 +408,19 @@ html {
 	height: 500px;
 	width: 100%;
 }
+.spacer {
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 50px;
+	font-size: 25px;
 
+}
+.img-top {
+	width: 100%;
+	height: 400px;
+}
 .section-inner {
 	padding-left: 10px;
 	padding-right: 10px;
