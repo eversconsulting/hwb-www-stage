@@ -246,15 +246,6 @@ html {
 	margin-left: auto;
 	margin-right: auto;
 }
-
-
-
-
-/*Phone*/
-@media only screen and (max-device-width : 480px) {
-
-/* Styles */
-
 .shop-item-container {
 	width: 90%;
 	height: 700px;
@@ -284,7 +275,64 @@ select {
 	height: 25px;
 	background-color: white;
 	font-family: mainFont;
-	border: none;
+	border: none;4
+	font-size: 20px;
+}
+.shop-desc {
+	width: 90%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+
+
+
+
+/*Phone*/
+@media only screen and (max-device-width : 480px) {
+
+/* Styles */
+
+.shop-item-container {
+	width: 90%;
+	height: 700px;
+	
+	margin-left: auto;
+	margin-right: auto;
+
+
+}
+.shop-image {
+	width: 90%;
+	height: 200px;
+	background-color: blue;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.shop-desc {
+	width: 300px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.select-container {
+	width: 90%;
+	height: 25px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+select {
+	width: 100%;
+	height: 25px;
+	background-color: white;
+	font-family: mainFont;
+	border: none;4
 	font-size: 20px;
 }
 .shop-inner {
@@ -496,6 +544,14 @@ select {
 	height: 600px;
 	margin-top: 25px;
 }
+.shop-desc {
+	width: 90%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
 
 .shop-inner {
 	display: none;
@@ -554,6 +610,39 @@ select {
 	border-color: black;
 	background-color: black;
 	color: white;
+}
+
+.shop-item-container {
+	width: 90%;
+	height: 700px;
+	
+	margin-left: auto;
+	margin-right: auto;
+
+
+}
+.shop-image {
+	width: 90%;
+	height: 200px;
+	background-color: blue;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.select-container {
+	width: 90%;
+	height: 25px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+select {
+	width: 100%;
+	height: 25px;
+	background-color: white;
+	font-family: mainFont;
+	border: none;4
+	font-size: 20px;
 }
 
 
