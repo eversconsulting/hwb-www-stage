@@ -256,11 +256,11 @@ html {
 
 }
 .shop-image {
-	width: 90%;
-	height: 200px;
+	width: 500px;
+	height: 300px;
 	background-color: blue;
-	margin-left: auto;
-	margin-right: auto;
+	
+	float: left;
 }
 
 .select-container {
@@ -268,6 +268,7 @@ html {
 	height: 25px;
 	margin-right: auto;
 	margin-left: auto;
+	display: none;
 }
 
 select {
@@ -283,10 +284,35 @@ select {
 	height: auto;
 	margin-left: auto;
 	margin-right: auto;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	font-size: 25px;
+	padding: 20px;
+	float: right;
 }
 
+.color-picker {
+	width: 50%;
+	float: left;
+
+}
+
+.colors {
+	list-style: none;
+	width: 90%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+
+
+}
+
+.color {
+	display: inline-block;
+	width: 75px;
+	height: 75px;
+	border: solid;
+	border-color: black;
+	border-width: 1px;
+}
 
 
 
@@ -325,6 +351,7 @@ select {
 	height: 25px;
 	margin-right: auto;
 	margin-left: auto;
+	display: inline;
 }
 
 select {
@@ -634,6 +661,7 @@ select {
 	height: 25px;
 	margin-right: auto;
 	margin-left: auto;
+	display: inline;
 }
 
 select {
