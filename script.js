@@ -22,4 +22,15 @@ $(document).ready(function(){
    			$slideClicked = false;
    		}
    });
+
+   $("#customize").click(function() {
+   		$(".customize-area").animate({
+				    height: "200"
+				  }, 500, function() {
+				    // Animation complete.
+				});
+   		$(".color-picker").show();
+
+
+   });
 }); 

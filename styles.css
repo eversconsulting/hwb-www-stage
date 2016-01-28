@@ -151,6 +151,18 @@ html {
 	padding-right: 200px;
 }
 
+#customize {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+}
+
+.customize-area {
+	height: 0;
+	
+}
+
+
 
 
 .button {
@@ -259,8 +271,9 @@ html {
 	width: 500px;
 	height: 300px;
 	background-color: blue;
+	margin-right: auto;
+	margin-left: auto;
 	
-	float: left;
 }
 
 .select-container {
@@ -280,7 +293,7 @@ select {
 	font-size: 20px;
 }
 .shop-desc {
-	width: 90%;
+	width: 100%;
 	height: auto;
 	margin-left: auto;
 	margin-right: auto;
@@ -289,10 +302,20 @@ select {
 	float: right;
 }
 
-.color-picker {
-	width: 50%;
-	float: left;
+#customize-sec {
+	height: 1000px;
+}
 
+.color-picker {
+	padding-top: 10px;
+	width: 400px;
+	float: left;
+	display: none;
+
+}
+
+.color-label {
+	float: left;
 }
 
 .colors {
@@ -301,17 +324,22 @@ select {
 	height: auto;
 	margin-left: auto;
 	margin-right: auto;
+	padding: 10px;
+	float: left;
+
 
 
 }
 
 .color {
 	display: inline-block;
-	width: 75px;
-	height: 75px;
+	width: 50px;
+	height: 50px;
 	border: solid;
 	border-color: black;
 	border-width: 1px;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
 
