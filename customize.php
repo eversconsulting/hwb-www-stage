@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<?php
+$id = $_GET['id'];
+?>
 <html> 
 <head>
 	<title>Homewood Bat</title>
@@ -30,8 +33,14 @@
 
 			<div class="shop-image"></div>
 			
+			<?php 
+				if($id == 1){
+					echo "<div class='button' id='customize'>Customize</div>";				
+				}
 
-			<div class="button" id="customize">Customize</div>
+
+			?>
+			
 			<div class="customize-area">
 				<div class="color-picker">
 					<div class="color-label">Handle Color:</div>
