@@ -12,7 +12,7 @@
 		<div class="logo"></div>
 		
 		<ul class="navbar-items">
-			<li>Home</li>
+			<a href="index.html"><li>Home</li></a>
 			<li>Shop</li>
 			<li>About</li>
 		</ul>
