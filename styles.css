@@ -60,11 +60,12 @@ ul a {
 
 .footer {
 	width: 100%;
-	height: 50px;
+	height: 250px;
 	background-color: black;
 	color: white;
 	text-align: center;
 	font-size: 20px;
+
 }
 .hamburger {
 	width: 63px;
@@ -242,7 +243,7 @@ ul a {
 
 .shop-item {
 	width: 400px;
-	height: 600px;
+	height: 400px;
 	margin-top: 25px;
 }
 
@@ -468,7 +469,7 @@ select {
 
 .shop-item {
 	width: 100%;
-	height: 400px;
+	height: 250px;
 	margin-top: 65px;
 
 }

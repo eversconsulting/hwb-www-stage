@@ -18,6 +18,7 @@ $id = $_GET['id'];
 			<a href="index.html"><li>Home</li></a>
 			<li>Shop</li>
 			<li>About</li>
+			<li>Cart ( )</li>
 		</ul>
 		<div class="hamburger"></div>
 	</div>
