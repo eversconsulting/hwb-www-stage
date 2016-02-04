@@ -9,16 +9,17 @@ $id = $_GET['id'];
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<script type="text/javascript" src="jquery.js"></script>
 	<script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript" src="customize.js"></script>
 </head>
 <body>
 	<div class="navbar">
 		<div class="logo"></div>
 		
 		<ul class="navbar-items">
-			<a href="index.html"><li>Home</li></a>
+			<a href="index.php"><li>Home</li></a>
 			<li>Shop</li>
 			<li>About</li>
-			<li>Cart ( )</li>
+			<li id="cartShow">Cart ( )</li>
 		</ul>
 		<div class="hamburger"></div>
 	</div>
@@ -36,29 +37,52 @@ $id = $_GET['id'];
 			
 			<?php 
 				if($id == 1){
-					echo "<div class='button' id='customize'>Customize</div>";				
+					echo "<div class='button noselect' id='customize'>Customize</div>";				
 				}
 
 
 			?>
 			
 			<div class="customize-area">
-				<div class="color-picker">
-					<div class="color-label">Handle Color:</div>
-					<ul class="colors">
-						<li class="color">red</li>
-						<li class="color">blue</li>
-						<li class="color">green</li>
-					</ul>
+				<div class="color-area">
+					<div class="color-picker">
+						<div class="color-label">Handle Color:</div>
+						<ul class="colors">
+							<li class="color" id="hR"></li>
+							<li class="color" id="hB"></li>
+							<li class="color" id="hG"></li>
+						</ul>
+					</div>
+					<div class="color-picker">
+						<div class="color-label">Bat Color:</div>
+						<ul class="colors">
+							<li class="color" id="bR"></li>
+							<li class="color" id="bB"></li>
+							<li class="color" id="bG"></li>
+						</ul>
+					</div>
 				</div>
-				<div class="color-picker">
-					<div class="color-label">Bat Color:</div>
-					<ul class="colors">
-						<li class="color">red</li>
-						<li class="color">blue</li>
-						<li class="color">green</li>
-					</ul>
+
+				<div class="select-container">
+					<div class="select-title">Handle:</div>
+					<select  id="handleSelect">
+						<option value="" selected="selected" disabled>Color</option>
+						<option value="blue">Blue</option>
+						<option value="red">Red</option>
+						<option value="green">Green</option>
+					</select>
 				</div>
+				<div class="select-container">
+					<div class="select-title">Bat:</div>
+					<select id="batSelect">
+						<option value="" selected="selected" disabled>Color</option>
+						<option value="blue">Blue</option>
+						<option value="red">Red</option>
+						<option value="green">Green</option>
+					</select>
+				</div>
+				
+					<div class="button disable noselect" id="add">Add to Cart</div>
 			</div>
 
 			<div class="shop-desc"> loream ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -68,13 +92,9 @@ $id = $_GET['id'];
 			</div>
 
 
-			<div class="select-container">
-				<select>
-					<option>Blue</option>
-					<option>Red</option>
-					<option>Green</option>
-				</select>
-			</div>
+			
+
+			
 
 
 			

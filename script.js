@@ -1,8 +1,9 @@
 $(document).ready(function(){
 	$slideClicked = false;
-
-
+	
    $(".hamburger").click(function() {
+
+   		
    		if($slideClicked == false) {
    			$(".slide-menu").animate({
 				    height: "300"
@@ -23,14 +24,5 @@ $(document).ready(function(){
    		}
    });
 
-   $("#customize").click(function() {
-   		$(".customize-area").animate({
-				    height: "200"
-				  }, 500, function() {
-				    // Animation complete.
-				});
-   		$(".color-picker").show();
-
-
-   });
+   
 }); 

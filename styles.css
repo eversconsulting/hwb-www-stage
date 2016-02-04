@@ -40,7 +40,7 @@ ul a {
 	float: left;
 	margin-left: 100px;
 	margin-top: 25px;
-	background-image: url("assets/hwb.png");
+	background-image: url("assets/hwb.jpg");
 	width: 150px;
 	height: 68px;
 }
@@ -90,7 +90,7 @@ ul a {
 	padding: 0;
 	margin: 0;
 	padding-right: 200px;
-	font-size: 25px;
+	font-size: 22px;
 }
 
 .navbar-items li {
@@ -164,10 +164,23 @@ ul a {
 }
 
 .customize-area {
-	height: 0;
+	display: none;
+	height: 200px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
 
 }
 
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* IE/Edge */
+  user-select: none;           /* non-prefixed version, currently
+                                  not supported by any browser */
+}
 
 
 
@@ -185,6 +198,15 @@ ul a {
 	vertical-align: middle;
 	text-align: center;
 	color: black;
+	pointer-events: auto;
+	cursor: pointer;
+
+}
+
+.disable {
+	background-color: maroon;
+	color: black;
+	pointer-events: none; 
 
 }
 
@@ -282,13 +304,7 @@ ul a {
 	
 }
 
-.select-container {
-	width: 90%;
-	height: 25px;
-	margin-right: auto;
-	margin-left: auto;
-	display: none;
-}
+
 
 select {
 	width: 100%;
@@ -305,7 +321,7 @@ select {
 	margin-right: auto;
 	font-size: 25px;
 	padding: 20px;
-	float: right;
+	
 }
 
 #customize-sec {
@@ -314,9 +330,9 @@ select {
 
 .color-picker {
 	padding-top: 10px;
-	width: 400px;
+	width: 300px;
 	float: left;
-	display: none;
+	display: inline;
 
 }
 
@@ -348,6 +364,45 @@ select {
 	margin-right: 10px;
 }
 
+.select-container {
+	display: none;
+}
+
+#add {
+	margin-right: auto;
+	margin-left: auto;	
+}
+
+.color-area {
+	width: 100%;
+	height: 150px;
+}
+
+#hR {
+	background-color: red;
+}
+
+#hB {
+	background-color: blue;
+}
+
+#hG {
+	background-color: green;
+}
+
+#bR {
+	background-color: red;
+}
+
+#bB {
+	background-color: blue;
+}
+
+#bG {
+	background-color: green;
+}
+
+
 
 
 
@@ -355,6 +410,9 @@ select {
 @media only screen and (max-device-width : 480px) {
 
 /* Styles */
+.color-picker {
+	display: none;
+}
 
 .shop-item-container {
 	width: 90%;
@@ -374,26 +432,41 @@ select {
 }
 
 .shop-desc {
-	width: 300px;
+	width: 90%;
 	height: auto;
 	margin-left: auto;
 	margin-right: auto;
 }
 
 .select-container {
-	width: 90%;
+	width: 100%;
 	height: 25px;
 	margin-right: auto;
 	margin-left: auto;
-	display: inline;
+	margin-top: 15px;
+	margin-bottom: 5px;
+	display: block;
+	
 }
 
 select {
-	width: 100%;
+	width: 50%;
 	height: 25px;
 	background-color: white;
 	font-family: mainFont;
-	border: none;4
+	border: none;
+	font-size: 20px;
+	float: left;
+}
+
+.select-title {
+	float: left;
+	width: 100px;
+	height: auto;
+	margin-right: 15px;
+	line-height: 25px;
+	vertical-align: middle;
+	text-align: center;
 	font-size: 20px;
 }
 .shop-inner {
@@ -695,7 +768,7 @@ select {
 	height: 25px;
 	margin-right: auto;
 	margin-left: auto;
-	display: inline;
+	display: none;
 }
 
 select {
@@ -703,7 +776,7 @@ select {
 	height: 25px;
 	background-color: white;
 	font-family: mainFont;
-	border: none;4
+	border: none;
 	font-size: 20px;
 }
 

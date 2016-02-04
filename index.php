@@ -8,19 +8,34 @@
 	<script type="text/javascript" src="script.js"></script>
 </head>
 <body>
+	
 	<div class="navbar">
 		<div class="logo"></div>
 		
 		<ul class="navbar-items">
-			<a href="index.html"><li>Home</li></a>
+			<a href="index.php"><li>Home</li></a>
 			<li>Shop</li>
 			<li>About</li>
-			<li>Cart ( )</li>
+			<li id="cartShow">Cart ( )</li>
 		</ul>
 		<div class="hamburger"></div>
 	</div>
 	<div class="navbar-spacer"></div>
 	<div class="slide-menu">
+
+	<script type="text/javascript">
+		$cart = sessionStorage.getItem("cart");
+
+		if(!$cart){
+			sessionStorage.setItem("cart", 0);
+		}
+		else{
+
+		}
+		$("#cartShow").text("Cart (" + sessionStorage.cart +")");
+		
+	</script>
+
 
 	</div>
 	
