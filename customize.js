@@ -38,26 +38,52 @@ $(document).ready(function() {
 	$("#hR").click(function() {
 		$handleColor = "red";
 		checkCustom();
+
+		$(this).addClass("colorSelected");
+		$("#hB").removeClass("colorSelected");
+		$("#hG").removeClass("colorSelected");
+
+
 	});
 	$("#hB").click(function() {
 		$handleColor = "blue";
 		checkCustom();
+
+		$(this).addClass("colorSelected");
+		$("#hR").removeClass("colorSelected");
+		$("#hG").removeClass("colorSelected");
 	});
 	$("#hG").click(function() {
 		$handleColor = "green";
 		checkCustom();
+
+		$(this).addClass("colorSelected");
+		$("#hB").removeClass("colorSelected");
+		$("#hR").removeClass("colorSelected");
 	});
 	$("#bR").click(function() {
 		$batColor = "red";
 		checkCustom();
+
+		$(this).addClass("colorSelected");
+		$("#bB").removeClass("colorSelected");
+		$("#bG").removeClass("colorSelected");
 	});
 	$("#bB").click(function() {
 		$batColor = "blue";
 		checkCustom();
+
+		$(this).addClass("colorSelected");
+		$("#bR").removeClass("colorSelected");
+		$("#bG").removeClass("colorSelected");
 	});
 	$("#bG").click(function() {
 		$batColor = "green";
 		checkCustom();
+
+		$(this).addClass("colorSelected");
+		$("#bB").removeClass("colorSelected");
+		$("#bR").removeClass("colorSelected");
 	});
 
 	

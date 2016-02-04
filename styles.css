@@ -358,10 +358,24 @@ select {
 	width: 50px;
 	height: 50px;
 	border: solid;
-	border-color: black;
+	border-color: transparent;
 	border-width: 1px;
 	margin-left: 10px;
 	margin-right: 10px;
+	transition: border-color 0.3s linear,
+				height 0.3s linear,
+				width 0.3s linear;
+}
+
+.color:hover {
+	border-color: black;
+	height: 75px;
+	width: 75px;
+}
+
+.colorSelected {
+	border-color: black;
+	border-width: 2px;
 }
 
 .select-container {
@@ -375,7 +389,7 @@ select {
 
 .color-area {
 	width: 100%;
-	height: 150px;
+	height: 170px;
 }
 
 #hR {
@@ -401,6 +415,79 @@ select {
 #bG {
 	background-color: green;
 }
+
+
+/*Cart*/
+
+.cart-list {
+	width: 80%;
+	height: auto;
+	background-color: #F0EAD6;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.cart-item {
+	width: 90%;
+	height: auto;
+	border-top: solid;
+	
+	border-color: black;
+	border-width: 1px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	overflow: hidden;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.cart-row {
+	width: 100%;
+	height: auto;
+	display: inline-block;
+}
+
+.cart-title {
+	width: 50%;
+	height: auto;
+	font-size: 35px;
+	float: left;
+}
+
+.cart-price {
+	width: 50%;
+	height: auto;
+	font-size: 35px;
+	float: left;
+	text-align: right;
+	
+}
+
+.cart-col {
+	width: 50%;
+	height: auto;
+	float: left;
+	padding-top: 20px;
+}
+
+.cart-label {
+	width: 50%;
+	height: auto;
+	font-size: 25px;
+	float: left;
+	text-align: center;
+}
+
+.cart-info {
+	width: 50%;
+	height: auto;
+	font-size: 25px;
+	float: left;
+	text-align: right;
+}
+
 
 
 
@@ -587,6 +674,15 @@ select {
 	background-color: black;
 	color: white;
 }
+
+/*Cart*/
+
+
+
+
+
+
+
 
 }
 

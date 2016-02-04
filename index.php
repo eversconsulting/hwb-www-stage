@@ -16,7 +16,7 @@
 			<a href="index.php"><li>Home</li></a>
 			<li>Shop</li>
 			<li>About</li>
-			<li id="cartShow">Cart ( )</li>
+			<a href="cart.php"><li id="cartShow">Cart ( )</li></a>
 		</ul>
 		<div class="hamburger"></div>
 	</div>
