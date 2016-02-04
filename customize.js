@@ -4,8 +4,16 @@ $handleColor = "none";
 
 $(document).ready(function() {
 	$("#cartShow").text("Cart (" + sessionStorage.cart +")");
-	$bats = ["empty"];
-	sessionStorage.setItem("bats", JSON.stringify($bats));
+	
+
+	$batFilled = sessionStorage.getItem("bats");
+
+	if(!$batFilled){
+		$bats = ["empty"];
+		sessionStorage.setItem("bats", JSON.stringify($bats));
+	}
+
+	
 
 
 	
@@ -127,11 +135,18 @@ function sendBat(handle, bat) {
 
 	if($bats[0] == "empty"){
 		$bats.splice(0, 1);
+		$bats.push($batKey);
+
+	}
+	else{
+		$bats.push($batKey);
+
 	}
 
-	$bats.push($batKey);
 
+	
 	sessionStorage.setItem("bats", JSON.stringify($bats));
+
 
 	$batData = sessionStorage.getItem("bats");
 

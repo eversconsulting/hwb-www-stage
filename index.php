@@ -28,10 +28,9 @@
 
 		if(!$cart){
 			sessionStorage.setItem("cart", 0);
+			$("#cartShow").text("Cart (" + sessionStorage.cart +")");
 		}
-		else{
-
-		}
+		
 		$("#cartShow").text("Cart (" + sessionStorage.cart +")");
 		
 	</script>

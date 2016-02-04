@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	$slideClicked = false;
-	
+
    $(".hamburger").click(function() {
 
    		
@@ -22,6 +22,16 @@ $(document).ready(function(){
 
    			$slideClicked = false;
    		}
+   });
+
+   $("#cartShow").click(function() {
+   		
+   		$batData = sessionStorage.getItem("bats");
+
+		$bats = JSON.parse($batData);
+
+		console.log($bats);
+
    });
 
    
