@@ -48,7 +48,7 @@
 
 	</div>
 	
-	<div class="section" id="sec1" style="background-color: rgb(250, 245, 234);">
+	<div class="section" id="sec1" style="background-color: rgb(53, 95, 106);">
 		
 		<img class="img-top" src="assets/baseball.jpg">
 		<div class="spacer">the sweet sound of a homewood bat</div>

@@ -52,7 +52,7 @@ ul a {
 	height: 150px;
 	margin: 0;
 	padding: 0;
-	background-color: #f4ede4;
+	background-color: rgb(24, 53, 80);
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -93,7 +93,7 @@ ul a {
 .nav-icon {
 	width: 40px;
 	height: 40px;
-	background-color: orange;
+	background-color: rgb(252, 116, 44);
 	float: left;
 	margin-right: 10px;
 	margin-left: 10px;
