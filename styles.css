@@ -20,9 +20,10 @@ ul a {
 	text-align: center;
 	vertical-align: middle;
 	line-height: 100px;
-	font-size: 50px;
+	font-size: 40px;
 	font-weight: bold;
-	color: white;
+	color: rgb(250, 245, 234);
+	background-color: rgb(24, 53, 80);
 }
 .main-image {
 	width: 100%;
@@ -32,11 +33,13 @@ ul a {
 #sec1 {
 	height: auto;
 	overflow: hidden;
+	background-color: rgb(24, 53, 80);
 }
 
 .img-top {
 	width: 100%;
 	height: 400px;
+
 }
 
 .logo {
@@ -44,12 +47,12 @@ ul a {
 	
 	background-image: url("assets/hwb.png");
 	width: 300px;
-	height: 150px;
+	height: 125px;
 }
 
 .navbar {
 	width: 100%;
-	height: 150px;
+	height: 125px;
 	margin: 0;
 	padding: 0;
 	background-color: rgb(24, 53, 80);
@@ -64,11 +67,11 @@ ul a {
 
 .footer {
 	width: 100%;
-	height: 250px;
-	background-color: black;
-	color: white;
+	height: auto;
+	background-color: rgb(24, 53, 80);
+	color: rgb(250, 245, 234);
 	text-align: center;
-	font-size: 18px;
+	font-size: 15px;
 
 }
 .hamburger {
@@ -84,10 +87,10 @@ ul a {
 
 .navbar-icons {
 	width: auto;
-	height: 150px;
+	height: 125px;
 	float: left;
 	display: inline-block;
-	margin-top: 55px;
+	margin-top: 45px;
 }
 
 .nav-icon {
@@ -101,24 +104,24 @@ ul a {
 }
 .navbar-items {
 	width: auto;
-	height: 150px;
+	height: 125px;
 	list-style: none;
-	color: white;
+	color: rgb(250, 245, 234);
 	margin-top: 0;
 	margin-right: 0;
 	margin-left: 40px;
 	margin-right: 40px;
-	line-height: 150px;
+	line-height: 125px;
 	vertical-align: middle;
 	float: left;
 	padding: 0;
-	font-size: 23px;
+	font-size: 22px;
 }
 
 .navbar-items li {
 	width: auto;
 	display: inline-block;
-	height: 150px;
+	height: 125px;
 	padding-left: 10px;
 	padding-right: 10px;
 
@@ -129,8 +132,8 @@ ul a {
 }
 
 .navbar-items li:hover {
-	background-color: white;
-	color: black;
+	background-color: rgb(250, 245, 234);
+	color: rgb(24, 53, 80);
 }
 
 
@@ -160,10 +163,29 @@ ul a {
 .section-title {
 	padding-top: 10px;
 	font-size: 50px;
-	
-	width: 100%;
+	color: rgb(24, 53, 80);
+	width: 300px;
 	text-align: center;
+	float: left;
 	}
+
+.title-line {
+	height: 3px;
+	width: 350px;
+	background-color: rgb(24, 53, 80);
+	float: left;
+	margin-top: 35px;
+}
+
+.title-row {
+	padding-top: 20px;
+	width: 1000px;
+	height: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	
+	
+}
 
 
 .section-title-main {
@@ -241,7 +263,7 @@ ul a {
 
 
 .navbar-spacer {
-	height: 150px;
+	height: 125px;
 	color: transparent;
 }
 
@@ -294,9 +316,12 @@ ul a {
 .item-picture {
 	width: 300px;
 	height: 300px;
-	background-color: black;
+	background-color: white;
 	margin-left: auto;
 	margin-right: auto;
+	border: solid;
+	border-color: rgb(24, 53, 80);
+	border-width: 2px;
 }
 
 .item-desc {
@@ -307,6 +332,7 @@ ul a {
 	margin-top: 10px;
 	margin-left: auto;
 	margin-right: auto;
+	color: rgb(24, 53, 80);
 }
 
 
@@ -593,6 +619,42 @@ select {
 	border-color: white;
 }
 
+.map {
+	border: solid;
+	border-width: 2px;
+	border-color: rgb(24, 53, 80);
+}
+
+.col-inner {
+	width: 400px;
+	height: 300px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.contact-info {
+	color: rgb(24, 53, 80);
+	font-size: 20px;
+}
+
+.contact-p {
+	color: black;
+	font-family: none;
+}
+
+.about-title {
+	font-size: 30px;
+	color: rgb(24, 53, 80);
+}
+
+.about-body {
+	font-family: none;
+
+}
+
+.about-sub {
+	color: rgb(252, 116, 44);
+}
 
 
 
@@ -723,12 +785,19 @@ select {
 .section-inner {
 	padding: 0;
 }
-.section-title {
-	padding-top: 10px;
-	font-size: 30px;
-	
+
+
+.title-line {
+	height: 2px;
+	width: 25px;
+	background-color: black;
+}
+
+.title-row {
 	width: 100%;
-	text-align: center;
+	height: auto;
+	display: inline-block;
+	
 }
 
 
