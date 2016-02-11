@@ -1,8 +1,9 @@
-$batColor = "none";
-$handleColor = "none";
+$bat = "";
 
 
 $(document).ready(function() {
+	$bat = getParameterByName('id');
+
 	$("#cartShow").text("Cart (" + sessionStorage.cart +")");
 	
 
@@ -17,74 +18,75 @@ $(document).ready(function() {
 
 
 	
-	$("#customize").click(function() {
-	   	// 	$(".customize-area").animate({
-					//     height: "200"
-					//   }, 500, function() {
-					//     // Animation complete.
-					// });
-		$customAreaShown = $(".customize-area").is(":visible");
+	$("#cb").click(function() {
+		$customAreaShown = $(".customize-bat").is(":visible");
 
 		if($customAreaShown)
-			$(".customize-area").slideUp();
+			$(".customize-bat").slideUp();
 
-		else
-			$(".customize-area").slideDown();
-	   		
+		else{
+
+			$(".customize-bat").slideDown();
+			$(".customize-bat").scrollView();
+
+
+			switch ($bat) {
+				case 'pro':
+
+					$lengths = ["32", "32.5", "33", "33.5", "34", "34.5"];
+					$weights = ["-3", "-2", "-1", "0"];
+					$woods = ["MAPLE", "ASH", "BIRCH"];
+
+					break;
+				case 'game':
+
+					$lengths = ["31", "32", "32.5", "33", "33.5", "34", "34.5"];
+					$weights = ["-3", "-2", "-1", "0"];
+					$woods = ["ASH", "BIRCH"];
+
+					break;
+				case 'youth':
+					$lengths = ["26", "27", "28", "29", "30"];
+					$weights = ["-3", "-2", "-1", "0"];
+					$woods = ["ASH", "BIRCH"];
+
+					break;
+				case 'fungo':
+					$lengths = ["34", "35", "35.5", "36"];
+					$weights = ["-3", "-2", "-1", "0"];
+					$woods = ["MAPLE"];
+
+					break;
+				case 'promo':
+					$lengths = ["34", "35", "35.5", "36"];
+					$weights = ["-3", "-2", "-1", "0"];
+					$woods = ["MAPLE"];
+
+					break;
+				
+				default:
+					
+					break;
+			}
+
+			jQuery.each( $lengths, function(i, val)  {
+				$("#colorList").append("<div class='color' id="+val+">"+val+"</div>");
+			});
+
+			jQuery.each( $weights, function(i, val)  {
+				$("#weightList").append("<div class='color' id="+val+">"+val+"</div>");
+			});
+
+			jQuery.each( $woods, function(i, val)  {
+				$("#woodList").append("<div class='colorX' id="+val+">"+val+"</div>");
+			});
+	   	}	
 
 
 	   });
 
-	$("#hR").click(function() {
-		$handleColor = "red";
-		checkCustom();
 
-		$(this).addClass("colorSelected");
-		$("#hB").removeClass("colorSelected");
-		$("#hG").removeClass("colorSelected");
-
-
-	});
-	$("#hB").click(function() {
-		$handleColor = "blue";
-		checkCustom();
-
-		$(this).addClass("colorSelected");
-		$("#hR").removeClass("colorSelected");
-		$("#hG").removeClass("colorSelected");
-	});
-	$("#hG").click(function() {
-		$handleColor = "green";
-		checkCustom();
-
-		$(this).addClass("colorSelected");
-		$("#hB").removeClass("colorSelected");
-		$("#hR").removeClass("colorSelected");
-	});
-	$("#bR").click(function() {
-		$batColor = "red";
-		checkCustom();
-
-		$(this).addClass("colorSelected");
-		$("#bB").removeClass("colorSelected");
-		$("#bG").removeClass("colorSelected");
-	});
-	$("#bB").click(function() {
-		$batColor = "blue";
-		checkCustom();
-
-		$(this).addClass("colorSelected");
-		$("#bR").removeClass("colorSelected");
-		$("#bG").removeClass("colorSelected");
-	});
-	$("#bG").click(function() {
-		$batColor = "green";
-		checkCustom();
-
-		$(this).addClass("colorSelected");
-		$("#bB").removeClass("colorSelected");
-		$("#bR").removeClass("colorSelected");
-	});
+	
 
 	
 
@@ -105,6 +107,40 @@ $(document).ready(function() {
    		sendBat($handleColor, $batColor);
 	});
 
+	$("li").click(function() {
+		$("li").removeClass("model-select");
+		$(this).addClass("model-select");
+		$("#cb").removeClass("disable");
+
+
+		$model = $(this).attr("id");
+		switch ($model) {
+			case "024":
+				$image = "";
+				$othervars = "";
+				break;
+			case "110":
+				$image = "";
+				$othervars = "";
+				break;
+			case "271":
+				$image = "";
+				$othervars = "";
+				break;
+			case "243":
+				$image = "";
+				$othervars = "";
+				break;
+			case "141":
+				$image = "";
+				$othervars = "";
+				break;
+		}
+
+
+
+	});
+
 	
 
 
@@ -112,6 +148,11 @@ $(document).ready(function() {
 
 
 });
+
+function loadBatData(id) {
+	
+
+}
 
 function checkCustom() {
 	if(($handleColor != "none") && ($batColor != "none")){
@@ -180,4 +221,25 @@ function sendBat(handle, bat) {
 
 	console.log($bats);
 
+}
+
+$.fn.scrollView = function () {
+  return this.each(function () {
+    $('html, body').animate({
+      scrollTop: $(this).offset().top
+    }, 1000);
+  });
+
+
+ 
+}
+
+function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
 }

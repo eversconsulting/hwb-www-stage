@@ -2,6 +2,16 @@
 $(document).ready(function(){
 	getBats();
 
+
+	$(".cart-item").click(function() {
+		$(this).css("background-color", "lightblue");
+
+	});
+
+	$(".cart-item").dblclick(function() {
+		$(this).css("background-color", "transparent");
+
+	});
 	
 });
 
@@ -60,8 +70,9 @@ function getBats(){
 
     	$inCart.push($bat);
     	
+		$(".cart-check").append('<div class="cart-mark"></div>');
+    	$(".cart-list").append('<div class="cart-item" id="item'+index+'"><div class="cart-row"><div class="cart-title">Homewood Test Bat v21</div><div class="cart-price">$59.99</div></div><div class="cart-col"><div class="cart-row"><div class="cart-label">Bat Color:</div><div class="cart-info">'+$b+'</div></div><div class="cart-row"><div class="cart-label">Handle Color:</div><div class="cart-info">'+$h+'</div></div></div></div>');
 
-    	$(".cart-list").append('<div class="cart-item"><div class="cart-row"><div class="cart-title">Homewood Test Bat v21</div><div class="cart-price">$59.99</div></div><div class="cart-col"><div class="cart-row"><div class="cart-label">Handle Color:</div><div class="cart-info">'+$h+'</div></div></div><div class="cart-col"><div class="cart-row"><div class="cart-label">Bat Color:</div><div class="cart-info">'+$b+'</div></div></div></div>');
 	});
 
 	

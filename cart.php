@@ -17,7 +17,7 @@
 			<a href="index.php"><li>Home</li></a>
 			<li>Shop</li>
 			<li>About</li>
-			<li id="cartShow">Cart ( )</li>
+			<a href="cart.php"><li id="cartShow">Cart ( )</li></a>
 		</ul>
 		<div class="hamburger"></div>
 	</div>
@@ -38,9 +38,11 @@
 	</div>
 	
 	<div class="section" id="sec1" style="background-color: #2F4F4F;">
-		<div class="cart-list">
-			
-		</div>
+		
+			<div class="cart-list">
+
+			</div>
+		
 	</div>
 	
 	<div class="footer">
