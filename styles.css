@@ -13,6 +13,17 @@ ul a {
 	color: white;
 }
 
+.cart {
+	float: right;
+}
+
+.cart-icon {
+	width: 48px;
+	height: 48px;
+	background-image: url("assets/cart2.png");
+	margin-top: 40px;
+}
+
 .spacer {
 	width: 100%;
 	height: 100px;
@@ -47,9 +58,9 @@ ul a {
 
 .logo {
 	float: left;
-	
-	background-image: url("assets/hwb.png");
-	width: 300px;
+	background-size: contain;
+	background-image: url("assets/hwb1.png");
+	width: 210px;
 	height: 125px;
 }
 
@@ -677,6 +688,12 @@ select {
 	display: none;
 }
 
+.cart {
+	width: 100px;
+	height: 125px;
+	
+}
+
 
 
 
@@ -690,8 +707,9 @@ select {
 }
 
 .logo {
-	width: 100px;
+	width: 150px;
 	height: 75px;
+	background-size: cover;
 }
 
 .navbar-spacer {
@@ -751,6 +769,7 @@ select {
 .title-row {
 	width: 250px;
 	height: 30px;
+	padding-top: 10px;
 }
 
 .title-line {
@@ -864,7 +883,7 @@ select {
 }
 
 .slide-menu {
-	height: 300px;
+	height: 250px;
 	width: 100%;
 	background-color: rgb(250, 245, 234);
 	position: fixed;
@@ -890,7 +909,20 @@ select {
 	font-size: 10px;
 }
 
+.cart {
+	width: 75px;
+	height: 75px;
+	float: right;
 
+}
+
+.cart-icon {
+	width: 32px;
+	height: 32px;
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-top: 22px;
+}
 
 
 

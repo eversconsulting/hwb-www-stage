@@ -18,7 +18,6 @@
 			<li id="news">NEWS</li>
 			<li id="contact">CONTACT</li>
 			<li id="about">ABOUT</li>
-			<a href="cart.php"><li id="cartShow">CART ( )</li></a>
 		</ul>
 
 		<!-- <div class="navbar-icons">
@@ -31,7 +30,12 @@
 			<div id="ham1" class="hamburger-line"></div>
 			<div id="ham2" class="hamburger-line"></div>
 			<div id="ham3" class="hamburger-line"></div>
-		</div>		
+		</div>
+
+		<div class="cart">
+			<img class="cart-icon" src="assets/cart.png">
+		</div>
+
 	</div>
 	<div class="navbar-spacer"></div>
 	<div class="slide-menu">
@@ -40,7 +44,7 @@
 		<div id="mnews" class="slide-option">NEWS</div>
 		<div id="mcontact" class="slide-option">CONTACT</div>
 		<div id="mabout" class="slide-option">ABOUT</div>
-		<div class="slide-option">CART ( )</div>
+		
 
 
 	</div>
