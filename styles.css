@@ -1013,6 +1013,9 @@ select {
 	font-size: 18px;
 	font-family: mainFont;
 }
+.about-body {
+	font-size: 15px;
+}
 
 .about-title {
 	font-size: 20px;
