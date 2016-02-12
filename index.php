@@ -20,11 +20,11 @@
 			<li id="about">ABOUT</li>
 		</ul>
 
-		<!-- <div class="navbar-icons">
-			<div class="nav-icon"></div>
-			<div class="nav-icon"></div>
-			<div class="nav-icon"></div>
-		</div> -->
+		<div class="navbar-icons">
+			<div id="facebook" class="nav-icon"></div>
+			<div id="twitter" class="nav-icon"></div>
+			<div id="instagram" class="nav-icon"></div>
+		</div>
 
 		<div class="hamburger">
 			<div id="ham1" class="hamburger-line"></div>
@@ -33,6 +33,7 @@
 		</div>
 
 		<div class="cart">
+			<div class="notify">2</div>
 			<img class="cart-icon" src="assets/cart.png">
 		</div>
 
@@ -50,24 +51,24 @@
 	</div>
 	
 
-	<script type="text/javascript">
-		$cart = sessionStorage.getItem("cart");
+	 <script type="text/javascript">
+	// 	$cart = sessionStorage.getItem("cart");
 
-		if(!$cart){
-			sessionStorage.setItem("cart", 0);
-			$("#cartShow").text("Cart (" + sessionStorage.cart +")");
-		}
+	// 	if(!$cart){
+	// 		sessionStorage.setItem("cart", 0);
+	// 		$("#cartShow").text("Cart (" + sessionStorage.cart +")");
+	// 	}
 		
-		$("#cartShow").text("Cart (" + sessionStorage.cart +")");
+	// 	$("#cartShow").text("Cart (" + sessionStorage.cart +")");
 		
-	</script>
+	 </script>
 
 
 	</div>
 	
 	<div class="section" id="sec1">
 		
-		<img class="img-top" src="assets/baseball.jpg">
+		<div class="img-top"></div>
 		<div class="spacer">THE SWEET SOUND OF A HOMEWOOD BAT</div>
 
 	</div>
@@ -172,7 +173,7 @@
 					<div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2985.1704947532794!2d-87.63521178505906!3d41.56555449289474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e18bb669d2c65%3A0xff83244a990b75e2!2s17845+Bretz+Dr%2C+Homewood%2C+IL+60430!5e0!3m2!1sen!2sus!4v1455171054605" width="400" height="400" frameborder="0" style="border:0" allowfullscreen></iframe></div>
 				</div>
 				<div class="cart-col" >
-					<div class="col-inner">
+					<div id="col-inner-contact" class="col-inner">
 						<div class="contact-info">
 							<div class="contact-p">
 								<div>We'd love to talk with you about your special bat needs. Please feel free to give us a call, send an email, or stop in for a look at our shop.</div>
@@ -187,6 +188,7 @@
 		</div>
 
 		<div id="mobile-contact" class="mobile-contact">
+			<div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2985.1704947532794!2d-87.63521178505906!3d41.56555449289474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e18bb669d2c65%3A0xff83244a990b75e2!2s17845+Bretz+Dr%2C+Homewood%2C+IL+60430!5e0!3m2!1sen!2sus!4v1455171054605" width="250" height="200" frameborder="0" style="border:0" allowfullscreen></iframe></div>
 			<div class="contact-info">
 				<div class="contact-p">
 					<div>We'd love to talk with you about your special bat needs. Please feel free to give us a call, send an email, or stop in for a look at our shop.</div>

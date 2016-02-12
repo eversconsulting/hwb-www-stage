@@ -1,3 +1,14 @@
+/*
+colors: 
+
+cream: rgb(250, 245, 234);
+dark blue: rgb(24, 53, 80);
+light blue: rgb(53, 95, 106);
+orange: rgb(252, 116, 44);
+*/
+
+
+
 body {
 	padding: 0;
 	margin: 0;
@@ -34,7 +45,7 @@ ul a {
 	font-size: 40px;
 	font-weight: bold;
 	color: rgb(250, 245, 234);
-	background-color: rgb(24, 53, 80);
+	background-color: rgb(53, 95, 106);
 }
 .main-image {
 	width: 100%;
@@ -44,7 +55,7 @@ ul a {
 #sec1 {
 	height: auto;
 	overflow: hidden;
-	background-color: rgb(24, 53, 80);
+	background-color: rgb(53, 95, 106);
 }
 #sec4 {
 	height: 600px;
@@ -53,14 +64,16 @@ ul a {
 .img-top {
 	width: 100%;
 	height: 400px;
+	background-size: cover;
+	background-image: url("assets/baseball.jpg")
 
 }
 
 .logo {
 	float: left;
-	background-size: contain;
+	background-size: 250px 125px;
 	background-image: url("assets/hwb1.png");
-	width: 210px;
+	width: 250px;
 	height: 125px;
 }
 
@@ -79,6 +92,24 @@ ul a {
 	
 }
 
+.notify {
+	width: 25px;
+	height: 25px;
+	border-radius: 20px;
+	border: solid;
+	border-color: transparent;
+	background-color: rgb(252, 116, 44);
+	color: rgb(24, 53, 80);
+	position: absolute;
+	top: 30px;
+	right: 35px;
+	text-align: center;
+	line-height: 25px;
+	vertical-align: middle;
+	font-size: 25px;
+	display: none;
+}
+
 .footer {
 	width: 100%;
 	height: auto;
@@ -93,20 +124,35 @@ ul a {
 }
 
 .navbar-icons {
-	width: auto;
+	width: 300px;
 	height: 125px;
 	float: left;
 	display: inline-block;
 	margin-top: 45px;
+	margin-left: 50px;
+
 }
+
+#facebook {
+	background-image: url("assets/facebook.png");
+}
+
+#twitter {
+	background-image: url("assets/twitter.png");
+}
+#instagram {
+	background-image: url("assets/instagram.png");
+}
+
+
 
 .nav-icon {
 	width: 40px;
 	height: 40px;
-	background-color: rgb(252, 116, 44);
 	float: left;
-	margin-right: 10px;
-	margin-left: 10px;
+	margin-right: 25px;
+	margin-left: 25px;
+	background-size: 40px 40px;
 
 }
 .navbar-items {
@@ -140,7 +186,7 @@ ul a {
 
 .navbar-items li:hover {
 	background-color: rgb(250, 245, 234);
-	color: rgb(24, 53, 80);
+	color: rgb(252, 116, 44);
 }
 
 
@@ -241,16 +287,19 @@ ul a {
 				color 0.5s linear;
 	width: 150px;
 	height: 50px;
-	background-color: transparent;
-	border-style: solid;
-	border-color: white;
 	border-width: 1px;
 	line-height: 50px;
 	vertical-align: middle;
 	text-align: center;
-	color: black;
 	pointer-events: auto;
 	cursor: pointer;
+	border: solid;
+	border-color: transparent;
+	border-width: 2px;
+	border-radius: 15px;
+	background-color: rgb(53, 95, 106);
+	color: rgb(250, 245, 234);
+	font-size: 20px;
 
 }
 
@@ -261,10 +310,26 @@ ul a {
 
 }
 
+#title-line-special {
+	width: 300px;
+}
+
+#title-line-special2 {
+	width: 300px;
+}
+
+#section-title-special {
+	width: 350px;
+}
+
+#title-row-special {
+	width: 950px;
+}
+
 .button:hover {
-	border-color: black;
-	background-color: black;
-	color: white;
+	background-color: rgb(252, 116, 44);
+	color: rgb(24, 53, 80);
+	border-color: rgb(53, 95, 106);
 }
 
 
@@ -477,7 +542,10 @@ select {
 .bat-image {
 	width: 550px;
 	height: 400px;
-	background-color: black;
+	background-color: white;
+	border: solid;
+	border-color: rgb(24, 53, 80);
+	border-width: 2px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -514,38 +582,76 @@ select {
 }
 
 .details-list {
-	padding-left: 20px;
-	margin-top: 10px;
-	}
 
+	margin-top: 0;
+	padding-left: 0;
+}
+
+#row-spec {
+	margin-top: 0;
+}
 
 .details-list li {
+	list-style: none;
+}
+
+.details-text {
+	width: auto;
+	height: 75px;
+	padding-top: 15px;
+
+
+}
+
+.details-container {
+	width: 600px;
+	height: 75px;
+	display: inline-block;
+
+}
+
+
+.details-list-items {
+	float: left;
 	cursor: pointer;
 	height: 50px;
 	width: 100px;
 	border: solid;
-	border-color: black;
-	border-width: 1px;
+	border-color: transparent;
+	border-width: 2px;
+	border-radius: 15px;
 	list-style: none;
 	line-height: 50px;
 	vertical-align: middle;
 	text-align: center;
 	margin: 10px;
-	display: inline-block;
-	transition: border-color 0.5s linear,
+	background-color: rgb(53, 95, 106);
+	color: rgb(250, 245, 234);
+	font-size: 25px;
+	transition:	border-color 0.5s linear,
 				background-color 0.5s linear,
 				color 0.5s linear;
+	
 }
+
+.details-list-items:hover {
+	background-color: rgb(252, 116, 44);
+	color: rgb(24, 53, 80);
+	border-color: rgb(53, 95, 106);
+
+}
+
 
 #customize-sec {
 	height: 800px;
+	background-color: rgb(250, 245, 234);
 }
 
 .customize-bat {
 	height: 1500px;
 	width: 100%;
 	display: none;
-	background-color: white;
+	background-color: rgb(250, 245, 234);
 }
 
 .customize-inner {
@@ -558,11 +664,14 @@ select {
 
 .customize-image {
 
-	height: 250px;
+	height: 200px;
 	width: 900px;
 	margin-right: auto;
 	margin-left: auto;
-	background-color: black;
+	background-color: white;
+	border: solid;
+	border-color: rgb(24, 53, 80);
+	border-width: 2px;
 }
 
 .color-title {
@@ -593,19 +702,64 @@ select {
 .color {
 	width: 50px;
 	height: 50px;
-	background-color: red;
+	background-color: white;
+	border: solid;
+	border-width: 2px;
+	border-color: rgb(24, 53, 80);
 	float: left;
 	margin-right: 10px;
 	margin-left: 10px;
+	text-align: center;
+	line-height: 50px;
+	vertical-align: middle;
+	font-size: 18px;
 }
 
 .colorX {
+	font-size: 18px;
 	width: 150px;
 	height: 50px;
-	background-color: red;
+	background-color: white;
+	border: solid;
+	border-width: 2px;
+	border-color: rgb(24, 53, 80);
 	float: left;
 	margin-right: 10px;
 	margin-left: 10px;
+	text-align: center;
+	line-height: 50px;
+	vertical-align: middle;
+}
+.colorY {
+	font-size: 18px;
+	width: 250px;
+	height: 50px;
+	background-color: white;
+	border: solid;
+	border-width: 2px;
+	border-color: rgb(24, 53, 80);
+	float: left;
+	margin-right: 10px;
+	margin-left: 10px;
+	text-align: center;
+	line-height: 50px;
+	vertical-align: middle;
+}
+.engraving {
+	font-size: 18px;
+	width: 300px;
+	height: 50px;
+	background-color: white;
+	border: solid;
+	border-width: 2px;
+	border-color: rgb(24, 53, 80);
+	float: left;
+	margin-right: 10px;
+	margin-left: 10px;
+	
+	line-height: 50px;
+	vertical-align: middle;
+
 }
 
 .options-cont {
@@ -617,9 +771,9 @@ select {
 
 
 .model-select {
-	background-color: black;
-	color: white;
-	border-color: white;
+	background-color: rgb(252, 116, 44);
+	color: rgb(24, 53, 80);
+	border-color: rgb(53, 95, 106);
 }
 
 .map {
@@ -629,10 +783,12 @@ select {
 }
 
 .col-inner {
-	width: 400px;
+	width: 600px;
 	height: 300px;
-	margin-top: 50px;
-	margin-bottom: 50px;
+}
+
+#col-inner-contact {
+	margin-left: 15px;
 }
 
 .contact-info {
@@ -642,7 +798,7 @@ select {
 
 .contact-p {
 	color: black;
-	font-family: none;
+	font-family: secondFont;
 }
 
 .about-title {
@@ -651,12 +807,15 @@ select {
 }
 
 .about-body {
-	font-family: none;
+	font-family: secondFont;
+	font-size: 20px;
 
 }
 
 .about-sub {
 	color: rgb(252, 116, 44);
+	font-size: 25px;
+	font-family: mainFont;
 }
 
 .slide-menu {
@@ -694,6 +853,10 @@ select {
 	
 }
 
+#sec5 {
+	height: 750px;
+}
+
 
 
 
@@ -706,10 +869,14 @@ select {
 	height: 75px;
 }
 
+.navbar-icons {
+	display: none;
+}
+
 .logo {
 	width: 150px;
 	height: 75px;
-	background-size: cover;
+	background-size: 150px 75px;
 }
 
 .navbar-spacer {
@@ -839,7 +1006,17 @@ select {
 	height: 400px;
 }
 #sec4 {
-	height: 250px;
+	height: 450px;
+}
+
+.about-sub {
+	font-size: 18px;
+	font-family: mainFont;
+}
+
+.about-title {
+	font-size: 20px;
+	text-align: center;
 }
 
 #desktop-contact {
@@ -855,7 +1032,7 @@ select {
 }
 
 .contact-info {
-	width: 300px;
+	width: 250px;
 	margin-right: auto;
 	margin-left: auto;
 	font-size: 15px;
@@ -875,11 +1052,12 @@ select {
 }
 
 #sec5 {
-	height: 700px;
+	height: 750px;
 }
 
 .about-title {
 	font-size: 18px;
+	font-weight: bold;
 }
 
 .slide-menu {
@@ -922,6 +1100,14 @@ select {
 	margin-left: 15px;
 	margin-right: 15px;
 	margin-top: 22px;
+	background-image: url("assets/cart.png");
+}
+
+.map {
+	width: 250px;
+	height: 200px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 
@@ -942,4 +1128,8 @@ select {
 @font-face {
 	font-family: mainFont;
 	src: url('BankGothicLight.ttf');
+}
+@font-face {
+	font-family: secondFont;
+	src: url('next.ttc');
 }

@@ -107,35 +107,37 @@ $(document).ready(function() {
    		sendBat($handleColor, $batColor);
 	});
 
-	$("li").click(function() {
-		$("li").removeClass("model-select");
+	$(".details-list-items").click(function() {
+		$(".details-list-items").removeClass("model-select");
+
 		$(this).addClass("model-select");
+		
 		$("#cb").removeClass("disable");
 
 
-		$model = $(this).attr("id");
-		switch ($model) {
-			case "024":
-				$image = "";
-				$othervars = "";
-				break;
-			case "110":
-				$image = "";
-				$othervars = "";
-				break;
-			case "271":
-				$image = "";
-				$othervars = "";
-				break;
-			case "243":
-				$image = "";
-				$othervars = "";
-				break;
-			case "141":
-				$image = "";
-				$othervars = "";
-				break;
-		}
+		// $model = $(this).attr("id");
+		// switch ($model) {
+		// 	case "024":
+		// 		$image = "";
+		// 		$othervars = "";
+		// 		break;
+		// 	case "110":
+		// 		$image = "";
+		// 		$othervars = "";
+		// 		break;
+		// 	case "271":
+		// 		$image = "";
+		// 		$othervars = "";
+		// 		break;
+		// 	case "243":
+		// 		$image = "";
+		// 		$othervars = "";
+		// 		break;
+		// 	case "141":
+		// 		$image = "";
+		// 		$othervars = "";
+		// 		break;
+		// }
 
 
 
@@ -226,7 +228,7 @@ function sendBat(handle, bat) {
 $.fn.scrollView = function () {
   return this.each(function () {
     $('html, body').animate({
-      scrollTop: $(this).offset().top
+      scrollTop: $(this).offset().top - 125
     }, 1000);
   });
 

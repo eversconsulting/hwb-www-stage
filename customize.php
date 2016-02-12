@@ -60,23 +60,23 @@
 			<a href="cart.php"><li id="cartShow">Cart ( )</li></a>
 		</ul>
 
-		<div class="navbar-icons">
+		<!-- <div class="navbar-icons">
 			<div class="nav-icon"></div>
 			<div class="nav-icon"></div>
 			<div class="nav-icon"></div>
 			<div class="nav-icon"></div>
 			<div class="nav-icon"></div>
-		</div>
-		<div class="hamburger"></div>
+		</div> -->
+		
 	</div>
 	<div class="navbar-spacer"></div>
-	<div class="slide-menu">
+	
 
 
 	</div>
 
 	
-	<div class="section" id="customize-sec" style="background-color: #2F4F4F;">
+	<div class="section" id="customize-sec">
 		<div class="display-bat">
 			<div class="cart-col">
 				<div class="bat-image"></div>
@@ -84,21 +84,22 @@
 			</div>
 			<div class="cart-col">
 				<div class="col-inner">
-					<div class="cart-row">
+					<div id="row-spec" class="cart-row">
 						<div class="bat-title"><?php echo $title; ?></div>
 						<div class="bat-price"><?php echo $price; ?></div>
 					</div>
-					<div class="bat-desc"><?php echo $desc; ?></div>
+					
 
 					<div class="bat-details">
 						<div class="details-title">Models</div>
 						<ul class="details-list">
 							<?php
 								foreach ($models as $value) {
-									echo "<li id=$value>$value</li>";
+									echo "<li><div class='details-container'><div class='details-list-items' id=$value>$value</div><div class='details-text'>Test text for this bat. Maybe input what you want here</div></div></li>";
 								}
 							?>
 						</ul>
+
 					</div>
 				</div>
 			</div>
@@ -115,14 +116,18 @@
 	</div>
 	<div class="customize-bat">
 		<div class="customize-inner">
-			<div style="height: 200px; width: 100%;"></div>
+			<div id="title-row-special" class="title-row">
+				<div id="title-line-special" class="title-line"></div>
+				<div id="section-title-special" class="section-title">CUSTOMIZE</div>
+				<div id="title-line-special2" class="title-line"></div>
+			</div>
 			<div class="customize-image"></div>
 			<div class="options-cont">
 				
 					<div class="cart-row">
 						<div class="color-title">Handle:</div>
 						<div class="color-cont">
-							<div class="color"></div>
+							<div title="test" class="color"></div>
 							<div class="color"></div>
 							<div class="color"></div>
 							<div class="color"></div>
@@ -175,7 +180,21 @@
 							
 							
 						</div>
-					</div>
+				</div>
+
+				<div class="cart-row">
+						<div class="color-title">CUSTOM ENGRAVING LETTERING STYLE</div>
+						<div class="color-cont">
+							<div class="colorY"></div>
+							<div class="colorY"></div>
+						</div>
+				</div>
+				<div class="cart-row">
+						<div class="color-title">CUSTOM ENGRAVING (UP TO 25 CHARACHTERS)</div>
+						<div class="color-cont">
+							<input class="engraving" type="text" maxlength="25">
+						</div>
+				</div>
 				
 				
 			</div>
