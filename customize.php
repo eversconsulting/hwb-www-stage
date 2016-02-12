@@ -247,6 +247,13 @@
 				</div>
 
 				<div class="cart-row">
+						<div class="color-title">QUANTITY</div>
+						<div class="color-cont">
+							<input class="quantity" type="number" min="1">
+						</div>
+				</div>
+
+				<div class="cart-row">
 					<div class="button disable" id="add">ADD TO CART</div>
 					<div class="button-title">ONLINE STORE COMING SOON! PLEASE CALL 708.713.8000 TO ORDER</div>
 				</div>
