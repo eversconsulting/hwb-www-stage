@@ -20,6 +20,11 @@
 			<li id="about">ABOUT</li>
 		</ul>
 
+		<div class="cart">
+			<div class="notify">2</div>
+			<img class="cart-icon" src="assets/cart.png">
+		</div>
+
 		<div class="navbar-icons">
 			<div id="facebook" class="nav-icon"></div>
 			<div id="twitter" class="nav-icon"></div>
@@ -32,10 +37,7 @@
 			<div id="ham3" class="hamburger-line"></div>
 		</div>
 
-		<div class="cart">
-			<div class="notify">2</div>
-			<img class="cart-icon" src="assets/cart.png">
-		</div>
+		
 
 	</div>
 	<div class="navbar-spacer"></div>
@@ -88,10 +90,7 @@
 							<a href="customize.php?id=fungo"><div class="item-picture"></div></a>
 							<div class="item-desc">FUNGO BAT</div>
 						</div>
-						<div class="shop-item">
-							<a href="customize.php?id=gift"><div class="item-picture"></div></a>
-							<div class="item-desc">GIFT CARD</div>
-						</div>
+						
 					</div>
 					<div class="spacer-col"></div>
 					<div class="shop-container" id="s2">
@@ -115,8 +114,6 @@
 							<a href="customize.php?id=accessories"><div class="item-picture"></div></a>
 							<div class="item-desc">ACCESSORIES</div>
 						</div>
-						
-						
 					</div>
 				</div>
 
@@ -145,10 +142,7 @@
 						<div class="mobile-item-title">ACCESSORIES</div>
 						<div class="mobile-item-selector">&#x2771;</div>
 					</div>
-					<div id="gc" class="mobile-item">
-						<div class="mobile-item-title">GIFT CARD</div>
-						<div class="mobile-item-selector">&#x2771;</div>
-					</div>
+					
 				</div>	
 	</div>
 	<div class="section" id="sec3" style="background-color: rgb(250, 245, 234);">
