@@ -20,22 +20,24 @@
 			<li id="about">ABOUT</li>
 		</ul>
 
+		<div class="hamburger">
+			<div id="ham1" class="hamburger-line"></div>
+			<div id="ham2" class="hamburger-line"></div>
+			<div id="ham3" class="hamburger-line"></div>
+		</div>
+
 		<div class="cart">
 			<div class="notify">2</div>
 			<img class="cart-icon" src="assets/cart.png">
 		</div>
 
 		<div class="navbar-icons">
+			<a href="https://www.instagram.com/homewoodbat/"><div id="instagram" class="nav-icon"></div></a>
 			<div id="facebook" class="nav-icon"></div>
 			<div id="twitter" class="nav-icon"></div>
-			<div id="instagram" class="nav-icon"></div>
 		</div>
 
-		<div class="hamburger">
-			<div id="ham1" class="hamburger-line"></div>
-			<div id="ham2" class="hamburger-line"></div>
-			<div id="ham3" class="hamburger-line"></div>
-		</div>
+		
 
 		
 
@@ -71,7 +73,7 @@
 	<div class="section" id="sec1">
 		
 		<div class="img-top"></div>
-		<div class="spacer">THE SWEET SOUND OF A HOMEWOOD BAT</div>
+		<div class="spacer">THE SWEET SOUND OF A HOMEWOOD BAT<sup>&#174;</sup></div>
 
 	</div>
 	<div class="section" id="sec2" style="background-color: rgb(250, 245, 234);">
@@ -202,40 +204,34 @@
 			</div>
 		<div id="desktop-about" class="section-inner">
 			<div class="about-title">WHY ANOTHER BAT COMPANY?</div>
-			<p>
+			<div class="star">&#9733;</div>
 			<div class="about-body">
 				<div class="about-sub">Because this is a baseball town.<br><br></div>
 				We are located only 20 miles south of Chicago, a city that loves baseball so much that it has two professional teams. If you haven't experienced Chicago baseball, have you really experienced Chicago? Complete the experience by visiting a local company that loves baseball as much as the region it calls home.
-				<br>
-				<br>
+				<div class="star">&#9733;</div>
 				<div class="about-sub">Because this is our dream.<br><br></div>
 				Creating bats in a plant where visitors can see that process and customize their bat has been a dream many years in the making. Patience and prayer have made that dream a reality. We know the quality of each bat will show our commitment to creating a fine and lasting product.
-				<br>
-				<br>
+				<div class="star">&#9733;</div>
 				<div class="about-sub">Because baseball brings people together.<br><br></div>
 				For generations families, neighbors, friend and foe alike, have gathered in their local park, in Grandma's back yard, and in professional stadiums to enjoy a game of baseball...
-				<br>
-				<br>
-				<div class="about-sub">Come visit us and see for yourself!</div>
+				<div class="star">&#9733;</div>
+				<div class="about-sub" id="bottom-sub">Come visit us and see for yourself!</div>
 			</div>
 		</div>
 
 		<div id="mobile-about" class="mobile-about">
 			<div class="about-title">WHY ANOTHER BAT COMPANY?</div>
-			<p>
+			<div class="star">&#9733;</div>
 			<div class="about-body">
 				<div class="about-sub">Because this is a baseball town.<br><br></div>
 				We are located only 20 miles south of Chicago, a city that loves baseball so much that it has two professional teams. If you haven't experienced Chicago baseball, have you really experienced Chicago? Complete the experience by visiting a local company that loves baseball as much as the region it calls home.
-				<br>
-				<br>
+				<div class="star">&#9733;</div>
 				<div class="about-sub">Because this is our dream.<br><br></div>
 				Creating bats in a plant where visitors can see that process and customize their bat has been a dream many years in the making. Patience and prayer have made that dream a reality. We know the quality of each bat will show our commitment to creating a fine and lasting product.
-				<br>
-				<br>
+				<div class="star">&#9733;</div>
 				<div class="about-sub">Because baseball brings people together.<br><br></div>
 				For generations families, neighbors, friend and foe alike, have gathered in their local park, in Grandma's back yard, and in professional stadiums to enjoy a game of baseball...
-				<br>
-				<br>
+				<div class="star">&#9733;</div>
 				<div class="about-sub">Come visit us and see for yourself!</div>
 			</div>
 		</div>

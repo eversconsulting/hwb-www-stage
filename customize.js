@@ -3,6 +3,7 @@ $bat = "";
 
 $(document).ready(function() {
 	$bat = getParameterByName('id');
+	$ackChecked = false;
 
 	$("#cartShow").text("Cart (" + sessionStorage.cart +")");
 	
@@ -17,7 +18,16 @@ $(document).ready(function() {
 	
 
 
-	
+	$(".ack-check").click(function() {
+		$ackChecked = $(".ack-checked").is(":visible");
+		if($ackChecked){
+			$(".ack-checked").hide();
+		}
+		else{
+			$(".ack-checked").show();
+		}
+		
+	});
 	$("#cb").click(function() {
 		$customAreaShown = $(".customize-bat").is(":visible");
 
@@ -70,7 +80,7 @@ $(document).ready(function() {
 			}
 
 			jQuery.each( $lengths, function(i, val)  {
-				$("#colorList").append("<div class='color' id="+val+">"+val+"</div>");
+				$("#lengthList").append('<div class="colorL" id='+val+'>'+val+'"</div>');
 			});
 
 			jQuery.each( $weights, function(i, val)  {
