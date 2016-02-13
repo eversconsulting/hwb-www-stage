@@ -201,7 +201,7 @@
 				<div class="title-line"></div>
 				<div class="section-title">ABOUT</div>
 				<div class="title-line"></div>
-			</div>
+		</div>
 		<div id="desktop-about" class="section-inner">
 			<div class="about-title">WHY ANOTHER BAT COMPANY?</div>
 			<div class="star">&#9733;</div>
@@ -217,6 +217,41 @@
 				<div class="star">&#9733;</div>
 				<div class="about-sub" id="bottom-sub">Come visit us and see for yourself!</div>
 			</div>
+
+			<div class="title-row">
+				<div class="title-line title-line-staff"></div>
+				<div id="staff-title" class="section-title">OUR FRIENDLY STAFF</div>
+				<div class="title-line title-line-staff"></div>
+			</div>
+
+			<div class="cart-row">
+				<div class="cart-col">
+					<div class="staff-image" id="todd"></div>
+					<div class="staff-name">TODD PALS</div>
+					<div class="staff-caption">PRESIDENT</div>
+				</div>
+				<div class="cart-col">
+					<div class="staff-image" id="dan"></div>
+					<div class="staff-name">DAN GIBSON</div>
+					<div class="staff-caption">VICE PRESIDENT<br>SALES</div>
+				</div>
+			</div>
+			<div class="cart-row">
+				<div class="cart-col">
+					<div class="staff-image" id="craig"></div>
+					<div class="staff-name">CRAIG OLTHOFF</div>
+					<div class="staff-caption">PRODUCTION<br>MANAGER</div>
+				</div>
+				<div class="cart-col">
+					<div class="staff-image" id="carly"></div>
+					<div class="staff-name">CARLY HOGAN</div>
+					<div class="staff-caption">LASER ENGRAVER<br>EXTRAORDINAIRE</div>
+				</div>
+			</div>
+
+
+
+
 		</div>
 
 		<div id="mobile-about" class="mobile-about">
@@ -233,6 +268,37 @@
 				For generations families, neighbors, friend and foe alike, have gathered in their local park, in Grandma's back yard, and in professional stadiums to enjoy a game of baseball...
 				<div class="star">&#9733;</div>
 				<div class="about-sub">Come visit us and see for yourself!</div>
+			</div>
+			
+			<div class="title-row">
+				<div class="title-line title-line-staff"></div>
+				<div id="staff-title" class="section-title">OUR FRIENDLY STAFF</div>
+				<div class="title-line title-line-staff"></div>
+			</div>
+
+			<div class="cart-row">
+				<div class="cart-col">
+					<div class="staff-image" id="todd"></div>
+					<div class="staff-name">TODD PALS</div>
+					<div class="staff-caption">PRESIDENT</div>
+				</div>
+				<div class="cart-col">
+					<div class="staff-image" id="dan"></div>
+					<div class="staff-name">DAN GIBSON</div>
+					<div class="staff-caption">VICE PRESIDENT<br>SALES</div>
+				</div>
+			</div>
+			<div class="cart-row">
+				<div class="cart-col">
+					<div class="staff-image" id="craig"></div>
+					<div class="staff-name">CRAIG OLTHOFF</div>
+					<div class="staff-caption">PRODUCTION<br>MANAGER</div>
+				</div>
+				<div class="cart-col">
+					<div class="staff-image" id="carly"></div>
+					<div class="staff-name">CARLY HOGAN</div>
+					<div class="staff-caption">LASER ENGRAVER<br>EXTRAORDINAIRE</div>
+				</div>
 			</div>
 		</div>
 	</div>
