@@ -20,16 +20,18 @@
 			<li id="about">ABOUT</li>
 		</ul>
 
+		<div class="cart">
+			<div class="notify">2</div>
+			<img class="cart-icon" src="assets/cart.png">
+		</div>
+
 		<div class="hamburger">
 			<div id="ham1" class="hamburger-line"></div>
 			<div id="ham2" class="hamburger-line"></div>
 			<div id="ham3" class="hamburger-line"></div>
 		</div>
 
-		<div class="cart">
-			<div class="notify">2</div>
-			<img class="cart-icon" src="assets/cart.png">
-		</div>
+		
 
 		<div class="navbar-icons">
 			<a href="https://www.instagram.com/homewoodbat/"><div id="instagram" class="nav-icon"></div></a>
@@ -269,7 +271,7 @@
 				<div class="star">&#9733;</div>
 				<div class="about-sub">Come visit us and see for yourself!</div>
 			</div>
-			
+
 			<div class="title-row">
 				<div class="title-line title-line-staff"></div>
 				<div id="staff-title" class="section-title">OUR FRIENDLY STAFF</div>

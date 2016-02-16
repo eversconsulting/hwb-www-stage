@@ -2,18 +2,108 @@ $bat = "";
 
 
 $(document).ready(function() {
+	
+
 	$bat = getParameterByName('id');
 	$ackChecked = false;
 
-	$("#cartShow").text("Cart (" + sessionStorage.cart +")");
-	
+	$('#models-select').on('change', function() {
+		$model = $(this).val();
 
-	$batFilled = sessionStorage.getItem("bats");
+		switch ($model) {
+			case "024":
+				$mDesc = "Medium / large barrel diameter, Medium / long barrel, thin handle, flared knob";
+			
+				break;
+			case "110":
+				$mDesc = "Medium barrel diameter, long barrel, thick handle, regular knob";
+				break;
+			case "271":
+				$mDesc = "Medium barrel diameter, Tapered barrel, medium handle, flared knob";
+				break;
+			case "243":
+				$mDesc = "Large barrel diameter, long barrel , medium handle, regular knob";
+				break;
+			case "141":
+				$mDesc = "Medium barrel diameter, long barrel, thin handle, regular knob";
+				break;
+		}
 
-	if(!$batFilled){
-		$bats = ["empty"];
-		sessionStorage.setItem("bats", JSON.stringify($bats));
-	}
+		$("#details-body").text($mDesc);
+		
+	});
+
+
+	$("#cb-mobile").click(function() {
+		$customAreaShownM = $("#mobile-bat").is(":visible");
+
+		
+		if($customAreaShownM)
+			$("#mobile-bat").slideUp();
+
+		else{
+
+			$("#mobile-bat").slideDown();
+			$("#mobile-bat").scrollView();
+
+			
+
+			switch ($bat) {
+				case 'pro':
+
+					$lengths = ["32", "32.5", "33", "33.5", "34", "34.5"];
+					$weights = ["-3", "-2", "-1", "0"];
+					$woods = ["MAPLE", "ASH", "BIRCH"];
+					$desc = ["Medium / large barrel diameter, Medium / long barrel, thin handle, flared knob", "Medium barrel diameter, long barrel, thick handle, regular knob", "Medium barrel diameter, long barrel, thin handle, regular knob", "Large barrel diameter, long barrel , medium handle, regular knob", "Medium barrel diameter, Tapered barrel, medium handle, flared knob"];
+
+
+					break;
+				case 'game':
+
+					$lengths = ["31", "32", "32.5", "33", "33.5", "34", "34.5"];
+					$weights = ["-3", "-2", "-1", "0"];
+					$woods = ["ASH", "BIRCH"];
+					$desc = ["Medium / large barrel diameter, Medium / long barrel, thin handle, flared knob", "Medium barrel diameter, long barrel, thick handle, regular knob", "Medium barrel diameter, long barrel, thin handle, regular knob", "Large barrel diameter, long barrel , medium handle, regular knob", "Medium barrel diameter, Tapered barrel, medium handle, flared knob"];
+
+
+					break;
+				case 'youth':
+					$lengths = ["26", "27", "28", "29", "30"];
+					$weights = ["-3", "-2", "-1", "0"];
+					$woods = ["ASH", "BIRCH"];
+
+					break;
+				case 'fungo':
+					$lengths = ["34", "35", "35.5", "36"];
+					$weights = ["-3", "-2", "-1", "0"];
+					$woods = ["MAPLE"];
+
+					break;
+				case 'promo':
+					$lengths = ["34", "35", "35.5", "36"];
+					$weights = ["-3", "-2", "-1", "0"];
+					$woods = ["MAPLE"];
+
+					break;
+				
+				default:
+					
+					break;
+			}
+
+			jQuery.each( $lengths, function(i, val)  {
+				$("#length-select").append('<option class="option-select" id='+val+'>'+val+'"</div>');
+			});
+
+			jQuery.each( $weights, function(i, val)  {
+				$("#weight-select").append("<option class='option-select' id="+val+">"+val+"</div>");
+			});
+
+			jQuery.each( $woods, function(i, val)  {
+				$("#wood-select").append("<option class='option-select' id="+val+">"+val+"</div>");
+			});
+	   	}	
+	});
 
 	
 
@@ -29,15 +119,16 @@ $(document).ready(function() {
 		
 	});
 	$("#cb").click(function() {
-		$customAreaShown = $(".customize-bat").is(":visible");
+		$customAreaShown = $("#desktop-bat").is(":visible");
 
+		
 		if($customAreaShown)
-			$(".customize-bat").slideUp();
+			$("#desktop-bat").slideUp();
 
 		else{
 
-			$(".customize-bat").slideDown();
-			$(".customize-bat").scrollView();
+			$("#desktop-bat").slideDown();
+			$("#desktop-bat").scrollView();
 
 
 			switch ($bat) {
@@ -46,6 +137,7 @@ $(document).ready(function() {
 					$lengths = ["32", "32.5", "33", "33.5", "34", "34.5"];
 					$weights = ["-3", "-2", "-1", "0"];
 					$woods = ["MAPLE", "ASH", "BIRCH"];
+					$desc = ["Medium / large barrel diameter, Medium / long barrel, thin handle, flared knob", "Medium barrel diameter, long barrel, thick handle, regular knob", "Medium barrel diameter, long barrel, thin handle, regular knob", "Large barrel diameter, long barrel , medium handle, regular knob", "Medium barrel diameter, Tapered barrel, medium handle, flared knob"];
 
 					break;
 				case 'game':
@@ -53,6 +145,8 @@ $(document).ready(function() {
 					$lengths = ["31", "32", "32.5", "33", "33.5", "34", "34.5"];
 					$weights = ["-3", "-2", "-1", "0"];
 					$woods = ["ASH", "BIRCH"];
+					$desc = ["Medium / large barrel diameter, Medium / long barrel, thin handle, flared knob", "Medium barrel diameter, long barrel, thick handle, regular knob", "Medium barrel diameter, long barrel, thin handle, regular knob", "Large barrel diameter, long barrel , medium handle, regular knob", "Medium barrel diameter, Tapered barrel, medium handle, flared knob"];
+
 
 					break;
 				case 'youth':
@@ -125,29 +219,7 @@ $(document).ready(function() {
 		$("#cb").removeClass("disable");
 
 
-		// $model = $(this).attr("id");
-		// switch ($model) {
-		// 	case "024":
-		// 		$image = "";
-		// 		$othervars = "";
-		// 		break;
-		// 	case "110":
-		// 		$image = "";
-		// 		$othervars = "";
-		// 		break;
-		// 	case "271":
-		// 		$image = "";
-		// 		$othervars = "";
-		// 		break;
-		// 	case "243":
-		// 		$image = "";
-		// 		$othervars = "";
-		// 		break;
-		// 	case "141":
-		// 		$image = "";
-		// 		$othervars = "";
-		// 		break;
-		// }
+		
 
 
 
