@@ -8,6 +8,7 @@
 			$price = "$999";
 			$models = array("024", "110", "141", "243", "271");
 			$desc = array("024" => "Medium / large barrel diameter, Medium / long barrel, thin handle, flared knob", "110" => "Medium barrel diameter, long barrel, thick handle, regular knob", "141" => "Medium barrel diameter, long barrel, thin handle, regular knob", "243" => "Large barrel diameter, long barrel , medium handle, regular knob", "271" => "Medium barrel diameter, Tapered barrel, medium handle, flared knob");
+			$display = true;
 
 			break;
 		case 'game':
@@ -16,6 +17,7 @@
 			$price = "$999";
 			$models = array("024", "110", "141", "243", "271");
 			$desc = array("Medium / large barrel diameter, Medium / long barrel, thin handle, flared knob", "Medium barrel diameter, long barrel, thick handle, regular knob", "Medium barrel diameter, long barrel, thin handle, regular knob", "Large barrel diameter, long barrel , medium handle, regular knob", "Medium barrel diameter, Tapered barrel, medium handle, flared knob");
+			$display = true;
 
 			break;
 		case 'youth':
@@ -23,18 +25,21 @@
 			$desc = "This is the description for this item fill this area with whatever you want";
 			$price = "$999";
 			$models = array();
+			$display = false;
 			break;
 		case 'fungo':
 			$title = "FUNGO BAT | ";
 			$desc = "This is the description for this item fill this area with whatever you want";
 			$price = "$999";
 			$models = array();
+			$display = false;
 			break;
 		case 'promo':
 			$title = "PROMO BAT | ";
 			$desc = "This is the description for this item fill this area with whatever you want";
 			$price = "$999";
 			$models = array();
+			$display = false;
 			break;
 		
 		default:
@@ -88,7 +93,7 @@
 	</div>
 	<div class="navbar-spacer"></div>
 	<div class="slide-menu">
-		<div id="mhome" class="slide-option">HOME</div>
+		<a href="index.php"><div id="mhome" class="slide-option">HOME</div></a>
 		<div id="mshop" class="slide-option">SHOP</div>
 		<div id="mnews" class="slide-option">NEWS</div>
 		<div id="mcontact" class="slide-option">CONTACT</div>
@@ -104,7 +109,15 @@
 			<div class="display-bat">
 				<div class="cart-col">
 					<div class="bat-image"></div>
-					<div class="button disable" id="cb">Customize</div>
+					<?php
+						if ($display == true){
+							echo '<div class="button disable" id="cb">Customize</div>';
+						}
+						else{
+							echo '<div class="button disable" id="addCart">Add to Cart</div>';
+						}
+
+					?>
 				</div>
 				<div class="cart-col">
 					<div class="col-inner">
@@ -115,17 +128,26 @@
 						
 
 						<div class="bat-details">
-							<div class="details-title">Models</div>
-							<ul class="details-list">
-								<?php
+						<?php
+							if($display == true){
+								echo '<div class="details-title">Models</div>';
+								echo '<ul class="details-list">';
+								
 									$index = 0;
 									foreach ($models as $value) {
 
 										echo "<li><div class='details-container'><div class='details-list-items' id=$value>$value</div><div class='details-text'>$desc[$value]</div></div></li>";
 										$index += 1;
 									}
-								?>
-							</ul>
+								
+								echo '</ul>';
+							}
+							else{
+
+							}
+
+						?>
+							
 
 						</div>
 					</div>
@@ -142,23 +164,33 @@
 					<div class="bat-title"><?php echo $title; ?></div>
 					<div class="bat-price"><?php echo $price; ?></div>
 					<div class="bat-details">
-							<div class="details-title">MODELS:</div>
-							<select id="models-select"class="models-select">
-								<option selected="selected">Choose</option>
-								<?php
+					<?php
+						if($display == true){
+							echo '<div class="details-title">MODELS:</div>';
+							echo '<select id="models-select"class="models-select">';
+								echo '<option selected="selected">Choose</option>';
+							
 									foreach ($models as $value) {
 										echo "<option id=$value value=$value>$value</option>";
 									}
-								?>
-							</select>
-							<div id="details-body" class="details-body">
 								
-							</div>
+							echo '</select>';
+							echo '<div id="details-body" class="details-body"></div>';
+						}
+					?>
 					</div>
 				</div>
 			</div>
 			<div class="cart-row">
-				<div class="button" id="cb-mobile">Customize</div>
+				<?php
+					if($display == true){
+						echo '<div class="button" id="cb-mobile">Customize</div>';
+					}
+					else {
+						echo '<div class="button disable" id="addCart-mobile">Add to Cart</div>';
+					}
+
+				?>
 			</div>
 		</div>
 	</div>

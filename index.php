@@ -120,7 +120,7 @@
 							<div class="item-desc">YOUTH BAT</div>
 						</div>
 						<div class="shop-item">
-							<a href="customize.php?id=accessories"><div class="item-picture"></div></a>
+							<div class="item-picture"></div>
 							<div class="item-desc">ACCESSORIES</div>
 						</div>
 					</div>

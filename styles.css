@@ -1112,6 +1112,11 @@ sup {
 	color: rgb(53, 95, 106);
 	margin-top: 20px;
 }
+#addCart {
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 10px;
+}
 
 
 
@@ -1354,6 +1359,7 @@ sup {
 	text-align: center;
 	font-size: 20px;
 	color: rgb(24, 53, 80);
+	cursor: pointer;
 }
 
 .footer {
@@ -1470,11 +1476,24 @@ sup {
 	margin-left: auto;
 	margin-top: 10px;
 }
+
+
 #cb-mobile {
 	margin-right: auto;
 	margin-left: auto;
 	margin-top: 10px;
 }
+
+a {
+	text-decoration: none;
+}
+
+#addCart-mobile {
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 10px;
+}
+
 
 .bat-title {
 	font-size: 17px;
