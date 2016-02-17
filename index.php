@@ -200,7 +200,7 @@
 								<div>We'd love to talk with you about your special bat needs. Please feel free to give us a call, send an email, or stop in for a look at our shop.</div>
 							</div>
 							<p>
-							708.713.8000<br>INFO@HOMEWOODBAT.COM
+							708.713.8000<br><a class="mail-to" title="Email Us!" href="mailto:info@homewoodbat.com">INFO@HOMEWOODBAT.COM</a>
 							<p>
 							HOMEWOOD BAT CO<br>17845 BRETS DRIVE<br>HOMEWOOD, ILLINOIS 60430
 						</div>
@@ -215,7 +215,7 @@
 					<div>We'd love to talk with you about your special bat needs. Please feel free to give us a call, send an email, or stop in for a look at our shop.</div>
 				</div>
 				<p>
-				708.713.8000<br>INFO@HOMEWOODBAT.COM
+				708.713.8000<br><a class="mail-to" title="Email Us!" href="mailto:info@homewoodbat.com">INFO@HOMEWOODBAT.COM</a>
 				<p>
 				HOMEWOOD BAT CO<br>17845 BRETS DRIVE<br>HOMEWOOD, ILLINOIS 60430
 			</div>

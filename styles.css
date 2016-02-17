@@ -1118,6 +1118,12 @@ sup {
 	margin-top: 10px;
 }
 
+.mail-to {
+	text-decoration: none;
+	font-weight: bold;
+	color: rgb(252, 116, 44);
+}
+
 
 
 
