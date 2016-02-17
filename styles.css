@@ -641,7 +641,9 @@ sup {
 .details-text {
 	width: auto;
 	height: 75px;
-	padding-top: 15px;
+	padding-top: 10px;
+	font-family: secondFont;
+	font-size: 13px;
 
 
 }
@@ -1123,6 +1125,11 @@ sup {
 	font-weight: bold;
 	color: rgb(252, 116, 44);
 }
+
+#brush-option {
+	font-family: brushFont;
+}
+
 
 
 
@@ -1708,8 +1715,8 @@ a {
 	font-family: mainFont;
 }
 
-.brush-option {
-
+#brush-option {
+	font-family: brushFont;
 }
 
 .footer-icons {
@@ -1727,7 +1734,7 @@ a {
 	height: 150px;
 	background-color: white;
 	border: solid;
-	border-color: rgb(24, 53, 80);
+	border-color: rgb(252, 116, 44);
 	border-width: 2px;
 	margin-right: auto;
 	margin-left: auto;
@@ -1793,4 +1800,8 @@ a {
 @font-face {
 	font-family: secondFont;
 	src: url('Verdana.ttf');
+}
+@font-face {
+	font-family: brushFont;
+	src: url('BrushScript.otf');
 }

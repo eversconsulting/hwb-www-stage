@@ -7,7 +7,7 @@
 			//$desc = "This is the description for this item fill this area with whatever you want";
 			$price = "$999";
 			$models = array("024", "110", "141", "243", "271");
-			$desc = array("024" => "Medium / large barrel diameter, Medium / long barrel, thin handle, flared knob", "110" => "Medium barrel diameter, long barrel, thick handle, regular knob", "141" => "Medium barrel diameter, long barrel, thin handle, regular knob", "243" => "Large barrel diameter, long barrel , medium handle, regular knob", "271" => "Medium barrel diameter, Tapered barrel, medium handle, flared knob");
+			$desc = array("024" => "Barrel = 2.50/ Handle = .92 <br>Medium / large barrel diameter, Medium / long barrel, thin handle, flared knob", "110" => "Barrel = 2.46/ Handle = .97 <br>Medium barrel diameter, long barrel, thick handle, regular knob", "141" => "Barrel = 2.46/ Handle = .92 <br>Medium barrel diameter, long barrel, thin handle, regular knob", "243" => "Barrel = 2.52/ Handle = .94 <br>Large barrel diameter, long barrel , medium handle, regular knob", "271" => "Barrel = 2.48/ Handle = .94 <br>Medium barrel diameter, Tapered barrel, medium handle, flared knob");
 			$display = true;
 
 			break;
@@ -16,7 +16,7 @@
 			$desc = "This is the description for this item fill this area with whatever you want";
 			$price = "$999";
 			$models = array("024", "110", "141", "243", "271");
-			$desc = array("Medium / large barrel diameter, Medium / long barrel, thin handle, flared knob", "Medium barrel diameter, long barrel, thick handle, regular knob", "Medium barrel diameter, long barrel, thin handle, regular knob", "Large barrel diameter, long barrel , medium handle, regular knob", "Medium barrel diameter, Tapered barrel, medium handle, flared knob");
+			$desc = array("024" => "Barrel = 2.50/ Handle = .92 <br>Medium / large barrel diameter, Medium / long barrel, thin handle, flared knob", "110" => "Barrel = 2.46/ Handle = .97 <br>Medium barrel diameter, long barrel, thick handle, regular knob", "141" => "Barrel = 2.46/ Handle = .92 <br>Medium barrel diameter, long barrel, thin handle, regular knob", "243" => "Barrel = 2.52/ Handle = .94 <br>Large barrel diameter, long barrel , medium handle, regular knob", "271" => "Barrel = 2.48/ Handle = .94 <br>Medium barrel diameter, Tapered barrel, medium handle, flared knob");
 			$display = true;
 
 			break;
@@ -290,7 +290,7 @@
 						<div class="color-title">CUSTOM ENGRAVING LETTERING STYLE</div>
 						<div class="color-cont">
 							<div class="colorY">BANK GOTHIC</div>
-							<div class="colorY">Brush Style</div>
+							<div class="colorY" id="brush-option">Brush Style</div>
 						</div>
 				</div>
 				<div class="cart-row">

@@ -12,20 +12,20 @@ $(document).ready(function() {
 
 		switch ($model) {
 			case "024":
-				$mDesc = "Medium / large barrel diameter, Medium / long barrel, thin handle, flared knob";
+				$mDesc = "Barrel = 2.50 Handle = .92 Medium / large barrel diameter, Medium / long barrel, thin handle, flared knob";
 			
 				break;
 			case "110":
-				$mDesc = "Medium barrel diameter, long barrel, thick handle, regular knob";
+				$mDesc = "Barrel = 2.46 Handle = .97 Medium barrel diameter, long barrel, thick handle, regular knob";
 				break;
 			case "271":
-				$mDesc = "Medium barrel diameter, Tapered barrel, medium handle, flared knob";
+				$mDesc = "Barrel = 2.48 Handle = .94 Medium barrel diameter, Tapered barrel, medium handle, flared knob";
 				break;
 			case "243":
-				$mDesc = "Large barrel diameter, long barrel , medium handle, regular knob";
+				$mDesc = "Barrel = 2.52 Handle = .94 Large barrel diameter, long barrel , medium handle, regular knob";
 				break;
 			case "141":
-				$mDesc = "Medium barrel diameter, long barrel, thin handle, regular knob";
+				$mDesc = "Barrel = 2.46 Handle = .92 Medium barrel diameter, long barrel, thin handle, regular knob";
 				break;
 		}
 
