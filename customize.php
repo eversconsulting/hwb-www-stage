@@ -7,7 +7,7 @@
 			//$desc = "This is the description for this item fill this area with whatever you want";
 			$price = "$999";
 			$models = array("024", "110", "141", "243", "271");
-			$desc = array("024" => "Barrel = 2.50/ Handle = .92 <br>Medium / large barrel diameter, Medium / long barrel, thin handle, flared knob", "110" => "Barrel = 2.46/ Handle = .97 <br>Medium barrel diameter, long barrel, thick handle, regular knob", "141" => "Barrel = 2.46/ Handle = .92 <br>Medium barrel diameter, long barrel, thin handle, regular knob", "243" => "Barrel = 2.52/ Handle = .94 <br>Large barrel diameter, long barrel , medium handle, regular knob", "271" => "Barrel = 2.48/ Handle = .94 <br>Medium barrel diameter, Tapered barrel, medium handle, flared knob");
+			$desc = array("024" => "Barrel = 2.50 Handle = .92 <br>Medium / large barrel diameter, Medium / long barrel, thin handle, flared knob", "110" => "Barrel = 2.46 Handle = .97 <br>Medium barrel diameter, long barrel, thick handle, regular knob", "141" => "Barrel = 2.46 Handle = .92 <br>Medium barrel diameter, long barrel, thin handle, regular knob", "243" => "Barrel = 2.52 Handle = .94 <br>Large barrel diameter, long barrel , medium handle, regular knob", "271" => "Barrel = 2.48 Handle = .94 <br>Medium barrel diameter, Tapered barrel, medium handle, flared knob");
 			$display = true;
 
 			break;
@@ -76,17 +76,18 @@
 		</div>
 
 		
+		<div id="desk-cart" class="cart">
+			<div class="notify">2</div>
+			<img class="cart-icon" src="assets/cart.png">
+		</div>
 
-		<div class="navbar-icons">
+		<div class="navbar-icons" style="float: right">
 			<a href="https://www.instagram.com/homewoodbat/"><div id="instagram" class="nav-icon"></div></a>
 			<div id="facebook" class="nav-icon"></div>
 			<div id="twitter" class="nav-icon"></div>
 		</div>
 
-		<div id="desk-cart" class="cart">
-			<div class="notify">2</div>
-			<img class="cart-icon" src="assets/cart.png">
-		</div>
+		
 
 		
 
@@ -175,6 +176,8 @@
 									}
 								
 							echo '</select>';
+							echo '<div id="barrel"></div>';
+							echo '<div id="handle"></div>';
 							echo '<div id="details-body" class="details-body"></div>';
 						}
 					?>
@@ -201,6 +204,9 @@
 				<div id="section-title-special" class="section-title">CUSTOMIZE</div>
 				<div id="title-line-special2" class="title-line"></div>
 			</div>
+
+				<div class="customize-model"></div>
+
 			<div class="customize-image"></div>
 			<div class="options-cont">
 
@@ -214,10 +220,10 @@
 				<div class="cart-row">
 						<div class="color-title">BAT COLOR</div>
 						<div class="color-cont">
-							<div class="color"></div>
-							<div class="color"></div>
-							<div class="color"></div>
-							<div class="color"></div>
+							<div id="bc1" class="color"></div>
+							<div id="bc2" class="color"></div>
+							<div id="bc3" class="color"></div>
+							<div id="bc4" class="color"></div>
 						</div>
 				</div>
 					<div class="cart-row">
@@ -226,21 +232,19 @@
 							<div class="cart-col">
 								<div class="color-title">HANDLE</div>
 								<div class="color-cont">
-									<div title="test" class="color"></div>
-									<div class="color"></div>
-									<div class="color"></div>
-									<div class="color"></div>
-									<div class="color"></div>
+									<div id="hc1" class="color"></div>
+									<div id="hc2" class="color"></div>
+									<div id="hc3" class="color"></div>
+									<div id="hc4" class="color"></div>
 								</div>
 							</div>
 							<div class="cart-col">
 								<div class="color-title">BARREL</div>
 									<div class="color-cont">
-										<div class="color"></div>
-										<div class="color"></div>
-										<div class="color"></div>
-										<div class="color"></div>
-										<div class="color"></div>
+										<div id="brc1" class="color"></div>
+										<div id="brc2" class="color"></div>
+										<div id="brc3" class="color"></div>
+										<div id="brc4" class="color"></div>
 									</div>
 							</div>
 						</div>
@@ -249,17 +253,17 @@
 						<div class="cart-col">
 							<div class="color-title">LOGO & ENGRAVING</div>
 								<div class="color-cont">
-									<div class="color"></div>
-									<div class="color"></div>
-									<div class="color"></div>
-									<div class="color"></div>
+									<div id="lc1" class="color"></div>
+									<div id="lc2" class="color"></div>
+									<div id="lc3" class="color"></div>
+									<div id="lc4" class="color"></div>
 								</div>
 						</div>
 						<div class="cart-col">
 							<div class="color-title">FINISH</div>
 								<div class="color-cont">
-									<div class="colorX">GLOSSY</div>
-									<div class="colorX">MATTE</div>
+									<div id="fc1" class="colorX">GLOSSY</div>
+									<div id="fc2" class="colorX">MATTE</div>
 								</div>
 						</div>
 					</div>
@@ -281,15 +285,15 @@
 				<div class="cart-row">
 						<div class="color-title">END CUP</div>
 						<div class="color-cont">
-							<div class="color">YES</div>
-							<div class="color">NO</div>
+							<div id="e1" class="color">YES</div>
+							<div id="e2" class="color">NO</div>
 						</div>
 				</div>
 
 				<div class="cart-row">
 						<div class="color-title">CUSTOM ENGRAVING LETTERING STYLE</div>
 						<div class="color-cont">
-							<div class="colorY">BANK GOTHIC</div>
+							<div id="eg1" class="colorY">BANK GOTHIC</div>
 							<div class="colorY" id="brush-option">Brush Style</div>
 						</div>
 				</div>
@@ -333,7 +337,7 @@
 	</div>
 	<div id="mobile-bat" class="customize-bat">
 		
-			
+			<div class="customize-model"></div>
 			<div class="customize-image"></div>
 			<div class="options-cont">
 
