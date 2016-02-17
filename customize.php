@@ -57,26 +57,30 @@
 		
 		<ul class="navbar-items">
 			<a href="index.php"><li id="home">HOME</li></a>
-			
 		</ul>
+		<div class="ham-contain">
+			<div class="hamburger">
+				<div id="ham1" class="hamburger-line"></div>
+				<div id="ham2" class="hamburger-line"></div>
+				<div id="ham3" class="hamburger-line"></div>
+			</div>
+			<div class="cart">
+				<div class="notify">2</div>
+				<img class="cart-icon" src="assets/cart.png">
+			</div>
+		</div>
 
 		
-		<div style="float: right;"class="navbar-icons">
+
+		<div class="navbar-icons">
 			<a href="https://www.instagram.com/homewoodbat/"><div id="instagram" class="nav-icon"></div></a>
 			<div id="facebook" class="nav-icon"></div>
 			<div id="twitter" class="nav-icon"></div>
 		</div>
 
-		<div class="cart" id="customize-cart">
+		<div id="desk-cart" class="cart">
 			<div class="notify">2</div>
 			<img class="cart-icon" src="assets/cart.png">
-		</div>
-
-
-		<div class="hamburger">
-			<div id="ham1" class="hamburger-line"></div>
-			<div id="ham2" class="hamburger-line"></div>
-			<div id="ham3" class="hamburger-line"></div>
 		</div>
 
 		
@@ -442,5 +446,6 @@
 
 
 	</div>
+	
 </body>
 </html>

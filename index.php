@@ -19,16 +19,16 @@
 			<li id="contact">CONTACT</li>
 			<li id="about">ABOUT</li>
 		</ul>
-
-		<div class="cart">
-			<div class="notify">2</div>
-			<img class="cart-icon" src="assets/cart.png">
-		</div>
-
-		<div class="hamburger">
-			<div id="ham1" class="hamburger-line"></div>
-			<div id="ham2" class="hamburger-line"></div>
-			<div id="ham3" class="hamburger-line"></div>
+		<div class="ham-contain">
+			<div class="hamburger">
+				<div id="ham1" class="hamburger-line"></div>
+				<div id="ham2" class="hamburger-line"></div>
+				<div id="ham3" class="hamburger-line"></div>
+			</div>
+			<div class="cart">
+				<div class="notify">2</div>
+				<img class="cart-icon" src="assets/cart.png">
+			</div>
 		</div>
 
 		
@@ -37,6 +37,11 @@
 			<a href="https://www.instagram.com/homewoodbat/"><div id="instagram" class="nav-icon"></div></a>
 			<div id="facebook" class="nav-icon"></div>
 			<div id="twitter" class="nav-icon"></div>
+		</div>
+
+		<div id="desk-cart" class="cart">
+			<div class="notify">2</div>
+			<img class="cart-icon" src="assets/cart.png">
 		</div>
 
 		
@@ -154,11 +159,29 @@
 				<div class="title-line"></div>
 				<div class="section-title">NEWS</div>
 				<div class="title-line"></div>
-			</div>
-		<div class="section-inner">
-			
-			
 		</div>
+		<div id="desktop-news" class="section-inner">
+			<div class="cart-col">
+				<div class="news-image"></div>
+			</div>
+			<div class="cart-col">
+				<div class="news-title">COMING SOON!</div>
+				<div class="news-sub">THE GRAND OPENING OF HOMEWOOD BAT CO</div>
+				<div class="news-body">Watch for details!</div>
+			</div>
+		</div>
+		<div id="mobile-news">
+			<div class="cart-row">
+				<div class="news-image"></div>
+			</div>
+			<div class="news-cont">
+				<div class="news-title">COMING SOON!</div>
+				<div class="news-sub">THE GRAND OPENING OF HOMEWOOD BAT CO</div>
+				<div class="news-body">Watch for details!</div>
+			</div>
+
+		</div>
+			
 	</div>
 	<div class="section" id="sec4" style="background-color: rgb(250, 245, 234);">
 		<div class="title-row">
@@ -252,7 +275,7 @@
 			</div>
 
 
-
+			<div class="sweet-sound">THE SWEET SOUND OF A HOMEWOOD BAT<sup>&#174;</sup></div>
 
 		</div>
 
@@ -305,7 +328,13 @@
 		</div>
 	</div>
 	<div class="footer">
-		HOMEWOOD BAT CO | 17845 BRETS DRIVE | HOMEWOOD IL 60430 | 708.713.8000 | INFO@HOMEWOODBAT.COM | &copy;2016 ALL RIGHTS RESERVED
+
+		<div class="footer-icons">
+			<a href="https://www.instagram.com/homewoodbat/"><div id="instagram" class="nav-icon"></div></a>
+			<div id="facebook" class="nav-icon"></div>
+			<div id="twitter" class="nav-icon"></div>
+		</div>
+		<div>HOMEWOOD BAT CO | 17845 BRETS DRIVE | HOMEWOOD IL 60430 | 708.713.8000 | INFO@HOMEWOODBAT.COM | &copy;2016 ALL RIGHTS RESERVED</div>
 	</div>
 	
 </body>
