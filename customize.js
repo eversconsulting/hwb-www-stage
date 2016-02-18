@@ -13,6 +13,7 @@ $(document).ready(function() {
 
 	$('#models-select').on('change', function() {
 		$model = $(this).val();
+		$currentModel = $model;
 
 		switch ($model) {
 			case "024":
@@ -68,10 +69,10 @@ $(document).ready(function() {
 
 					$lengths = ["32", "32.5", "33", "33.5", "34", "34.5"];
 					$weights = ["-3", "-2", "-1", "0"];
-					$woods = ["MAPLE", "ASH", "BIRCH"];
+					$woods = ["MAPLE | $120", "ASH | $100", "BIRCH | $100"];
 					$desc = ["Medium / large barrel diameter, Medium / long barrel, thin handle, flared knob", "Medium barrel diameter, long barrel, thick handle, regular knob", "Medium barrel diameter, long barrel, thin handle, regular knob", "Large barrel diameter, long barrel , medium handle, regular knob", "Medium barrel diameter, Tapered barrel, medium handle, flared knob"];
 					$customTitle = "PRO BAT";
-					$price = "$999";
+					$price = "$120";
 
 					break;
 				case 'game':
@@ -81,19 +82,23 @@ $(document).ready(function() {
 					$woods = ["ASH", "BIRCH"];
 					$desc = ["Medium / large barrel diameter, Medium / long barrel, thin handle, flared knob", "Medium barrel diameter, long barrel, thick handle, regular knob", "Medium barrel diameter, long barrel, thin handle, regular knob", "Large barrel diameter, long barrel , medium handle, regular knob", "Medium barrel diameter, Tapered barrel, medium handle, flared knob"];
 					$customTitle = "GAME BAT";
-					$price = "$999";
+					$price = "$70";
 
 					break;
 				case 'youth':
 					$lengths = ["26", "27", "28", "29", "30"];
 					$weights = ["-3", "-2", "-1", "0"];
 					$woods = ["ASH", "BIRCH"];
+					$customTitle = "GAME BAT";
+					$price = "$40";
 
 					break;
 				case 'fungo':
 					$lengths = ["34", "35", "35.5", "36"];
 					$weights = ["-3", "-2", "-1", "0"];
 					$woods = ["MAPLE"];
+					$customTitle = "GAME BAT";
+					$price = "$65";
 
 					break;
 				case 'promo':
@@ -108,7 +113,20 @@ $(document).ready(function() {
 					break;
 			}
 
-			$text = $customTitle + " - MODEL #" + $model + " | " + $price;
+			switch($customTitle){
+				case 'FUNGO BAT':
+					$text = $customTitle + " | " + $price;
+				break;
+				case 'YOUTH BAT':
+					$text = $customTitle + " | " + $price;
+				break;
+				case 'PRO BAT':
+					$text = $customTitle + " - MODEL #" + $currentModel;
+				break;
+				default:
+					$text = $customTitle + " - MODEL #" + $currentModel + " | " + $price;
+				break;
+			}
 			$(".customize-model").text($text);
 
 			jQuery.each( $lengths, function(i, val)  {
@@ -159,7 +177,7 @@ $(document).ready(function() {
 					$woods = ["MAPLE", "ASH", "BIRCH"];
 					$desc = ["Medium / large barrel diameter, Medium / long barrel, thin handle, flared knob", "Medium barrel diameter, long barrel, thick handle, regular knob", "Medium barrel diameter, long barrel, thin handle, regular knob", "Large barrel diameter, long barrel , medium handle, regular knob", "Medium barrel diameter, Tapered barrel, medium handle, flared knob"];
 					$customTitle = "PRO BAT";
-					$price = "$999";
+					$price = "$120";
 					break;
 				case 'game':
 
@@ -168,19 +186,23 @@ $(document).ready(function() {
 					$woods = ["ASH", "BIRCH"];
 					$desc = ["Medium / large barrel diameter, Medium / long barrel, thin handle, flared knob", "Medium barrel diameter, long barrel, thick handle, regular knob", "Medium barrel diameter, long barrel, thin handle, regular knob", "Large barrel diameter, long barrel , medium handle, regular knob", "Medium barrel diameter, Tapered barrel, medium handle, flared knob"];
 					$customTitle = "GAME BAT";
-					$price = "$999";
+					$price = "$70";
 
 					break;
 				case 'youth':
 					$lengths = ["26", "27", "28", "29", "30"];
 					$weights = ["-3", "-2", "-1", "0"];
 					$woods = ["ASH", "BIRCH"];
+					$customTitle = "YOUTH BAT";
+					$price = "$40";
 
 					break;
 				case 'fungo':
 					$lengths = ["34", "35", "35.5", "36"];
 					$weights = ["-3", "-2", "-1", "0"];
 					$woods = ["MAPLE"];
+					$customTitle = "FUNGO BAT";
+					$price = "$65";
 
 					break;
 				case 'promo':
@@ -195,7 +217,23 @@ $(document).ready(function() {
 					break;
 			}
 
-			$text = $customTitle + " - MODEL #" + $currentModel + " | " + $price;
+
+			switch($customTitle){
+				case 'FUNGO BAT':
+					$text = $customTitle + " | " + $price;
+				break;
+				case 'YOUTH BAT':
+					$text = $customTitle + " | " + $price;
+				break;
+				case 'PRO BAT':
+					$text = $customTitle + " - MODEL #" + $currentModel;
+				break;
+				default:
+					$text = $customTitle + " - MODEL #" + $currentModel + " | " + $price;
+				break;
+			}
+
+			
 			$(".customize-model").text($text);
 
 			jQuery.each( $lengths, function(i, val)  {
