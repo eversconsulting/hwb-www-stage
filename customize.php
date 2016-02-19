@@ -2,6 +2,7 @@
 <?php
 	$id = $_GET['id'];
 	$showPrices = false;
+	$showWeight = true;
 	switch ($id) {
 		case 'pro':
 			$title = "PRO BAT | ";
@@ -12,6 +13,7 @@
 			$display = true;
 			$displayModels = true;
 			$showPrices = true;
+			$image = "assets/pro.jpg";
 
 			break;
 		case 'game':
@@ -31,6 +33,7 @@
 			$models = array();
 			$display = true;
 			$displayModels = false;
+			$showWeight = false;
 			break;
 		case 'fungo':
 			$title = "FUNGO BAT | ";
@@ -39,7 +42,7 @@
 			$models = array();
 			$display = true;
 			$displayModels = false;
-
+			$showWeight = false;
 			break;
 		case 'promo':
 			$title = "PROMO BAT | ";
@@ -92,7 +95,7 @@
 
 		<div class="navbar-icons" style="float: right">
 			<a href="https://www.instagram.com/homewoodbat/"><div id="instagram" class="nav-icon"></div></a>
-			<div id="facebook" class="nav-icon"></div>
+			<a href="https://www.facebook.com/homewoodbat/"><div id="facebook" class="nav-icon"></div></a>
 			<div id="twitter" class="nav-icon"></div>
 		</div>
 
@@ -118,7 +121,9 @@
 		<div id="desktop-custom">
 			<div class="display-bat">
 				<div class="cart-col">
-					<div class="bat-image"></div>
+					
+						<div class="bat-image desktop-bat-img"></div>';
+			
 					<div class="bat-general">
 						<?php echo $d; ?>
 					</div>
@@ -305,13 +310,14 @@
 						</div>
 					</div>
 				
-				<div class="cart-row">
-						<div class="color-title">BAT WEIGHT</div>
-						<div id="weightList" class="color-cont">
-							
-							
-						</div>
-				</div>
+				<?php
+					if($showWeight == false){
+
+					}
+					else {
+						echo '<div class="cart-row"><div class="color-title">BAT WEIGHT</div><div id="weightList" class="color-cont"></div></div>';
+					}
+				?>
 
 				<div class="cart-row">
 						<div class="color-title">END CUP</div>
@@ -329,14 +335,14 @@
 						</div>
 				</div>
 				<div class="cart-row">
-						<div class="color-title">CUSTOM ENGRAVING (UP TO 25 CHARACHTERS)</div>
+						<div class="color-title">CUSTOM ENGRAVING (UP TO 25 CHARACTERS)</div>
 						<div class="color-cont">
 							<input class="engraving" type="text" maxlength="25">
 						</div>
 				</div>
 
 				<div class="cart-row">
-					<div class="custom-time">STANDARD PRODUCTION TIME IS 2-3 WEEKS FOR ALL CUSTOM ORDERS</div>
+					<div class="custom-time"><div class="custom-time-inner">STANDARD PRODUCTION TIME IS 2-3 WEEKS FOR ALL CUSTOM ORDERS</div></div>
 				</div>
 
 				<div class="cart-row">
@@ -386,6 +392,10 @@
 						<div class="styled-select">
 						   <select>
 						     <option selected="selected">Choose</option>
+						     <option id="bc1">Maple</option>
+						     <option id="bc2">Birch</option>
+						     <option style="color: rgb(250, 245, 234);" id="bc3">Black</option>
+						     <option style="color: rgb(250, 245, 234);" id="bc4">Gray</option>
 						   </select>
 						</div>
 				</div>
@@ -398,6 +408,10 @@
 										<div class="styled-select">
 										   <select>
 										     <option selected="selected">Choose</option>
+										     <option id="bc1">Maple</option>
+										     <option id="bc2">Birch</option>
+										     <option style="color: rgb(250, 245, 234);" id="bc3">Black</option>
+										     <option style="color: rgb(250, 245, 234);" id="bc4">Gray</option>
 										   </select>
 										</div>
 								</div>
@@ -406,6 +420,10 @@
 										<div class="styled-select">
 										   <select>
 										     <option selected="selected">Choose</option>
+										     <option id="bc1">Maple</option>
+										     <option id="bc2">Birch</option>
+										     <option style="color: rgb(250, 245, 234);" id="bc3">Black</option>
+										     <option style="color: rgb(250, 245, 234);" id="bc4">Gray</option>
 										   </select>
 										</div>
 								</div>
@@ -418,6 +436,10 @@
 								<div class="styled-select">
 								   <select id="wood-select">
 								     <option selected="selected">Choose</option>
+								     <option id="lc1" style="color: rgb(250, 245, 234);">Black</option>
+								     <option id="lc2">Silver</option>
+								     <option id="lc3">Gold</option>
+								     <option id="lc4">White</option>
 								   </select>
 								</div>
 					
@@ -426,6 +448,8 @@
 								<div class="styled-select">
 								   <select id="wood-select">
 								     <option selected="selected">Choose</option>
+								     <option id="fc1" style="color: rgb(250, 245, 234);">Black</option>
+								     <option id="fc2" style="color: rgb(250, 245, 234);">Matte</option>
 								   </select>
 								</div>
 						</div>
@@ -440,20 +464,23 @@
 						</div>
 					</div>
 				
-				<div class="cart-row">
-						<div class="color-title">BAT WEIGHT</div>
-						<div class="styled-select">
-						   <select id="weight-select">
-						     <option selected="selected">Choose</option>
-						   </select>
-						</div>
-				</div>
+				<?php
+					if($showWeight == false){
+
+					}
+					else {
+
+						echo '<div class="cart-row"><div class="color-title">BAT WEIGHT</div><div class="styled-select"><select id="weight-select"><option selected="selected">Choose</option></select></div></div>';
+					}
+				?>
 
 				<div class="cart-row">
 						<div class="color-title">END CUP</div>
 						<div class="styled-select">
 						   <select>
 						     <option selected="selected">Choose</option>
+						     <option>YES</option>
+						     <option>NO</option>
 						   </select>
 						</div>
 				</div>
@@ -469,7 +496,7 @@
 						</div>
 				</div>
 				<div class="cart-row">
-						<div class="color-title">CUSTOM ENGRAVING (UP TO 25 CHARACHTERS)</div>
+						<div class="color-title">CUSTOM ENGRAVING (UP TO 25 CHARACTERS)</div>
 						<div class="color-cont">
 							<input class="engraving" type="text" maxlength="25">
 						</div>

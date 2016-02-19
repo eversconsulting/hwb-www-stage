@@ -9,6 +9,36 @@ $(document).ready(function() {
 	$bat = getParameterByName('id');
 	$ackChecked = false;
 
+	switch ($bat) {
+				case 'pro':
+					$image = "assets/pro-c.jpg";
+				
+
+					break;
+				case 'game':
+					$image = "assets/game-c.jpg";
+					
+
+					break;
+				case 'youth':
+					$image = "assets/youth-c.jpg";
+
+					break;
+				case 'fungo':
+					$image = "assets/fungo-c.jpg";
+					break;
+				case 'promo':
+					$image = "assets/pro-c.jpg";
+
+					break;
+				
+				default:
+					
+					break;
+	}
+
+	$(".desktop-bat-img").css("background-image", "url("+$image+")");
+
 
 
 	$('#models-select').on('change', function() {
@@ -73,6 +103,7 @@ $(document).ready(function() {
 					$desc = ["Medium / large barrel diameter, Medium / long barrel, thin handle, flared knob", "Medium barrel diameter, long barrel, thick handle, regular knob", "Medium barrel diameter, long barrel, thin handle, regular knob", "Large barrel diameter, long barrel , medium handle, regular knob", "Medium barrel diameter, Tapered barrel, medium handle, flared knob"];
 					$customTitle = "PRO BAT";
 					$price = "$120";
+					$unFin = "assets/unfinished-m.png";
 
 					break;
 				case 'game':
@@ -83,6 +114,7 @@ $(document).ready(function() {
 					$desc = ["Medium / large barrel diameter, Medium / long barrel, thin handle, flared knob", "Medium barrel diameter, long barrel, thick handle, regular knob", "Medium barrel diameter, long barrel, thin handle, regular knob", "Large barrel diameter, long barrel , medium handle, regular knob", "Medium barrel diameter, Tapered barrel, medium handle, flared knob"];
 					$customTitle = "GAME BAT";
 					$price = "$70";
+					$unFin = "assets/unfinished-m.png";
 
 					break;
 				case 'youth':
@@ -91,6 +123,7 @@ $(document).ready(function() {
 					$woods = ["ASH", "BIRCH"];
 					$customTitle = "GAME BAT";
 					$price = "$40";
+					$unFin = "assets/unfinished-m.png";
 
 					break;
 				case 'fungo':
@@ -99,12 +132,14 @@ $(document).ready(function() {
 					$woods = ["MAPLE"];
 					$customTitle = "GAME BAT";
 					$price = "$65";
+					$unFin = "assets/unfinished-m.png";
 
 					break;
 				case 'promo':
 					$lengths = ["34", "35", "35.5", "36"];
 					$weights = ["-3", "-2", "-1", "0"];
 					$woods = ["MAPLE"];
+					$unFin = "assets/unfinished-m.png";
 
 					break;
 				
@@ -112,6 +147,8 @@ $(document).ready(function() {
 					
 					break;
 			}
+
+			$(".customize-image").css("background-image", "url("+$unFin+")");
 
 			switch($customTitle){
 				case 'FUNGO BAT':
@@ -178,6 +215,7 @@ $(document).ready(function() {
 					$desc = ["Medium / large barrel diameter, Medium / long barrel, thin handle, flared knob", "Medium barrel diameter, long barrel, thick handle, regular knob", "Medium barrel diameter, long barrel, thin handle, regular knob", "Large barrel diameter, long barrel , medium handle, regular knob", "Medium barrel diameter, Tapered barrel, medium handle, flared knob"];
 					$customTitle = "PRO BAT";
 					$price = "$120";
+					$unFin = "assets/unfinished.png";
 					break;
 				case 'game':
 
@@ -187,6 +225,7 @@ $(document).ready(function() {
 					$desc = ["Medium / large barrel diameter, Medium / long barrel, thin handle, flared knob", "Medium barrel diameter, long barrel, thick handle, regular knob", "Medium barrel diameter, long barrel, thin handle, regular knob", "Large barrel diameter, long barrel , medium handle, regular knob", "Medium barrel diameter, Tapered barrel, medium handle, flared knob"];
 					$customTitle = "GAME BAT";
 					$price = "$70";
+					$unFin = "assets/unfinished.png";
 
 					break;
 				case 'youth':
@@ -195,7 +234,7 @@ $(document).ready(function() {
 					$woods = ["ASH", "BIRCH"];
 					$customTitle = "YOUTH BAT";
 					$price = "$40";
-
+					$unFin = "assets/unfinished.png";
 					break;
 				case 'fungo':
 					$lengths = ["34", "35", "35.5", "36"];
@@ -203,13 +242,13 @@ $(document).ready(function() {
 					$woods = ["MAPLE"];
 					$customTitle = "FUNGO BAT";
 					$price = "$65";
-
+					$unFin = "assets/unfinished.png";
 					break;
 				case 'promo':
 					$lengths = ["34", "35", "35.5", "36"];
 					$weights = ["-3", "-2", "-1", "0"];
 					$woods = ["MAPLE"];
-
+					$unFin = "assets/unfinished.png";
 					break;
 				
 				default:
@@ -232,6 +271,8 @@ $(document).ready(function() {
 					$text = $customTitle + " - MODEL #" + $currentModel + " | " + $price;
 				break;
 			}
+
+			$(".customize-image").css("background-image", "url("+$unFin+")");
 
 			
 			$(".customize-model").text($text);

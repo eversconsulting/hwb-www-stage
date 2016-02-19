@@ -1165,6 +1165,96 @@ sup {
 	padding-right: 20px;
 }
 
+.img-bat {
+	padding-top: 75px;
+	width: 300px;
+	height: 140px;
+}
+
+#acc {
+	background: url(assets/tshirt.jpg);
+	background-size: 300px 300px;
+}
+
+.desktop-bat-img {
+	background-size: 550px 300px;
+}
+
+option {
+	
+}
+
+#MAPLE {
+	background-image: url("assets/maple.jpg");
+}
+#ASH {
+	background-image: url("assets/ash.jpg");
+}
+#BIRCH {
+	background-image: url("assets/birch.jpg");
+}
+#bc1 {
+	background-image: url("assets/maple.jpg");
+}
+#bc2 {
+	background-image: url("assets/birch.jpg");
+}
+#bc3 {
+	background-color: black;
+}
+#bc4 {
+	background-image: url("assets/gray.jpg");
+}
+#hc1 {
+	background-image: url("assets/maple.jpg");
+}
+#hc2 {
+	background-image: url("assets/birch.jpg");
+}
+#hc3 {
+	background-color: black;
+}
+#hc4 {
+	background-image: url("assets/gray.jpg");
+}
+#brc1 {
+	background-image: url("assets/maple.jpg");
+}
+#brc2 {
+	background-image: url("assets/birch.jpg");
+}
+#brc3 {
+	background-color: black;
+}
+#brc4 {
+	background-image: url("assets/gray.jpg");
+}
+#lc1 {
+	background-color: black;
+}
+#lc2 {
+	background-color: rgb(181, 190, 179);
+}
+#lc3 {
+	background-color: rgb(199, 167, 88);
+}
+#lc4 {
+	background-color: white;
+}
+#fc1{
+	background-color: black;
+	color: rgb(250, 245, 234);
+}
+#fc2{
+	background-color: rgba(0, 0, 0, 0.7);
+	color: rgb(250, 245, 234);
+}
+
+.custom-time-inner {
+	padding: 5px;
+}
+
+
 
 
 
