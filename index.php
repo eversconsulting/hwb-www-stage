@@ -92,11 +92,11 @@
 				<div id="desktop-shop" class="shop-inner">
 					<div class="shop-container" id="s1">
 						<div class="shop-item">
-							<a href="customize.php?id=pro"><div class="item-picture"><img class="img-bat" src="assets/pro.jpg"></div></a>
+							<a href="customize.php?id=pro"><div class="item-picture"><img class="img-bat" src="assets/pro.png"></div></a>
 							<div class="item-desc">PRO BAT</div>
 						</div>
 						<div class="shop-item">
-							<a href="customize.php?id=fungo"><div class="item-picture"><img class="img-bat" src="assets/fungo.jpg"></div></a>
+							<a href="customize.php?id=fungo"><div class="item-picture"><img class="img-bat" src="assets/fungo.png"></div></a>
 							<div class="item-desc">FUNGO BAT</div>
 						</div>
 						
@@ -104,11 +104,11 @@
 					<div class="spacer-col"></div>
 					<div class="shop-container" id="s2">
 						<div class="shop-item">
-							<a href="customize.php?id=game"><div class="item-picture"><img class="img-bat" src="assets/game.jpg"></div></a>
+							<a href="customize.php?id=game"><div class="item-picture"><img class="img-bat" src="assets/game.png"></div></a>
 							<div class="item-desc">GAME BAT</div>
 						</div>
 						<div class="shop-item">
-							<a href="customize.php?id=promo"><div class="item-picture"><img class="img-bat" src="assets/pro.jpg"></div></a>
+							<a href="customize.php?id=promo"><div class="item-picture"><img class="img-bat" src="assets/pro.png"></div></a>
 							<div class="item-desc">PROMOTIONAL BAT</div>
 						</div>
 						
@@ -116,7 +116,7 @@
 					<div class="spacer-col"></div>
 					<div class="shop-container" id="s3">
 						<div class="shop-item">
-							<a href="customize.php?id=youth"><div class="item-picture"><img class="img-bat" src="assets/youth.jpg"></div></a>
+							<a href="customize.php?id=youth"><div class="item-picture"><img class="img-bat" src="assets/youth.png"></div></a>
 							<div class="item-desc">YOUTH BAT</div>
 						</div>
 						<div class="shop-item">

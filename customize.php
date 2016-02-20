@@ -13,7 +13,7 @@
 			$display = true;
 			$displayModels = true;
 			$showPrices = true;
-			$image = "assets/pro.jpg";
+			$imageM = "assets/prom.png";
 
 			break;
 		case 'game':
@@ -24,6 +24,7 @@
 			$desc = array("024" => "Barrel = 2.50/ Handle = .92 <br>Medium / large barrel diameter, Medium / long barrel, thin handle, flared knob", "110" => "Barrel = 2.46/ Handle = .97 <br>Medium barrel diameter, long barrel, thick handle, regular knob", "141" => "Barrel = 2.46/ Handle = .92 <br>Medium barrel diameter, long barrel, thin handle, regular knob", "243" => "Barrel = 2.52/ Handle = .94 <br>Large barrel diameter, long barrel , medium handle, regular knob", "271" => "Barrel = 2.48/ Handle = .94 <br>Medium barrel diameter, Tapered barrel, medium handle, flared knob");
 			$display = true;
 			$displayModels = true;
+			$imageM = "assets/gamem.png";
 
 			break;
 		case 'youth':
@@ -34,6 +35,7 @@
 			$display = true;
 			$displayModels = false;
 			$showWeight = false;
+			$imageM = "assets/youthm.png";
 			break;
 		case 'fungo':
 			$title = "FUNGO BAT | ";
@@ -43,6 +45,7 @@
 			$display = true;
 			$displayModels = false;
 			$showWeight = false;
+			$imageM = "assets/fungom.png";
 			break;
 		case 'promo':
 			$title = "PROMO BAT | ";
@@ -51,6 +54,7 @@
 			$models = array();
 			$display = false;
 			$displayModels = false;
+			$imageM = "assets/prom.png";
 
 			break;
 		
@@ -182,8 +186,10 @@
 		<div id="mobile-custom">
 			<div class="cart-row">
 				<div class="cart-col">
-					<div class="bat-image"></div>
-					
+					<div class="bat-image">
+					<?php
+						echo '<img class="bat-image-m" src='.$imageM.'></div>';
+					?>
 				</div>
 				<div class="cart-col">
 					<div class="bat-title"><?php echo $title; ?></div>

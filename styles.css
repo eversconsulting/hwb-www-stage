@@ -1166,13 +1166,13 @@ sup {
 }
 
 .img-bat {
-	padding-top: 75px;
+
 	width: 300px;
-	height: 140px;
+	height: 300px;
 }
 
 #acc {
-	background: url(assets/tshirt.jpg);
+	background: url(assets/tshirt.png);
 	background-size: 300px 300px;
 }
 
@@ -1181,7 +1181,7 @@ sup {
 }
 
 option {
-	
+
 }
 
 #MAPLE {
@@ -1584,7 +1584,7 @@ a[href^="tel"]{
 .bat-image {
 	width: 125px;
 	height: 175px;
-	background-color: white;
+	background-image: url("assets/turf.png");
 	border: solid;
 	border-color: rgb(24, 53, 80);
 	border-width: 2px;
@@ -1924,6 +1924,13 @@ a {
 	font-family: secondFont;
 	padding-top: 0;
 	font-size: 12px;
+}
+
+.bat-image-m {
+	height: 175px;
+	width: 37px;
+	
+	margin-left: 45px;
 }
 
 

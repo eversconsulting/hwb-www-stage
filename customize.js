@@ -11,24 +11,24 @@ $(document).ready(function() {
 
 	switch ($bat) {
 				case 'pro':
-					$image = "assets/pro-c.jpg";
+					$image = "assets/pro-c.png";
 				
 
 					break;
 				case 'game':
-					$image = "assets/game-c.jpg";
+					$image = "assets/pro-c.png";
 					
 
 					break;
 				case 'youth':
-					$image = "assets/youth-c.jpg";
+					$image = "assets/youth-c.png";
 
 					break;
 				case 'fungo':
-					$image = "assets/fungo-c.jpg";
+					$image = "assets/fungo-c.png";
 					break;
 				case 'promo':
-					$image = "assets/pro-c.jpg";
+					$image = "assets/pro-c.png";
 
 					break;
 				
