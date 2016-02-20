@@ -89,6 +89,7 @@
 				<div class="section-title">SHOP</div>
 				<div class="title-line"></div>
 			</div>
+			<div class="online-soon">ONLINE STORE COMING SOON! FEEL FREE TO LOOK AROUND!</div>
 				<div id="desktop-shop" class="shop-inner">
 					<div class="shop-container" id="s1">
 						<div class="shop-item">

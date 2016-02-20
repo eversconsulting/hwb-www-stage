@@ -1254,6 +1254,12 @@ option {
 	padding: 5px;
 }
 
+.online-soon {
+	text-align: center;
+	color: rgb(24, 53, 80);
+	font-size: 20px;
+}
+
 
 
 
@@ -1931,6 +1937,10 @@ a {
 	width: 37px;
 	
 	margin-left: 45px;
+}
+
+.online-soon {
+	font-size: 15px;
 }
 
 
