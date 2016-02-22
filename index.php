@@ -89,7 +89,7 @@
 				<div class="section-title">SHOP</div>
 				<div class="title-line"></div>
 			</div>
-			<div class="online-soon">ONLINE STORE COMING SOON! FEEL FREE TO LOOK AROUND!</div>
+			<div class="online-soon">ONLINE STORE COMING SOON!</div>
 				<div id="desktop-shop" class="shop-inner">
 					<div class="shop-container" id="s1">
 						<div class="shop-item">
@@ -332,7 +332,7 @@
 
 		<div class="footer-icons">
 			<a href="https://www.instagram.com/homewoodbat/"><div id="instagram" class="nav-icon"></div></a>
-			<div id="facebook" class="nav-icon"></div>
+			<a href="https://www.facebook.com/homewoodbat/"><div id="facebook" class="nav-icon"></div></a>
 			<div id="twitter" class="nav-icon"></div>
 		</div>
 		<div>HOMEWOOD BAT CO | 17845 BRETS DRIVE | HOMEWOOD IL 60430 | 708.713.8000 | INFO@HOMEWOODBAT.COM | &copy;2016 ALL RIGHTS RESERVED</div>
