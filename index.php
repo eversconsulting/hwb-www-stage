@@ -25,8 +25,8 @@
 				<div id="ham2" class="hamburger-line"></div>
 				<div id="ham3" class="hamburger-line"></div>
 			</div>
-			<div class="cart">
-				<div class="notify">2</div>
+			<div id="cart-c" class="cart">
+				<div class="notify" style="display: none;"></div>
 				<img class="cart-icon" src="assets/cart.png">
 			</div>
 		</div>
@@ -40,7 +40,7 @@
 		</div>
 
 		<div id="desk-cart" class="cart">
-			<div class="notify">2</div>
+			<div class="notify" style="display: none;">2</div>
 			<img class="cart-icon" src="assets/cart.png">
 		</div>
 
@@ -155,7 +155,7 @@
 					
 				</div>	
 	</div>
-	<div class="section" id="sec3" style="background-color: rgb(250, 245, 234);">
+	<div class="section" id="sec3" style="background-color: rgb(250, 245, 234); height: auto;">
 		<div class="title-row">
 				<div class="title-line"></div>
 				<div class="section-title">NEWS</div>
@@ -166,9 +166,10 @@
 				<div class="news-image"></div>
 			</div>
 			<div class="cart-col">
-				<div class="news-title">COMING SOON!</div>
-				<div class="news-sub">THE GRAND OPENING OF HOMEWOOD BAT CO</div>
-				<div class="news-body">Watch for details!</div>
+				<div class="news-title">GRAND OPENING!</div>
+				<div class="news-sub">APRIL 16<br>10-2 PM</div>
+				<div class="news-sub">OPEN HOUSE WITH TOUR & DOOR PRIZES!</div>
+				<div class="news-body">Please join us as we celebrate the Grand Opening of our shop and store! We are looking forward to sharing our new venture with friends, both old and new alike.<br>See you there!</div>
 			</div>
 		</div>
 		<div id="mobile-news">
@@ -176,9 +177,10 @@
 				<div class="news-image"></div>
 			</div>
 			<div class="news-cont">
-				<div class="news-title">COMING SOON!</div>
-				<div class="news-sub">THE GRAND OPENING OF HOMEWOOD BAT CO</div>
-				<div class="news-body">Watch for details!</div>
+				<div class="news-title">GRAND OPENING!</div>
+				<div class="news-sub">APRIL 16<br>10-2 PM</div>
+				<div class="news-sub">OPEN HOUSE WITH TOUR & DOOR PRIZES!</div>
+				<div class="news-body">Please join us as we celebrate the Grand Opening of our shop and store! We are looking forward to sharing our new venture with friends, both old and new alike.<br>See you there!</div>
 			</div>
 
 		</div>
@@ -203,11 +205,11 @@
 							<p>
 							708.713.8000<br><a class="mail-to" title="Email Us!" href="mailto:info@homewoodbat.com">INFO@HOMEWOODBAT.COM</a>
 							<p>
-							HOMEWOOD BAT CO<br>17845 BRETS DRIVE<br>HOMEWOOD, ILLINOIS 60430
+							HOMEWOOD BAT CO<br>17845 BRETZ DRIVE<br>HOMEWOOD, ILLINOIS 60430
 						</div>
+		</div>
 					</div>
 				</div>
-		</div>
 
 		<div id="mobile-contact" class="mobile-contact">
 			<div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2985.1704947532794!2d-87.63521178505906!3d41.56555449289474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e18bb669d2c65%3A0xff83244a990b75e2!2s17845+Bretz+Dr%2C+Homewood%2C+IL+60430!5e0!3m2!1sen!2sus!4v1455171054605" width="250" height="200" frameborder="0" style="border:0" allowfullscreen></iframe></div>
@@ -218,7 +220,7 @@
 				<p>
 				708.713.8000<br><a class="mail-to" title="Email Us!" href="mailto:info@homewoodbat.com">INFO@HOMEWOODBAT.COM</a>
 				<p>
-				HOMEWOOD BAT CO<br>17845 BRETS DRIVE<br>HOMEWOOD, ILLINOIS 60430
+				HOMEWOOD BAT CO<br>17845 BRETZ DRIVE<br>HOMEWOOD, ILLINOIS 60430
 			</div>
 		</div>
 	</div>
@@ -335,7 +337,7 @@
 			<a href="https://www.facebook.com/homewoodbat/"><div id="facebook" class="nav-icon"></div></a>
 			<div id="twitter" class="nav-icon"></div>
 		</div>
-		<div>HOMEWOOD BAT CO | 17845 BRETS DRIVE | HOMEWOOD IL 60430 | 708.713.8000 | INFO@HOMEWOODBAT.COM | &copy;2016 ALL RIGHTS RESERVED</div>
+		<div>HOMEWOOD BAT CO | 17845 BRETZ DRIVE | HOMEWOOD IL 60430 | 708.713.8000 | INFO@HOMEWOODBAT.COM | &copy;2016 ALL RIGHTS RESERVED</div>
 	</div>
 	
 </body>
