@@ -155,7 +155,7 @@
 					
 				</div>	
 	</div>
-	<div class="section" id="sec3" style="background-color: rgb(250, 245, 234); height: auto;">
+	<div class="section" id="sec3" style="background-color: rgb(250, 245, 234); height: 600px;">
 		<div class="title-row">
 				<div class="title-line"></div>
 				<div class="section-title">NEWS</div>
