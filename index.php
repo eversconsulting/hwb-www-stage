@@ -100,40 +100,37 @@
 
 					</div>
 
-					<!-- <div class="shop-container" id="s1">
+
+
+					<div class="shop-container" id="s1">
 						<div class="shop-item">
-							<a href="customize.php?id=pro"><div class="item-picture"><img class="img-bat" src="assets/pro.png"></div></a>
-							<div class="item-desc">PRO BAT</div>
+							<a href="customize.php?id=pro"><div class="item-picture"><img class="img-bat" src="assets/tshirt2.png"></div></a>
+							<div class="item-desc">HBC SWEET SOUND SHORT SLEEVE SHIRT <br> $25</div>
 						</div>
-						<div class="shop-item">
-							<a href="customize.php?id=fungo"><div class="item-picture"><img class="img-bat" src="assets/fungo.png"></div></a>
-							<div class="item-desc">FUNGO BAT</div>
-						</div>
+						
 						
 					</div>
 					<div class="spacer-col"></div>
 					<div class="shop-container" id="s2">
 						<div class="shop-item">
-							<a href="customize.php?id=game"><div class="item-picture"><img class="img-bat" src="assets/game.png"></div></a>
-							<div class="item-desc">GAME BAT</div>
+							<a href="customize.php?id=game"><div class="item-picture"><img class="img-bat" src="assets/tshirt.png"></div></a>
+							<div class="item-desc">HBC DISTRESSED LOGO 3/4 SLEEVE SHIRT<br> $35</div>
 						</div>
-						<div class="shop-item">
-							<a href="customize.php?id=promo"><div class="item-picture"><img class="img-bat" src="assets/pro.png"></div></a>
-							<div class="item-desc">PROMOTIONAL BAT</div>
-						</div>
+						
 						
 					</div>
 					<div class="spacer-col"></div>
 					<div class="shop-container" id="s3">
 						<div class="shop-item">
-							<a href="customize.php?id=youth"><div class="item-picture"><img class="img-bat" src="assets/youth.png"></div></a>
-							<div class="item-desc">YOUTH BAT</div>
+							<a href="customize.php?id=youth"><div class="item-picture"><img class="img-bat" src="assets/hat.png"></div></a>
+							<div class="item-desc">HBC LOGO HAT <br> $30</div>
 						</div>
-						<div class="shop-item">
-							<div class="item-picture" id="acc"></div>
-							<div class="item-desc">ACCESSORIES</div>
-						</div>
-					</div> -->
+						
+					</div>
+					
+					<div class="acc-info">TO ORDER ACCESSORIES CALL 708.713.8000 FOR SIZES AND COLORS <br> OR EMAIL US AT INFO@HOMEWOODBAT.COM</div>
+
+					
 
 				</div>
 
