@@ -1,5 +1,29 @@
 $(document).ready(function(){
 	$slideVisible = false;
+  $batNum = 0;
+
+  if(sessionStorage.getItem("bats") == null){
+    $bats = [];
+    sessionStorage.setItem("bats", JSON.stringify($bats));
+    $batNum = 0;
+    $(".notify").text($batNum);
+  }
+  else{
+    $myArray = JSON.parse(sessionStorage.getItem("bats"));
+    for ($i=0; $i<$myArray.length; $i++){
+        $batNum += 1;
+    }
+    $(".notify").text($batNum);
+  }
+
+  $("#cart-c").click(function() {
+    
+
+  });
+  $("#desk-cart").click(function() {
+    
+
+  });
 
    $(".hamburger").click(function() {
       $slideVisible = $('.slide-menu').is(':visible');

@@ -17,7 +17,7 @@
 			<li id="shop">SHOP</li>
 			<li id="news">NEWS</li>
 			<li id="contact">CONTACT</li>
-			<li id="about">ABOUT</li>
+			<li id="about">ABOUT US</li>
 		</ul>
 		<div class="ham-contain">
 			<div class="hamburger">
@@ -84,14 +84,23 @@
 
 	</div>
 	<div class="section" id="sec2" style="background-color: rgb(250, 245, 234);">
-			<div class="title-row">
-				<div class="title-line"></div>
-				<div class="section-title">SHOP</div>
-				<div class="title-line"></div>
+			<div class="title-rowB">
+				<div class="title-lineB"></div>
+				<div class="section-titleB">BATS & ACCESSORIES</div>
+				<div class="title-lineB"></div>
 			</div>
-			<div class="online-soon">ONLINE STORE COMING SOON!</div>
+			
 				<div id="desktop-shop" class="shop-inner">
-					<div class="shop-container" id="s1">
+					<div class="shop-box">
+					<a href="customize.php?id=pro"><div id="pro-bat" class="select-area"></div></a>
+					<a href="customize.php?id=game"><div id="game-bat" class="select-area"></div></a>
+					<a href="customize.php?id=fungo"><div id="fungo-bat" class="select-area"></div></a>
+					<a href="customize.php?id=promo"><div id="promo-bat" class="select-area"></div></a>
+					<a href="customize.php?id=youth"><div id="youth-bat" class="select-area"></div></a>
+
+					</div>
+
+					<!-- <div class="shop-container" id="s1">
 						<div class="shop-item">
 							<a href="customize.php?id=pro"><div class="item-picture"><img class="img-bat" src="assets/pro.png"></div></a>
 							<div class="item-desc">PRO BAT</div>
@@ -124,7 +133,8 @@
 							<div class="item-picture" id="acc"></div>
 							<div class="item-desc">ACCESSORIES</div>
 						</div>
-					</div>
+					</div> -->
+
 				</div>
 
 				<div id="mobile-shop" class="mobile-shop">
@@ -166,10 +176,10 @@
 				<div class="news-image"></div>
 			</div>
 			<div class="cart-col">
-				<div class="news-title">GRAND OPENING!</div>
-				<div class="news-sub">APRIL 16<br>10-2 PM</div>
-				<div class="news-sub">OPEN HOUSE WITH TOUR & DOOR PRIZES!</div>
-				<div class="news-body">Please join us as we celebrate the Grand Opening of our shop and store! We are looking forward to sharing our new venture with friends, both old and new alike.<br>See you there!</div>
+				<div class="news-title">PROSHOP NOW OPEN</div>
+				<div class="news-sub">MON-FRI<br>11-5</div>
+				<div class="news-sub">CALL FOR EVENING AND WEEKEND HOURS!</div>
+				<!-- <div class="news-body">Please join us as we celebrate the Grand Opening of our shop and store! We are looking forward to sharing our new venture with friends, both old and new alike.<br>See you there!</div> -->
 			</div>
 		</div>
 		<div id="mobile-news">
@@ -177,10 +187,10 @@
 				<div class="news-image"></div>
 			</div>
 			<div class="news-cont">
-				<div class="news-title">GRAND OPENING!</div>
-				<div class="news-sub">APRIL 16<br>10-2 PM</div>
-				<div class="news-sub">OPEN HOUSE WITH TOUR & DOOR PRIZES!</div>
-				<div class="news-body">Please join us as we celebrate the Grand Opening of our shop and store! We are looking forward to sharing our new venture with friends, both old and new alike.<br>See you there!</div>
+				<div class="news-title">PROSHOP NOW OPEN</div>
+				<div class="news-sub">MON-FRI<br>11-5</div>
+				<div class="news-sub">CALL FOR EVENING AND WEEKEND HOURS!</div>
+				<!-- <div class="news-body">Please join us as we celebrate the Grand Opening of our shop and store! We are looking forward to sharing our new venture with friends, both old and new alike.<br>See you there!</div> -->
 			</div>
 
 		</div>
@@ -245,12 +255,13 @@
 				<div class="star">&#9733;</div>
 				<div class="about-sub" id="bottom-sub">Come visit us and see for yourself!</div>
 			</div>
-
+			
 			<div class="title-row">
 				<div class="title-line title-line-staff"></div>
 				<div id="staff-title" class="section-title">OUR FRIENDLY STAFF</div>
 				<div class="title-line title-line-staff"></div>
 			</div>
+
 
 			<div class="cart-row">
 				<div class="cart-col">
@@ -276,6 +287,9 @@
 					<div class="staff-caption">LASER ENGRAVER<br>EXTRAORDINAIRE</div>
 				</div>
 			</div>
+			
+
+		
 
 
 			<div class="sweet-sound">THE SWEET SOUND OF A HOMEWOOD BAT<sup>&#174;</sup></div>
@@ -337,7 +351,7 @@
 			<a href="https://www.facebook.com/homewoodbat/"><div id="facebook" class="nav-icon"></div></a>
 			<div id="twitter" class="nav-icon"></div>
 		</div>
-		<div>HOMEWOOD BAT CO | 17845 BRETZ DRIVE | HOMEWOOD IL 60430 | 708.713.8000 | INFO@HOMEWOODBAT.COM | &copy;2016 ALL RIGHTS RESERVED</div>
+		<div class="footer-text">HOMEWOOD BAT CO | 17845 BRETZ DRIVE | HOMEWOOD IL 60430 | 708.713.8000 | INFO@HOMEWOODBAT.COM | &copy;2016 ALL RIGHTS RESERVED</div>
 	</div>
 	
 </body>
