@@ -36,7 +36,7 @@
 		<div class="navbar-icons">
 			<a href="https://www.instagram.com/homewoodbat/"><div id="instagram" class="nav-icon"></div></a>
 			<a href="https://www.facebook.com/homewoodbat/"><div id="facebook" class="nav-icon"></div></a>
-			<div id="twitter" class="nav-icon"></div>
+			<a href="https://twitter.com/HomewoodBat/"><div id="twitter" class="nav-icon"></div></a>
 		</div>
 
 		<div id="desk-cart" class="cart">

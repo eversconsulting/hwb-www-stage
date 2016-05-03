@@ -982,6 +982,9 @@ sup {
 .contact-info {
 	color: rgb(24, 53, 80);
 	font-size: 20px;
+	margin-right: auto;
+	margin-left: auto;
+	width: 400px;
 }
 
 .contact-p {

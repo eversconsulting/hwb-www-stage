@@ -328,7 +328,93 @@ $(document).ready(function() {
 				$("#bc2").css("border-color", "rgb(24, 53, 80)");
 				$("#bc3").css("border-color", "rgb(24, 53, 80)");
 				$("#bc4").css("border-color", "rgb(24, 53, 80)");
-				$batColor = 'maple';
+				$batColor = 'unfinished';
+				switch($bat){
+					case "pro":
+						$("#left-img").css("background-image", "url('assets/proHandles/prohunfin.png')" );
+						break;
+					case "game":
+						$("#left-img").css("background-image", "url('assets/proHandles/prohunfin.png')" );
+						break;
+					case "youth":
+						$("#left-img").css("background-image", "url('assets/youthHandles/youthhunfin.png')" );
+						break;
+					case "fungo":
+						$("#left-img").css("background-image", "url('assets/fungoHandles/fungohunfin.png')" );
+						break;
+					default:
+
+					break;
+				}
+				switch($bat){
+					case "pro":
+						switch($logoColor){
+							case "white":
+								$("#right-img").css("background-image", "url('assets/proBarrels/prounfinwhite.png')" );
+							break;
+							case "black":
+								$("#right-img").css("background-image", "url('assets/proBarrels/prounfinblack.png')" );
+							break;
+							case "gold":
+								$("#right-img").css("background-image", "url('assets/proBarrels/prounfingold.png')" );
+							break;
+							case "gray":
+								$("#right-img").css("background-image", "url('assets/proBarrels/prounfingray.png')" );
+							break;
+						}
+						break;
+					case "game":
+						switch($logoColor){
+							case "white":
+								$("#right-img").css("background-image", "url('assets/proBarrels/prounfinwhite.png')" );
+							break;
+							case "black":
+								$("#right-img").css("background-image", "url('assets/proBarrels/prounfinblack.png')" );
+							break;
+							case "gold":
+								$("#right-img").css("background-image", "url('assets/proBarrels/prounfingold.png')" );
+							break;
+							case "gray":
+								$("#right-img").css("background-image", "url('assets/proBarrels/prounfingray.png')" );
+							break;
+						}
+						break;
+					case "youth":
+						switch($logoColor){
+							case "white":
+								$("#right-img").css("background-image", "url('assets/youthBarrels/youthunfinwhite.png')" );
+							break;
+							case "black":
+								$("#right-img").css("background-image", "url('assets/youthBarrels/youthunfinblack.png')" );
+							break;
+							case "gold":
+								$("#right-img").css("background-image", "url('assets/youthBarrels/youthunfingold.png')" );
+							break;
+							case "gray":
+								$("#right-img").css("background-image", "url('assets/youthBarrels/youthunfingray.png')" );
+							break;
+						}
+						break;
+					case "fungo":
+						switch($logoColor){
+							case "white":
+								$("#right-img").css("background-image", "url('assets/fungoBarrels/fungounfinwhite.png')" );
+							break;
+							case "black":
+								$("#right-img").css("background-image", "url('assets/fungoBarrels/fungounfinblack.png')" );
+							break;
+							case "gold":
+								$("#right-img").css("background-image", "url('assets/fungoBarrels/fungounfingold.png')" );
+							break;
+							case "gray":
+								$("#right-img").css("background-image", "url('assets/fungoBarrels/fungounfingray.png')" );
+							break;
+						}
+						break;
+					default:
+
+					break;
+				}
 
 			});
 			$("#bc2").click(function() {
@@ -336,7 +422,93 @@ $(document).ready(function() {
 				$("#bc1").css("border-color", "rgb(24, 53, 80)");
 				$("#bc3").css("border-color", "rgb(24, 53, 80)");
 				$("#bc4").css("border-color", "rgb(24, 53, 80)");
-				$batColor = 'birch';
+				$batColor = 'natural';
+				switch($bat){
+					case "pro":
+						$("#left-img").css("background-image", "url('assets/proHandles/prohnatural.png')" );
+						break;
+					case "game":
+						$("#left-img").css("background-image", "url('assets/proHandles/prohnatural.png')" );
+						break;
+					case "youth":
+						$("#left-img").css("background-image", "url('assets/youthHandles/youthhnatural.png')" );
+						break;
+					case "fungo":
+						$("#left-img").css("background-image", "url('assets/fungoHandles/fungohnatural.png')" );
+						break;
+					default:
+
+					break;
+				}
+				switch($bat){
+					case "pro":
+						switch($logoColor){
+							case "white":
+								$("#right-img").css("background-image", "url('assets/proBarrels/pronaturalwhite.png')" );
+							break;
+							case "black":
+								$("#right-img").css("background-image", "url('assets/proBarrels/pronaturalblack.png')" );
+							break;
+							case "gold":
+								$("#right-img").css("background-image", "url('assets/proBarrels/pronaturalgold.png')" );
+							break;
+							case "gray":
+								$("#right-img").css("background-image", "url('assets/proBarrels/pronaturalgray.png')" );
+							break;
+						}
+						break;
+					case "game":
+						switch($logoColor){
+							case "white":
+								$("#right-img").css("background-image", "url('assets/proBarrels/pronaturalwhite.png')" );
+							break;
+							case "black":
+								$("#right-img").css("background-image", "url('assets/proBarrels/pronaturalblack.png')" );
+							break;
+							case "gold":
+								$("#right-img").css("background-image", "url('assets/proBarrels/pronaturalgold.png')" );
+							break;
+							case "gray":
+								$("#right-img").css("background-image", "url('assets/proBarrels/pronaturalgray.png')" );
+							break;
+						}
+						break;
+					case "youth":
+						switch($logoColor){
+							case "white":
+								$("#right-img").css("background-image", "url('assets/youthBarrels/youthnaturalwhite.png')" );
+							break;
+							case "black":
+								$("#right-img").css("background-image", "url('assets/youthBarrels/youthnaturalblack.png')" );
+							break;
+							case "gold":
+								$("#right-img").css("background-image", "url('assets/youthBarrels/youthnaturalgold.png')" );
+							break;
+							case "gray":
+								$("#right-img").css("background-image", "url('assets/youthBarrels/youthnaturalgray.png')" );
+							break;
+						}
+						break;
+					case "fungo":
+						switch($logoColor){
+							case "white":
+								$("#right-img").css("background-image", "url('assets/fungoBarrels/fungonaturalwhite.png')" );
+							break;
+							case "black":
+								$("#right-img").css("background-image", "url('assets/fungoBarrels/fungonaturalblack.png')" );
+							break;
+							case "gold":
+								$("#right-img").css("background-image", "url('assets/fungoBarrels/fungonaturalgold.png')" );
+							break;
+							case "gray":
+								$("#right-img").css("background-image", "url('assets/fungoBarrels/fungonaturalgray.png')" );
+							break;
+						}
+						break;
+					default:
+
+					break;
+				}
 			});
 			$("#bc3").click(function() {
 				$(this).css("border-color", "rgb(252, 116, 44)");
@@ -344,6 +516,92 @@ $(document).ready(function() {
 				$("#bc1").css("border-color", "rgb(24, 53, 80)");
 				$("#bc4").css("border-color", "rgb(24, 53, 80)");
 				$batColor = 'black';
+				switch($bat){
+					case "pro":
+						$("#left-img").css("background-image", "url('assets/proHandles/prohblack.png')" );
+						break;
+					case "game":
+						$("#left-img").css("background-image", "url('assets/proHandles/prohblack.png')" );
+						break;
+					case "youth":
+						$("#left-img").css("background-image", "url('assets/youthHandles/youthhblack.png')" );
+						break;
+					case "fungo":
+						$("#left-img").css("background-image", "url('assets/fungoHandles/fungohblack.png')" );
+						break;
+					default:
+
+					break;
+				}
+				switch($bat){
+					case "pro":
+						switch($logoColor){
+							case "white":
+								$("#right-img").css("background-image", "url('assets/proBarrels/problackwhite.png')" );
+							break;
+							case "black":
+								$("#right-img").css("background-image", "url('assets/proBarrels/problackblack.png')" );
+							break;
+							case "gold":
+								$("#right-img").css("background-image", "url('assets/proBarrels/problackgold.png')" );
+							break;
+							case "gray":
+								$("#right-img").css("background-image", "url('assets/proBarrels/problackgray.png')" );
+							break;
+						}
+						break;
+					case "game":
+						switch($logoColor){
+							case "white":
+								$("#right-img").css("background-image", "url('assets/proBarrels/problackwhite.png')" );
+							break;
+							case "black":
+								$("#right-img").css("background-image", "url('assets/proBarrels/problackblack.png')" );
+							break;
+							case "gold":
+								$("#right-img").css("background-image", "url('assets/proBarrels/problackgold.png')" );
+							break;
+							case "gray":
+								$("#right-img").css("background-image", "url('assets/proBarrels/problackgray.png')" );
+							break;
+						}
+						break;
+					case "youth":
+						switch($logoColor){
+							case "white":
+								$("#right-img").css("background-image", "url('assets/youthBarrels/youthblackwhite.png')" );
+							break;
+							case "black":
+								$("#right-img").css("background-image", "url('assets/youthBarrels/youthblackblack.png')" );
+							break;
+							case "gold":
+								$("#right-img").css("background-image", "url('assets/youthBarrels/youthblackgold.png')" );
+							break;
+							case "gray":
+								$("#right-img").css("background-image", "url('assets/youthBarrels/youthblackgray.png')" );
+							break;
+						}
+						break;
+					case "fungo":
+						switch($logoColor){
+							case "white":
+								$("#right-img").css("background-image", "url('assets/fungoBarrels/fungoblackwhite.png')" );
+							break;
+							case "black":
+								$("#right-img").css("background-image", "url('assets/fungoBarrels/fungoblackblack.png')" );
+							break;
+							case "gold":
+								$("#right-img").css("background-image", "url('assets/fungoBarrels/fungoblackgold.png')" );
+							break;
+							case "gray":
+								$("#right-img").css("background-image", "url('assets/fungoBarrels/fungoblackgray.png')" );
+							break;
+						}
+						break;
+					default:
+
+					break;
+				}
 			});
 			$("#bc4").click(function() {
 				$(this).css("border-color", "rgb(252, 116, 44)");
@@ -351,6 +609,92 @@ $(document).ready(function() {
 				$("#bc3").css("border-color", "rgb(24, 53, 80)");
 				$("#bc1").css("border-color", "rgb(24, 53, 80)");
 				$batColor = 'gray';
+				switch($bat){
+					case "pro":
+						$("#left-img").css("background-image", "url('assets/proHandles/prohgray.png')" );
+						break;
+					case "game":
+						$("#left-img").css("background-image", "url('assets/proHandles/prohgray.png')" );
+						break;
+					case "youth":
+						$("#left-img").css("background-image", "url('assets/youthHandles/youthhgray.png')" );
+						break;
+					case "fungo":
+						$("#left-img").css("background-image", "url('assets/fungoHandles/fungohgray.png')" );
+						break;
+					default:
+
+					break;
+				}
+				switch($bat){
+					case "pro":
+						switch($logoColor){
+							case "white":
+								$("#right-img").css("background-image", "url('assets/proBarrels/prograywhite.png')" );
+							break;
+							case "black":
+								$("#right-img").css("background-image", "url('assets/proBarrels/prograyblack.png')" );
+							break;
+							case "gold":
+								$("#right-img").css("background-image", "url('assets/proBarrels/prograygold.png')" );
+							break;
+							case "gray":
+								$("#right-img").css("background-image", "url('assets/proBarrels/prograygray.png')" );
+							break;
+						}
+						break;
+					case "game":
+						switch($logoColor){
+							case "white":
+								$("#right-img").css("background-image", "url('assets/proBarrels/prograywhite.png')" );
+							break;
+							case "black":
+								$("#right-img").css("background-image", "url('assets/proBarrels/prograyblack.png')" );
+							break;
+							case "gold":
+								$("#right-img").css("background-image", "url('assets/proBarrels/prograygold.png')" );
+							break;
+							case "gray":
+								$("#right-img").css("background-image", "url('assets/proBarrels/prograygray.png')" );
+							break;
+						}
+						break;
+					case "youth":
+						switch($logoColor){
+							case "white":
+								$("#right-img").css("background-image", "url('assets/youthBarrels/youthgraywhite.png')" );
+							break;
+							case "black":
+								$("#right-img").css("background-image", "url('assets/youthBarrels/youthgrayblack.png')" );
+							break;
+							case "gold":
+								$("#right-img").css("background-image", "url('assets/youthBarrels/youthgraygold.png')" );
+							break;
+							case "gray":
+								$("#right-img").css("background-image", "url('assets/youthBarrels/youthgraygray.png')" );
+							break;
+						}
+						break;
+					case "fungo":
+						switch($logoColor){
+							case "white":
+								$("#right-img").css("background-image", "url('assets/fungoBarrels/fungograywhite.png')" );
+							break;
+							case "black":
+								$("#right-img").css("background-image", "url('assets/fungoBarrels/fungograyblack.png')" );
+							break;
+							case "gold":
+								$("#right-img").css("background-image", "url('assets/fungoBarrels/fungograygold.png')" );
+							break;
+							case "gray":
+								$("#right-img").css("background-image", "url('assets/fungoBarrels/fungograygray.png')" );
+							break;
+						}
+						break;
+					default:
+
+					break;
+				}
 			});
 			$("#hc1").click(function() {
 				$(this).css("border-color", "rgb(252, 116, 44)");

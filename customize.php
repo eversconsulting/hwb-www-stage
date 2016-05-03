@@ -82,9 +82,11 @@
 	<title>Homewood Bat</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="styles.css">
+	
 	<script type="text/javascript" src="jquery.js"></script>
 	<script type="text/javascript" src="script.js"></script>
 	<script type="text/javascript" src="customize.js"></script>
+
 </head>
 <body>
 	<div class="navbar">
@@ -305,10 +307,13 @@
 				<div class="cart-row">
 						<div class="color-title">BAT COLOR</div>
 						<div class="color-cont">
-							<div id="bc1" class="color"></div>
-							<div id="bc2" class="color"></div>
-							<div id="bc3" class="color"></div>
-							<div id="bc4" class="color"></div>
+							
+							   
+							
+							<div id="bc1" title="Unfinished" class="color"></div>
+							<div id="bc2" title="Natural" class="color"></div>
+							<div id="bc3" title="Black" class="color"></div>
+							<div id="bc4" title="Gray" class="color"></div>
 						</div>
 				</div>
 					<div class="cart-row">
@@ -317,19 +322,19 @@
 							<div class="cart-col">
 								<div class="color-title">HANDLE</div>
 								<div class="color-cont">
-									<div id="hc1" class="color"></div>
-									<div id="hc2" class="color"></div>
-									<div id="hc3" class="color"></div>
-									<div id="hc4" class="color"></div>
+									<div id="hc1" title="Unfinished" class="color"></div>
+									<div id="hc2" title="Natural" class="color"></div>
+									<div id="hc3" title="Black" class="color"></div>
+									<div id="hc4" title="Gray" class="color"></div>
 								</div>
 							</div>
 							<div class="cart-col">
 								<div class="color-title">BARREL</div>
 									<div class="color-cont">
-										<div id="brc1" class="color"></div>
-										<div id="brc2" class="color"></div>
-										<div id="brc3" class="color"></div>
-										<div id="brc4" class="color"></div>
+										<div id="brc1" title="Unfinished" class="color"></div>
+										<div id="brc2" title="Natural" class="color"></div>
+										<div id="brc3" title="Black" class="color"></div>
+										<div id="brc4" title="Gray" class="color"></div>
 									</div>
 							</div>
 						</div>
@@ -497,7 +502,7 @@
 								<div class="styled-select">
 								   <select id="wood-select">
 								     <option selected="selected">Choose</option>
-								     <option id="fc1" style="color: rgb(250, 245, 234);">Black</option>
+								     <option id="fc1" style="color: rgb(250, 245, 234);">Glossy</option>
 								     <option id="fc2" style="color: rgb(250, 245, 234);">Matte</option>
 								   </select>
 								</div>
@@ -589,6 +594,5 @@
 
 
 	</div>
-	
 </body>
 </html>
