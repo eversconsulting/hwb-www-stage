@@ -104,7 +104,7 @@
 
 					<div class="shop-container" id="s1">
 						<div class="shop-item">
-							<a href="customize.php?id=pro"><div class="item-picture"><img class="img-bat" src="assets/tshirt2.png"></div></a>
+							<div class="item-picture"><img class="img-bat" src="assets/tshirt2.png"></div>
 							<div class="item-desc">HBC SWEET SOUND SHORT SLEEVE SHIRT <br> $25</div>
 						</div>
 						
@@ -113,7 +113,7 @@
 					<div class="spacer-col"></div>
 					<div class="shop-container" id="s2">
 						<div class="shop-item">
-							<a href="customize.php?id=game"><div class="item-picture"><img class="img-bat" src="assets/tshirt.png"></div></a>
+							<div class="item-picture"><img class="img-bat" src="assets/tshirt.png"></div>
 							<div class="item-desc">HBC DISTRESSED LOGO 3/4 SLEEVE SHIRT<br> $35</div>
 						</div>
 						
@@ -122,7 +122,7 @@
 					<div class="spacer-col"></div>
 					<div class="shop-container" id="s3">
 						<div class="shop-item">
-							<a href="customize.php?id=youth"><div class="item-picture"><img class="img-bat" src="assets/hat.png"></div></a>
+							<div class="item-picture"><img class="img-bat" src="assets/hat.png"></div>
 							<div class="item-desc">HBC LOGO HAT <br> $30</div>
 						</div>
 						
@@ -234,7 +234,7 @@
 	<div class="section" id="sec5" style="background-color: rgb(250, 245, 234);">
 		<div class="title-row">
 				<div class="title-line"></div>
-				<div class="section-title">ABOUT</div>
+				<div class="section-title">ABOUT US</div>
 				<div class="title-line"></div>
 		</div>
 		<div id="desktop-about" class="section-inner">
