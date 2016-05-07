@@ -253,36 +253,54 @@
 				<div class="about-sub" id="bottom-sub">Come visit us and see for yourself!</div>
 			</div>
 			
-			<div class="title-row">
-				<div class="title-line title-line-staff"></div>
-				<div id="staff-title" class="section-title">OUR FRIENDLY STAFF</div>
-				<div class="title-line title-line-staff"></div>
-			</div>
-
-
-			<div class="cart-row">
-				<div class="cart-col">
-					<div class="staff-image" id="todd"></div>
-					<div class="staff-name">TODD PALS</div>
-					<div class="staff-caption">PRESIDENT</div>
-				</div>
-				<div class="cart-col">
-					<div class="staff-image" id="dan"></div>
-					<div class="staff-name">DAN GIBSON</div>
-					<div class="staff-caption">VICE PRESIDENT<br>SALES</div>
+			<div class="title-row-staff">
+				<div class="staff-title-inner">
+					<div class="title-line-staff"></div>
+					<div class="section-title-staff">OUR FRIENDLY STAFF</div>
+					<div class="title-line-staff"></div>
 				</div>
 			</div>
+			
+
+		
+			<div class="staff-container">
+				<div class="staff-inner-top">
+					<div class="staffer-top">
+						<div class="staff-image-top"></div>
+						<div class="staff-title-top">TODD PALS</div>
+						<div class="staff-caption-top">PRESIDENT</div>
+					</div>
+					<div class="staffer-top">
+						<div class="staff-image-top"></div>
+						<div class="staff-title-top">PAMELA PALS</div>
+						<div class="staff-caption-top">THE BOSS</div>
+					</div>
+				</div>
+				<div class="staff-inner-bottom">
+					<div class="staffer-bottom">
+						<div class="staff-image-bottom"></div>
+						<div class="staff-title-bottom">DAN GIBSON</div>
+						<div class="staff-caption-bottom">VICE PRESIDENT <BR>SALES</div>
+					</div>
+					<div class="staffer-bottom">
+						<div class="staff-image-bottom"></div>
+						<div class="staff-title-bottom">CRAIG OLTOFF</div>
+						<div class="staff-caption-bottom">PRODUCTION <BR>MANAGER</div>
+					</div>
+					<div class="staffer-bottom">
+						<div class="staff-image-bottom"></div>
+						<div class="staff-title-bottom">CARLY HOGAN</div>
+						<div class="staff-caption-bottom">LASER ENGRAVER <br> EXTRAORDINARE</div>
+					</div>
+					
+				</div>
+			</div>
+				
+				
+			
+		
 			<div class="cart-row">
-				<div class="cart-col">
-					<div class="staff-image" id="craig"></div>
-					<div class="staff-name">CRAIG OLTHOFF</div>
-					<div class="staff-caption">PRODUCTION<br>MANAGER</div>
-				</div>
-				<div class="cart-col">
-					<div class="staff-image" id="carly"></div>
-					<div class="staff-name">CARLY HOGAN</div>
-					<div class="staff-caption">LASER ENGRAVER<br>EXTRAORDINAIRE</div>
-				</div>
+				
 			</div>
 			
 
@@ -326,6 +344,7 @@
 					<div class="staff-name">DAN GIBSON</div>
 					<div class="staff-caption">VICE PRESIDENT<br>SALES</div>
 				</div>
+
 			</div>
 			<div class="cart-row">
 				<div class="cart-col">

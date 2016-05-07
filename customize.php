@@ -289,9 +289,8 @@
 
 				<div class="customize-model"></div>
 
-			<div class="customize-image">
-				<div id="left-img" class="customize-image-left"></div>
-				<div id="right-img" class="customize-image-right"></div>
+			<div id="custom-bat" class="customize-image">
+				<div id="logo-overlay" class="logo-image"></div>
 			</div>
 			<div class="options-cont">
 
