@@ -367,19 +367,23 @@ $(document).ready(function() {
 				$("#hc2").css("border-color", "rgb(24, 53, 80)");
 				$("#hc3").css("border-color", "rgb(24, 53, 80)");
 				$("#hc4").css("border-color", "rgb(24, 53, 80)");
+				$("#bc1").css("border-color", "rgb(24, 53, 80)");
+				$("#bc2").css("border-color", "rgb(24, 53, 80)");
+				$("#bc3").css("border-color", "rgb(24, 53, 80)");
+				$("#bc4").css("border-color", "rgb(24, 53, 80)");
 				$batTwoOption = true;
 				$batTwoHandle = 'unfinished';
 				loadBatColor("unfinished", $batTwoBarrel, $logoColor, $bat);
-				
-				
-				
-				
 			});
 			$("#hc2").click(function() {
 				$(this).css("border-color", "rgb(252, 116, 44)");
 				$("#hc1").css("border-color", "rgb(24, 53, 80)");
 				$("#hc3").css("border-color", "rgb(24, 53, 80)");
 				$("#hc4").css("border-color", "rgb(24, 53, 80)");
+				$("#bc1").css("border-color", "rgb(24, 53, 80)");
+				$("#bc2").css("border-color", "rgb(24, 53, 80)");
+				$("#bc3").css("border-color", "rgb(24, 53, 80)");
+				$("#bc4").css("border-color", "rgb(24, 53, 80)");
 				$batTwoOption = true;
 				$batTwoHandle = 'natural';
 				loadBatColor("natural", $batTwoBarrel, $logoColor, $bat);
@@ -391,6 +395,10 @@ $(document).ready(function() {
 				$("#hc2").css("border-color", "rgb(24, 53, 80)");
 				$("#hc1").css("border-color", "rgb(24, 53, 80)");
 				$("#hc4").css("border-color", "rgb(24, 53, 80)");
+				$("#bc1").css("border-color", "rgb(24, 53, 80)");
+				$("#bc2").css("border-color", "rgb(24, 53, 80)");
+				$("#bc3").css("border-color", "rgb(24, 53, 80)");
+				$("#bc4").css("border-color", "rgb(24, 53, 80)");
 				$batTwoOption = true;
 				$batTwoHandle = 'black';
 				loadBatColor("black", $batTwoBarrel, $logoColor, $bat);
@@ -400,6 +408,10 @@ $(document).ready(function() {
 				$("#hc2").css("border-color", "rgb(24, 53, 80)");
 				$("#hc3").css("border-color", "rgb(24, 53, 80)");
 				$("#hc1").css("border-color", "rgb(24, 53, 80)");
+				$("#bc1").css("border-color", "rgb(24, 53, 80)");
+				$("#bc2").css("border-color", "rgb(24, 53, 80)");
+				$("#bc3").css("border-color", "rgb(24, 53, 80)");
+				$("#bc4").css("border-color", "rgb(24, 53, 80)");
 				$batTwoOption = true;
 				$batTwoHandle = 'gray';
 				loadBatColor("gray", $batTwoBarrel, $logoColor, $bat);
@@ -409,6 +421,10 @@ $(document).ready(function() {
 				$("#brc2").css("border-color", "rgb(24, 53, 80)");
 				$("#brc3").css("border-color", "rgb(24, 53, 80)");
 				$("#brc4").css("border-color", "rgb(24, 53, 80)");
+				$("#bc1").css("border-color", "rgb(24, 53, 80)");
+				$("#bc2").css("border-color", "rgb(24, 53, 80)");
+				$("#bc3").css("border-color", "rgb(24, 53, 80)");
+				$("#bc4").css("border-color", "rgb(24, 53, 80)");
 				$batTwoOption = true;
 				$batTwoBarrel = 'unfinished';
 				loadBatColor($batTwoHandle, "unfinished", $logoColor, $bat);
@@ -419,6 +435,10 @@ $(document).ready(function() {
 				$("#brc1").css("border-color", "rgb(24, 53, 80)");
 				$("#brc3").css("border-color", "rgb(24, 53, 80)");
 				$("#brc4").css("border-color", "rgb(24, 53, 80)");
+				$("#bc1").css("border-color", "rgb(24, 53, 80)");
+				$("#bc2").css("border-color", "rgb(24, 53, 80)");
+				$("#bc3").css("border-color", "rgb(24, 53, 80)");
+				$("#bc4").css("border-color", "rgb(24, 53, 80)");
 				$batTwoOption = true;
 				$batTwoBarrel = 'natural';
 				loadBatColor($batTwoHandle, "natural", $logoColor, $bat);
@@ -428,6 +448,10 @@ $(document).ready(function() {
 				$("#brc2").css("border-color", "rgb(24, 53, 80)");
 				$("#brc1").css("border-color", "rgb(24, 53, 80)");
 				$("#brc4").css("border-color", "rgb(24, 53, 80)");
+				$("#bc1").css("border-color", "rgb(24, 53, 80)");
+				$("#bc2").css("border-color", "rgb(24, 53, 80)");
+				$("#bc3").css("border-color", "rgb(24, 53, 80)");
+				$("#bc4").css("border-color", "rgb(24, 53, 80)");
 				$batTwoOption = true;
 				$batTwoBarrel = 'black';
 				loadBatColor($batTwoHandle, "black", $logoColor, $bat);
@@ -437,6 +461,10 @@ $(document).ready(function() {
 				$("#brc2").css("border-color", "rgb(24, 53, 80)");
 				$("#brc3").css("border-color", "rgb(24, 53, 80)");
 				$("#brc1").css("border-color", "rgb(24, 53, 80)");
+				$("#bc1").css("border-color", "rgb(24, 53, 80)");
+				$("#bc2").css("border-color", "rgb(24, 53, 80)");
+				$("#bc3").css("border-color", "rgb(24, 53, 80)");
+				$("#bc4").css("border-color", "rgb(24, 53, 80)");
 				$batTwoOption = true;
 				$batTwoBarrel = 'gray';
 				loadBatColor($batTwoHandle, "gray", $logoColor, $bat);
