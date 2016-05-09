@@ -23,7 +23,7 @@
 			$d = "These bats are available in top grade Maple, Ash or Birch and are made for game use.  The finished weight of the bat will be approximately 3 ounces less than the length of the bat, unless otherwise requested.";
 			$price = "$70";
 			$models = array("024", "110", "141", "243", "271");
-			$desc = array("024" => "Barrel = 2.50/ Handle = .92 <br>Medium / large barrel diameter, Medium / long barrel, thin handle, flared knob", "110" => "Barrel = 2.46/ Handle = .97 <br>Medium barrel diameter, long barrel, thick handle, regular knob", "141" => "Barrel = 2.46/ Handle = .92 <br>Medium barrel diameter, long barrel, thin handle, regular knob", "243" => "Barrel = 2.52/ Handle = .94 <br>Large barrel diameter, long barrel , medium handle, regular knob", "271" => "Barrel = 2.48/ Handle = .94 <br>Medium barrel diameter, Tapered barrel, medium handle, flared knob");
+			$desc = array("024" => "Barrel = 2.48/ Handle = .92 <br>Medium / large barrel diameter, Medium / long barrel, thin handle, flared knob", "110" => "Barrel = 2.46/ Handle = .97 <br>Medium barrel diameter, long barrel, thick handle, regular knob", "141" => "Barrel = 2.46/ Handle = .92 <br>Medium barrel diameter, long barrel, thin handle, regular knob", "243" => "Barrel = 2.52/ Handle = .94 <br>Large barrel diameter, long barrel , medium handle, regular knob", "271" => "Barrel = 2.48/ Handle = .94 <br>Medium barrel diameter, Tapered barrel, medium handle, flared knob");
 			$display = true;
 			$displayModels = true;
 			$imageM = "assets/gamem.png";
@@ -169,7 +169,7 @@
 								echo '<div class="wood-prices">MAPLE | $120 <br />ASH & BIRCH | $100</div>';
 							}
 							if($showPricesGame == true){
-								echo '<div class="wood-prices">MAPLE | $95<br />ASH & BIRCH | $75</div>';
+								echo '<div class="wood-prices">MAPLE | $95<br />ASH & BIRCH | $70</div>';
 							}
 							if($showPromo == true){
 								echo '<div class="wood-prices">PROMO BATS: $70 <sup>(includes artwok)</sup><br />ADDITIONAL BATS: $55 EACH <sup>(w/ same artwork)</sup></div>';
@@ -363,14 +363,14 @@
 						</div>
 					</div>
 				
-				<?php
+				<!-- <?php
 					if($showWeight == false){
 
 					}
 					else {
 						echo '<div class="cart-row"><div class="color-title">BAT WEIGHT</div><div id="weightList" class="color-cont"></div></div>';
 					}
-				?>
+				?> -->
 
 				<div class="cart-row">
 						<div class="color-title">END CUP</div>
@@ -573,10 +573,10 @@
 						</div>
 				</div>
 
-				<div class="cart-row">
+				<!-- <div class="cart-row">
 					<div class="button" id="add">ADD TO CART</div>
 					
-				</div>
+				</div> -->
 
 				<div class="cart-row">
 					

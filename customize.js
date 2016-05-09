@@ -524,11 +524,7 @@ $(document).ready(function() {
 				$(this).css("border-color", "rgb(252, 116, 44)");
 				$batLength = $(this).attr('id');
 			});
-			$(".weight-colors").click(function() {
-				$(".weight-colors").css("border-color", "rgb(24, 53, 80)");
-				$(this).css("border-color", "rgb(252, 116, 44)");
-				$batWeight = $(this).attr('id');
-			});
+		
 			$("#e1").click(function() {
 				$(this).css("border-color", "rgb(252, 116, 44)");
 				$("#e2").css("border-color", "rgb(24, 53, 80)");

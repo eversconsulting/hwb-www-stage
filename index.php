@@ -266,29 +266,29 @@
 			<div class="staff-container">
 				<div class="staff-inner-top">
 					<div class="staffer-top">
-						<div class="staff-image-top"></div>
+						<div class="staff-image-top" id="todd"></div>
 						<div class="staff-title-top">TODD PALS</div>
 						<div class="staff-caption-top">PRESIDENT</div>
 					</div>
 					<div class="staffer-top">
-						<div class="staff-image-top"></div>
+						<div class="staff-image-top" id="pam"></div>
 						<div class="staff-title-top">PAMELA PALS</div>
 						<div class="staff-caption-top">THE BOSS</div>
 					</div>
 				</div>
 				<div class="staff-inner-bottom">
 					<div class="staffer-bottom">
-						<div class="staff-image-bottom"></div>
+						<div class="staff-image-bottom" id="dan"></div>
 						<div class="staff-title-bottom">DAN GIBSON</div>
 						<div class="staff-caption-bottom">VICE PRESIDENT <BR>SALES</div>
 					</div>
 					<div class="staffer-bottom">
-						<div class="staff-image-bottom"></div>
+						<div class="staff-image-bottom" id="craig"></div>
 						<div class="staff-title-bottom">CRAIG OLTOFF</div>
 						<div class="staff-caption-bottom">PRODUCTION <BR>MANAGER</div>
 					</div>
 					<div class="staffer-bottom">
-						<div class="staff-image-bottom"></div>
+						<div class="staff-image-bottom" id="carly"></div>
 						<div class="staff-title-bottom">CARLY HOGAN</div>
 						<div class="staff-caption-bottom">LASER ENGRAVER <br> EXTRAORDINARE</div>
 					</div>

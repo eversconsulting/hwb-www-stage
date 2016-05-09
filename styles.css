@@ -335,7 +335,7 @@ ul a {
 
 
 .button {
-	transition: border-color 0.5s linear,
+	transition: 
 				background-color 0.5s linear,
 				color 0.5s linear;
 	width: 150px;
@@ -394,7 +394,7 @@ ul a {
 .button:hover {
 	background-color: rgb(252, 116, 44);
 	color: rgb(24, 53, 80);
-	border-color: rgb(53, 95, 106);
+	
 }
 
 
@@ -969,7 +969,7 @@ sup {
 .model-select {
 	background-color: rgb(252, 116, 44);
 	color: rgb(24, 53, 80);
-	border-color: rgb(53, 95, 106);
+	
 }
 
 .map {
@@ -1824,7 +1824,7 @@ a[href^="tel"]{
 }
 
 .button {
-	transition: border-color 0.5s linear,
+	transition:
 				background-color 0.5s linear,
 				color 0.5s linear;
 	width: 150px;
@@ -2504,7 +2504,7 @@ a[href^="tel"]{
 }
 
 .button {
-	transition: border-color 0.5s linear,
+	transition:
 				background-color 0.5s linear,
 				color 0.5s linear;
 	width: 150px;
