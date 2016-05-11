@@ -8,8 +8,8 @@
 			$title = "PRO SERIES ";
 			$d = "These bats are made with wood that measures top grade in every way. They include the ink dot window showing straight grain in the handle. The finishing process includes additional sanding and care. The finished weight of the bat will be approximately 3 ounces less than the length of the bat, unless otherwise requested.";
 			$price = "$120";
-			$models = array("024", "110", "141", "243", "271");
-			$desc = array("024" => "Barrel = 2.50 Handle = .92 <br>Medium / large barrel diameter, Medium / long barrel, thin handle, flared knob", "110" => "Barrel = 2.46 Handle = .97 <br>Medium barrel diameter, long barrel, thick handle, regular knob", "141" => "Barrel = 2.46 Handle = .92 <br>Medium barrel diameter, long barrel, thin handle, regular knob", "243" => "Barrel = 2.52 Handle = .94 <br>Large barrel diameter, long barrel , medium handle, regular knob", "271" => "Barrel = 2.48 Handle = .94 <br>Medium barrel diameter, Tapered barrel, medium handle, flared knob");
+			$models = array("024", "026", "110", "243", "271");
+			$desc = array("024" => "Barrel = 2.50 Handle = .92 <br>Medium / large barrel diameter, Medium / long barrel, thin handle, flared knob", "026" => "Barrel = 2.50 Handle = .94 <br>Large barrel diameter, long barrel, medium handle, flared knob","110" => "Barrel = 2.48 Handle = .96 <br>Medium barrel diameter, long barrel , medium handle, regular knob", "243" => "Barrel = 2.52 Handle = .94 <br>Large barrel diameter, long barrel , medium handle, regular knob", "271" => "Barrel = 2.48 Handle = .94 <br>Medium barrel diameter, Tapered barrel, medium handle, flared knob");
 			$display = true;
 			$displayModels = true;
 			$showPrices = true;
@@ -22,8 +22,8 @@
 			$title = "GAME SERIES ";
 			$d = "These bats are available in top grade Maple, Ash or Birch and are made for game use.  The finished weight of the bat will be approximately 3 ounces less than the length of the bat, unless otherwise requested.";
 			$price = "$70";
-			$models = array("024", "110", "141", "243", "271");
-			$desc = array("024" => "Barrel = 2.48/ Handle = .92 <br>Medium / large barrel diameter, Medium / long barrel, thin handle, flared knob", "110" => "Barrel = 2.46/ Handle = .97 <br>Medium barrel diameter, long barrel, thick handle, regular knob", "141" => "Barrel = 2.46/ Handle = .92 <br>Medium barrel diameter, long barrel, thin handle, regular knob", "243" => "Barrel = 2.52/ Handle = .94 <br>Large barrel diameter, long barrel , medium handle, regular knob", "271" => "Barrel = 2.48/ Handle = .94 <br>Medium barrel diameter, Tapered barrel, medium handle, flared knob");
+			$models = array("024", "026", "110", "243", "271");
+			$desc = array("024" => "Barrel = 2.50 Handle = .92 <br>Medium / large barrel diameter, Medium / long barrel, thin handle, flared knob", "026" => "Barrel = 2.50 Handle = .94 <br>Large barrel diameter, long barrel, medium handle, flared knob","110" => "Barrel = 2.48 Handle = .96 <br>Medium barrel diameter, long barrel , medium handle, regular knob", "243" => "Barrel = 2.52 Handle = .94 <br>Large barrel diameter, long barrel , medium handle, regular knob", "271" => "Barrel = 2.48 Handle = .94 <br>Medium barrel diameter, Tapered barrel, medium handle, flared knob");
 			$display = true;
 			$displayModels = true;
 			$imageM = "assets/gamem.png";

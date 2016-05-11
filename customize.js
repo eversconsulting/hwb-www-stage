@@ -67,10 +67,10 @@ $(document).ready(function() {
 				$b = 'BARREL = 2.52"';
 				$h = 'HANDLE = .94"';
 				break;
-			case "141":
-				$mDesc = "Medium barrel diameter, long barrel, thin handle, regular knob";
-				$b = 'BARREL = 2.46"';
-				$h = 'HANDLE = .92"';
+			case "026":
+				$mDesc = "Large barrel diameter, long barrel, medium handle, flared knob";
+				$b = 'BARREL = 2.50"';
+				$h = 'HANDLE = .94"';
 				break;
 		}
 
