@@ -40,8 +40,8 @@
 		</div>
 
 		<div id="desk-cart" class="cart">
-			<div class="notify" style="display: none;">2</div>
-			<img class="cart-icon" src="assets/cart.png">
+			<div class="notify"></div>
+			<a href="https://homewood-bat-co.myshopify.com/cart/18643510977:1,18643510977:1"><img class="cart-icon" src="assets/cart.png"></a>
 		</div>
 
 		

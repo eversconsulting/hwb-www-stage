@@ -576,7 +576,7 @@ $(document).ready(function() {
 		$batArray = JSON.parse(sessionStorage.getItem("bats"));
 	   
 	    $newBat = new Object();
-	    $newBat.type = "bat1";
+	    $newBat.type = $bat;
 	    $newBat.wood = $batWood;
 	    $newBat.color = $batColor;
 	    $newBat.optional = $batTwoOption;
@@ -614,7 +614,7 @@ $(document).ready(function() {
 		$batArray = JSON.parse(sessionStorage.getItem("bats"));
 	   
 	    $newBat = new Object();
-	    $newBat.type = "bat1";
+	    $newBat.type = $bat;
 	    $newBat.wood = $batWood;
 	    $newBat.color = $batColor;
 	    $newBat.optional = $batTwoOption;

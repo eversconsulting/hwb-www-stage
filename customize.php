@@ -102,7 +102,7 @@
 				<div id="ham3" class="hamburger-line"></div>
 			</div>
 			<div class="cart">
-				<div class="notify">2</div>
+				<div class="notify"></div>
 				<img class="cart-icon" src="assets/cart.png">
 			</div>
 		</div>
@@ -573,10 +573,10 @@
 						</div>
 				</div>
 
-				<!-- <div class="cart-row">
+				<div class="cart-row">
 					<div class="button" id="add">ADD TO CART</div>
 					
-				</div> -->
+				</div>
 
 				<div class="cart-row">
 					
