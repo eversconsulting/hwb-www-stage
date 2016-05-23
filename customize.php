@@ -159,9 +159,9 @@
 		</div>
 
 		<div class="navbar-icons" style="float: right">
-			<a href="https://www.instagram.com/homewoodbat/"><div id="instagram" class="nav-icon"></div></a>
-			<a href="https://www.facebook.com/homewoodbat/"><div id="facebook" class="nav-icon"></div></a>
-			<div id="twitter" class="nav-icon"></div>
+			<a href="https://www.instagram.com/homewoodbat/" target="_blank"><div id="instagram" class="nav-icon"></div></a>
+			<a href="https://www.facebook.com/homewoodbat/" target="_blank"><div id="facebook" class="nav-icon"></div></a>
+			<a href="https://twitter.com/HomewoodBat/" target="_blank"><div id="twitter" class="nav-icon"></div></a>
 		</div>
 
 
@@ -566,7 +566,7 @@
 					}
 				?>
 
-				
+
 
 				<div class="cart-row">
 						<div class="color-title">CUSTOM ENGRAVING LETTERING STYLE</div>

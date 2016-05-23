@@ -4,6 +4,7 @@
 $(document).ready(function(){
 
 
+
   //---------Shopify Start------------
   var shopClient = ShopifyBuy.buildClient({
       apiKey: 'a8ca2115ba8bf2a471b32d2ee821ffca',
@@ -85,7 +86,7 @@ $(document).ready(function(){
    });
    $(".dismiss-popup").click(function(){
      $(".bottom-popup").animate({
-       width: 0
+       height: 0
      });
      $(".popup-text").hide();
    });
@@ -162,16 +163,12 @@ $(document).ready(function(){
         $(".side-cart").animate({
             width: 400
         });
-
-
-
-
       });
     }
-    else
-    {
-
+    else {
+      requireDesktop();
     }
+
 
 
   });
@@ -254,16 +251,17 @@ function requireDesktop() {
 
   if($sWood && $sHandle && $sBarrel && $sLogo && $sLength && $sEngStyle && $sEng && $sAgree && $sQuant){
     $readyToSubmit = true;
+    return $readyToSubmit;
   }
   else{
-
+    $readyToSubmit = false;
     $fix = $fix.substring(0, $fix.length - 2);
     $fix += ".";
     $('.popup-text').text($fix);
     $('.bottom-popup').animate({
       height: 75
     });
+    $('.popup-text').show();
+    return $readyToSubmit;
   }
-
-  return $readyToSubmit;
 }
