@@ -1,6 +1,7 @@
 $(document).ready(function(){
 	$slideVisible = false;
   $batNum = 0;
+  $prodsActive = false;
 
   if(sessionStorage.getItem("bats") == null){
     $bats = [];
@@ -20,20 +21,7 @@ $(document).ready(function(){
     
 
   });
-  $("#desk-cart").click(function() {
-    
-
-  });
-
-   $(".hamburger").click(function() {
-      $slideVisible = $('.slide-menu').is(':visible');
-      if($slideVisible == false){
-         $(".slide-menu").slideDown("slow");
-      }
-      else {
-         $(".slide-menu").slideUp("slow");
-      }
-   });
+ 
 
 
    $("#shop").click(function() {
@@ -131,4 +119,15 @@ $.fn.scrollViewM = function () {
       scrollTop: $(this).offset().top - 75
     }, 1000);
   });
+}
+
+function checkProds(){
+  if($(".cart-prod").hasClass("prod-active")){
+    $("#cart-button").removeClass("check-button").addClass("remove-button");
+    $("#cart-button").text("REMOVE");
+  }
+  else{
+    $("#cart-button").removeClass("remove-button").addClass("check-button");
+    $("#cart-button").text("CHECKOUT");
+  }
 }

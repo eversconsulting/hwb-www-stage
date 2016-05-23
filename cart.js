@@ -1,80 +1,109 @@
 
+
+
 $(document).ready(function(){
-	getBats();
+
+  //---------Shopify Start------------
+  var shopClient = ShopifyBuy.buildClient({
+      apiKey: 'a8ca2115ba8bf2a471b32d2ee821ffca',
+      myShopifyDomain: 'homewood-bat-co',
+      appId: '6'
+    });
 
 
-	$(".cart-item").click(function() {
-		$(this).css("background-color", "lightblue");
+ 
+   $("#desk-cart").click(function() {
+    $(".side-cart").animate({
+        width: 400
+      });
+  });
 
-	});
+  $(".cart-prod").click(function() {
+    if($(this).hasClass("prod-active")){
+      $(this).removeClass("prod-active");
+      checkProds();
 
-	$(".cart-item").dblclick(function() {
-		$(this).css("background-color", "transparent");
+    }
 
-	});
-	
+    else{
+      $(this).addClass("prod-active");
+      checkProds();
+
+
+    }
+  });
+
+  $("#cart-button").click(function() {
+    if($("#cart-button").hasClass("remove-button")){
+
+      if($(".cart-prod").hasClass("prod-active")){
+        $(".cart-prod").css("pointer-events", "none");
+      }
+
+      $("#cart-check").hide();
+      $("#cart-confirm").show();
+    }
+  });
+
+  $("#yes-button").click(function() {
+    $("#cart-confirm").hide();
+    $("#cart-check").show();
+    $(".prod-active").remove();
+    checkProds();
+    $(".cart-prod").css("pointer-events", "auto");
+  });
+
+  $("#no-button").click(function() {
+    $("#cart-confirm").hide();
+    $("#cart-check").show();
+    $(".cart-prod").removeClass("prod-active");
+    checkProds();
+    $(".cart-prod").css("pointer-events", "auto");
+  });
+
+   $(".hamburger").click(function() {
+      $slideVisible = $('.slide-menu').is(':visible');
+      if($slideVisible == false){
+         $(".slide-menu").slideDown("slow");
+      }
+      else {
+         $(".slide-menu").slideUp("slow");
+      }
+   });
+
+   $(".cart-top-close").click(function() {
+      $(".side-cart").animate({
+        width: 0
+      });
+   });
+
+
+     shopClient.createCart().then(function(newCart){
+    var cart = newCart;
+
+    shopClient.fetchProduct(6052966209).then(function(product){
+      var v = product.variants[0];
+      cart.addVariants({variant: v , quantity: 1, properties: { 'wood' : 'maple', 'handle' : 'black', 'barrel' : 'black', 'logo' : 'gold', 'length' : '33.5', 'finish' : 'glossy', 'engravingStyle' : 'bank gothic', 'engraving' : 'congrats brandon you arent'} });  
+      shopClient.fetchCart(cart.id).then(cart => {
+        console.log(cart); // The retrieved cart
+        var items = cart.lineItems;
+        for (index = 0; index < items.length; ++ index){
+          var item = items[index];
+          var productToAdd = '<div class="cart-prod"><div class="prod-row"><div class="prod-title">Pro Bat</div><div class="prod-quant">1</div></div><div class="prod-row"><div class="prod-col"><div class="prod-wood">'+item.properties.wood+'</div><div class="prod-hand">'+item.properties.handle+' Handle</div><div class="prod-barr">'+item.properties.barrel+' Barrel</div><div class="prod-logo">'+item.properties.logo+' Logo</div></div><div class="prod-col"><div class="prod-leng">'+item.properties.length+'"</div><div class="prod-finish">'+item.properties.finish+' Finish</div><div class="prod-eng-style">'+item.properties.engravingStyle+'</div><div class="prod-eng">"'+item.properties.engraving+'"</div></div></div></div>'
+
+          $(".cart-mid").append(productToAdd);
+        }
+        var locUrl = cart.checkoutUrl;
+        $(".check-a").attr("href", locUrl);
+      });
+    });
+    
+
+    
+  });
 });
 
-function getBats(){
-	$inCart = [];
-	$batData = sessionStorage.getItem("bats");
-	$bats = JSON.parse($batData);
 
-	
-	$.each( $bats, function( index, value ){
-    	//break down bat key for each bat
 
-    	//get handle color
-    	$handleColor = value.charAt(0);
 
-		//translate to full info
 
-    	switch($handleColor){
-			case 'r':
-				$h = 'Red';
-				break;
-			case 'b':
-				$h = 'Blue';
-				break;
-			case 'g':
-				$h = 'Green';
-				break;
-			default:
-				$h = 'none';
-			}
-
-		//get bat color
-    	$batColor = value.charAt(1);
-
-    	//translate to full info
-
-		switch($batColor){
-			case 'r':
-				$b = 'Red';
-				break;
-			case 'b':
-				$b = 'Blue';
-				break;
-			case 'g':
-				$b = 'Green';
-				break;
-			default:
-				$b = 'none';
-			}
-
-    	$bat = {
-    		handle: $h,
-    		bat: $b
-
-    	};
-
-    	$inCart.push($bat);
-    	
-		$(".cart-check").append('<div class="cart-mark"></div>');
-    	$(".cart-list").append('<div class="cart-item" id="item'+index+'"><div class="cart-row"><div class="cart-title">Homewood Test Bat v21</div><div class="cart-price">$59.99</div></div><div class="cart-col"><div class="cart-row"><div class="cart-label">Bat Color:</div><div class="cart-info">'+$b+'</div></div><div class="cart-row"><div class="cart-label">Handle Color:</div><div class="cart-info">'+$h+'</div></div></div></div>');
-
-	});
-
-	
-	
-}

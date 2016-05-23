@@ -86,9 +86,46 @@
 	<script type="text/javascript" src="jquery.js"></script>
 	<script type="text/javascript" src="script.js"></script>
 	<script type="text/javascript" src="customize.js"></script>
+	<script src="http://sdks.shopifycdn.com/js-buy-sdk/latest/shopify-buy.polyfilled.globals.min.js"></script>
+	<script type="text/javascript" src="jquery-ui.js"></script>
+	<script type="text/javascript" src="cart.js"></script>
+
 
 </head>
 <body>
+	<div class="side-cart">
+
+		<div class="cart-top">
+			<div class="cart-top-text">Your Cart</div>
+			<div class="cart-top-close">&#10006;</div>
+		</div>
+
+		<div class="cart-mid">
+			
+			
+		</div>
+
+		<div class="cart-bot">
+			<div id="cart-check">
+				<div class="cart-bot-total">
+					<div class="cart-bot-text">Total</div>
+					<div class="cart-bot-amt">$0</div>
+				</div>
+				<div class="cart-bot-checkout">
+					<a class="check-a" href=""><div id="cart-button" class="check-button">Checkout</div></a>
+				</div>
+			</div>
+			<div id="cart-confirm">
+				<div class="cart-ask-txt">Are you sure?</div>
+				<div class="ask-cont">
+					<div id="yes-button" class="ask-button">Yes</div> 
+					<div id="no-button" class="ask-button">No</div> 
+				</div>
+				
+			</div>
+		</div>
+
+  	</div>
 	<div class="navbar">
 		<div class="logo"></div>
 		
