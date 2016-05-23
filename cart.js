@@ -2,6 +2,7 @@
 
 
 $(document).ready(function(){
+   
 
   //---------Shopify Start------------
   var shopClient = ShopifyBuy.buildClient({
@@ -78,12 +79,11 @@ $(document).ready(function(){
    });
 
 
-     shopClient.createCart().then(function(newCart){
+  shopClient.createCart().then(function(newCart){
     var cart = newCart;
 
     shopClient.fetchProduct(6052966209).then(function(product){
-      var v = product.variants[0];
-      cart.addVariants({variant: v , quantity: 1, properties: { 'wood' : 'maple', 'handle' : 'black', 'barrel' : 'black', 'logo' : 'gold', 'length' : '33.5', 'finish' : 'glossy', 'engravingStyle' : 'bank gothic', 'engraving' : 'congrats brandon you arent'} });  
+      
       shopClient.fetchCart(cart.id).then(cart => {
         console.log(cart); // The retrieved cart
         var items = cart.lineItems;
@@ -96,11 +96,69 @@ $(document).ready(function(){
         var locUrl = cart.checkoutUrl;
         $(".check-a").attr("href", locUrl);
       });
-    });
-    
-
-    
+    }); 
   });
+
+
+  $("#add1").click(function(){
+    $batEngraving = $('#engraving1').val();
+    $batQuantity = $('#q1').val();
+    $agree = $('#ack-checked').is(':visible');
+
+    $batWood = $batWood.substring(0, 1).toUpperCase() + $batWood.substring(1);
+    $bat = $bat.toUpperCase();
+    $batTwoHandle = $batTwoHandle.substring(0, 1).toUpperCase() + $batTwoHandle.substring(1);
+    $batTwoBarrel = $batTwoBarrel.substring(0, 1).toUpperCase() + $batTwoBarrel.substring(1);
+    $batLogoColor = $batLogoColor.substring(0, 1).toUpperCase() + $batLogoColor.substring(1);
+    $batFinish = $batFinish.substring(0, 1).toUpperCase() + $batFinish.substring(1);
+    $batLength = $batLength.substring(0, 1).toUpperCase() + $batLength.substring(1);
+    
+    $batEngravingStyle = $batEngravingStyle.substring(0, 1).toUpperCase() + $batEngravingStyle.substring(1);
+   
+
+    shopClient.createCart().then(function(newCart){
+      var cart = newCart;
+      var batNum;
+      switch($bat){
+        case 'PRO':
+          $batNum = 6052966209;
+    
+        break;
+
+        default:
+
+        break;
+      }
+
+      shopClient.fetchProduct($batNum).then(function(product){
+        var v = product.variants[0];
+        cart.addVariants({variant: v , quantity: 1, properties: { 'wood' : $batWood, 'handle' : $batTwoHandle, 'barrel' : $batTwoBarrel, 'logo' : $batLogoColor, 'length' : $batLength, 'finish' : $batFinish, 'engravingStyle' : $batEngravingStyle, 'engraving' : $batEngraving} });  
+        shopClient.fetchCart(cart.id).then(cart => {
+          console.log(cart); // The retrieved cart
+          var items = cart.lineItems;
+          for (index = 0; index < items.length; ++ index){
+            var item = items[index];
+            var productToAdd = '<div class="cart-prod"><div class="prod-row"><div class="prod-title">'+$bat+' BAT</div><div class="prod-quant">'+$batQuantity+'</div></div><div class="prod-row"><div class="prod-col"><div class="prod-wood">'+item.properties.wood+'</div><div class="prod-hand">'+item.properties.handle+' Handle</div><div class="prod-barr">'+item.properties.barrel+' Barrel</div><div class="prod-logo">'+item.properties.logo+' Logo</div></div><div class="prod-col"><div class="prod-leng">'+item.properties.length+'"</div><div class="prod-finish">'+item.properties.finish+' Finish</div><div class="prod-eng-style">'+item.properties.engravingStyle+'</div><div class="prod-eng">"'+item.properties.engraving+'"</div></div></div></div>'
+
+            $(".cart-mid").append(productToAdd);
+          }
+          var locUrl = cart.checkoutUrl;
+          $(".check-a").attr("href", locUrl);
+        });
+      });
+
+
+
+
+
+    });
+
+  });
+
+
+ 
+
+
 });
 
 

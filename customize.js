@@ -564,85 +564,80 @@ $(document).ready(function() {
 	  	checkCustom();
 	});
 
-	$("#add").click(function() {
-		$batEngraving = $('#engraving1').val();
-		$batQuantity = $('#q1').val();
-		if( $('#ack-checked').not(':hidden'))
-			$agree = true;
-		else
-			$agree = false;
+	// $("#add").click(function() {
+	// 	$batEngraving = $('#engraving1').val();
+	// 	$batQuantity = $('#q1').val();
+	// 	if( $('#ack-checked').not(':hidden'))
+	// 		$agree = true;
+	// 	else
+	// 		$agree = false;
 
-		$batNum = 0;
-		$batArray = JSON.parse(sessionStorage.getItem("bats"));
+	// 	$batNum = 0;
+	// 	$batArray = JSON.parse(sessionStorage.getItem("bats"));
 	   
-	    $newBat = new Object();
-	    $newBat.type = $bat;
-	    $newBat.wood = $batWood;
-	    $newBat.color = $batColor;
-	    $newBat.optional = $batTwoOption;
-	    $newBat.optionalHandle = $batTwoHandle;
-	    $newBat.optionalBarrel = $batTwoBarrel;
-	    $newBat.logoColor = $batLogoColor;
-	    $newBat.finish = $batFinish;
-	    $newBat.length = $batLength;
-	    $newBat.weight = $batWeight;
-	    $newBat.endCup = $batEndCup;
-	    $newBat.engravingStyle = $batEngravingStyle;
-	    $newBat.engraving = $batEngraving;
-	    $newBat.quantity = $batQuantity;
-	    $newBat.agree = $agree;
+	//     $newBat = new Object();
+	//     $newBat.type = $bat;
+	//     $newBat.wood = $batWood;
+	//     $newBat.color = $batColor;
+	//     $newBat.optional = $batTwoOption;
+	//     $newBat.optionalHandle = $batTwoHandle;
+	//     $newBat.optionalBarrel = $batTwoBarrel;
+	//     $newBat.logoColor = $batLogoColor;
+	//     $newBat.finish = $batFinish;
+	//     $newBat.length = $batLength;
+	//     $newBat.weight = $batWeight;
+	//     $newBat.endCup = $batEndCup;
+	//     $newBat.engravingStyle = $batEngravingStyle;
+	//     $newBat.engraving = $batEngraving;
+	//     $newBat.quantity = $batQuantity;
+	//     $newBat.agree = $agree;
 
-	    console.log($newBat);
+	//     console.log($newBat);
 
-		$batArray.push($newBat);
-	   
-	    
-	   
-	    sessionStorage.setItem("bats", JSON.stringify($batArray));
-	    $myArray = JSON.parse(sessionStorage.getItem("bats"));
-	    for ($i=0; $i<$myArray.length; $i++){
-	        $batNum += 1;
-	    }
-	    $(".notify").text($batNum);
-	});
-	$("#add1").click(function() {
-		$batEngraving = $('#engraving1').val();
-		$batQuantity = $('#q1').val();
-		$agree = $('#ack-checked').is(':visible');
-
-		$batNum = 0;
-		$batArray = JSON.parse(sessionStorage.getItem("bats"));
-	   
-	    $newBat = new Object();
-	    $newBat.type = $bat;
-	    $newBat.wood = $batWood;
-	    $newBat.color = $batColor;
-	    $newBat.optional = $batTwoOption;
-	    $newBat.optionalHandle = $batTwoHandle;
-	    $newBat.optionalBarrel = $batTwoBarrel;
-	    $newBat.logoColor = $batLogoColor;
-	    $newBat.finish = $batFinish;
-	    $newBat.length = $batLength;
-	    $newBat.weight = $batWeight;
-	    $newBat.endCup = $batEndCup;
-	    $newBat.engravingStyle = $batEngravingStyle;
-	    $newBat.engraving = $batEngraving;
-	    $newBat.quantity = $batQuantity;
-	    $newBat.agree = $agree;
-
-	    console.log($newBat);
-
-		$batArray.push($newBat);
+	// 	$batArray.push($newBat);
 	   
 	    
 	   
-	    sessionStorage.setItem("bats", JSON.stringify($batArray));
-	    $myArray = JSON.parse(sessionStorage.getItem("bats"));
-	    for ($i=0; $i<$myArray.length; $i++){
-	        $batNum += 1;
-	    }
-	    $(".notify").text($batNum);
-	});
+	//     sessionStorage.setItem("bats", JSON.stringify($batArray));
+	//     $myArray = JSON.parse(sessionStorage.getItem("bats"));
+	//     for ($i=0; $i<$myArray.length; $i++){
+	//         $batNum += 1;
+	//     }
+	//     $(".notify").text($batNum);
+	// });
+	// $("#add1").click(function() {
+	// 	$batEngraving = $('#engraving1').val();
+	// 	$batQuantity = $('#q1').val();
+	// 	$agree = $('#ack-checked').is(':visible');
+
+		
+	// 	$batArray = JSON.parse(sessionStorage.getItem("bats"));
+	   
+	//     $newBat = new Object();
+	//     $newBat.type = $bat;
+	//     $newBat.wood = $batWood;
+	//     $newBat.color = $batColor;
+	//     $newBat.optional = $batTwoOption;
+	//     $newBat.optionalHandle = $batTwoHandle;
+	//     $newBat.optionalBarrel = $batTwoBarrel;
+	//     $newBat.logoColor = $batLogoColor;
+	//     $newBat.finish = $batFinish;
+	//     $newBat.length = $batLength;
+	//     $newBat.weight = $batWeight;
+	//     $newBat.endCup = $batEndCup;
+	//     $newBat.engravingStyle = $batEngravingStyle;
+	//     $newBat.engraving = $batEngraving;
+	//     $newBat.quantity = $batQuantity;
+	//     $newBat.agree = $agree;
+
+	//     console.log($newBat);
+
+	// 	$batArray.push($newBat);
+	   
+	    
+	   
+	   
+	// });
 
 	$(".details-list-items").click(function() {
 		$(".details-list-items").removeClass("model-select");
@@ -652,6 +647,7 @@ $(document).ready(function() {
 		$("#cb").removeClass("disable");
 
 		$currentModel = $(this).text();
+		
 
 
 

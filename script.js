@@ -63,32 +63,7 @@ $(document).ready(function(){
       $(".slide-menu").slideUp("fast");
    });
 
-   $(".cart-icon").click(function() {
-      $link = "myshop-shopify/cart/";
-      $batData = sessionStorage.getItem("bats");
-
-      $bats = JSON.parse($batData);
-
-        $.each($bats, function(){
-          switch(this.type){
-            case "pro":
-              console.log("pro");
-              break;
-            case "game":
-              console.log("game");
-              break;
-            case "fungo":
-              console.log("fungo");
-              break;
-            case "youth":
-              console.log("youth");
-              break;
-            default:
-              console.log("other");
-              break;
-          }
-      });
-   });
+   
 
    
 
