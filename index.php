@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html> 
+<html>
 <head>
 	<title>Homewood Bat</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,7 +22,7 @@
 		</div>
 
 		<div class="cart-mid">
-			
+
 		</div>
 
 		<div class="cart-bot">
@@ -38,18 +38,18 @@
 			<div id="cart-confirm">
 				<div class="cart-ask-txt">Are you sure?</div>
 				<div class="ask-cont">
-					<div id="yes-button" class="ask-button">Yes</div> 
-					<div id="no-button" class="ask-button">No</div> 
+					<div id="yes-button" class="ask-button">Yes</div>
+					<div id="no-button" class="ask-button">No</div>
 				</div>
-				
+
 			</div>
 		</div>
 
   	</div>
-	
+
 	<div class="navbar">
 		<div class="logo"></div>
-		
+
 		<ul class="navbar-items">
 			<li id="home">HOME</li>
 			<li id="shop">SHOP</li>
@@ -69,12 +69,12 @@
 			</div>
 		</div>
 
-		
+
 
 		<div class="navbar-icons">
-			<a href="https://www.instagram.com/homewoodbat/"><div id="instagram" class="nav-icon"></div></a>
-			<a href="https://www.facebook.com/homewoodbat/"><div id="facebook" class="nav-icon"></div></a>
-			<a href="https://twitter.com/HomewoodBat/"><div id="twitter" class="nav-icon"></div></a>
+			<a href="https://www.instagram.com/homewoodbat/" target="_blank"><div id="instagram" class="nav-icon"></div></a>
+			<a href="https://www.facebook.com/homewoodbat/" target="_blank"><div id="facebook" class="nav-icon"></div></a>
+			<a href="https://twitter.com/HomewoodBat/" target="_blank"><div id="twitter" class="nav-icon"></div></a>
 		</div>
 
 		<div id="desk-cart" class="cart">
@@ -82,9 +82,9 @@
 			<img class="cart-icon" src="assets/cart.png">
 		</div>
 
-		
 
-		
+
+
 
 	</div>
 	<div class="navbar-spacer"></div>
@@ -94,11 +94,11 @@
 		<div id="mnews" class="slide-option">NEWS</div>
 		<div id="mcontact" class="slide-option">CONTACT</div>
 		<div id="mabout" class="slide-option">ABOUT</div>
-		
+
 
 
 	</div>
-	
+
 
 	 <script type="text/javascript">
 	// 	$cart = sessionStorage.getItem("cart");
@@ -107,16 +107,16 @@
 	// 		sessionStorage.setItem("cart", 0);
 	// 		$("#cartShow").text("Cart (" + sessionStorage.cart +")");
 	// 	}
-		
+
 	// 	$("#cartShow").text("Cart (" + sessionStorage.cart +")");
-		
+
 	 </script>
 
 
 	</div>
-	
+
 	<div class="section" id="sec1">
-		
+
 		<div class="img-top"></div>
 		<div class="spacer">THE SWEET SOUND OF A HOMEWOOD BAT<sup>&#174;</sup></div>
 
@@ -127,7 +127,7 @@
 				<div class="section-titleB">BATS & ACCESSORIES</div>
 				<div class="title-lineB"></div>
 			</div>
-			
+
 				<div id="desktop-shop" class="shop-inner">
 					<div class="shop-box">
 					<a href="customize.php?id=pro"><div id="pro-bat" class="select-area"></div></a>
@@ -145,8 +145,8 @@
 							<div class="item-picture"><img class="img-bat" src="assets/tshirt2.png"></div>
 							<div class="item-desc">HBC SWEET SOUND SHORT SLEEVE SHIRT <br> $25</div>
 						</div>
-						
-						
+
+
 					</div>
 					<div class="spacer-col"></div>
 					<div class="shop-container" id="s2">
@@ -154,8 +154,8 @@
 							<div class="item-picture"><img class="img-bat" src="assets/tshirt.png"></div>
 							<div class="item-desc">HBC DISTRESSED LOGO 3/4 SLEEVE SHIRT<br> $35</div>
 						</div>
-						
-						
+
+
 					</div>
 					<div class="spacer-col"></div>
 					<div class="shop-container" id="s3">
@@ -163,12 +163,12 @@
 							<div class="item-picture"><img class="img-bat" src="assets/hat.png"></div>
 							<div class="item-desc">HBC LOGO HAT <br> $30</div>
 						</div>
-						
+
 					</div>
-					
+
 					<div class="acc-info">TO ORDER ACCESSORIES CALL 708.713.8000 FOR SIZES AND COLORS <br> OR EMAIL US AT INFO@HOMEWOODBAT.COM</div>
 
-					
+
 
 				</div>
 
@@ -197,8 +197,8 @@
 						<div class="mobile-item-title">ACCESSORIES</div>
 						<div class="mobile-item-selector">&#x2771;</div>
 					</div>
-					
-				</div>	
+
+				</div>
 	</div>
 	<div class="section" id="sec3" style="background-color: rgb(250, 245, 234); height: 600px;">
 		<div class="title-row">
@@ -229,7 +229,7 @@
 			</div>
 
 		</div>
-			
+
 	</div>
 	<div class="section" id="sec4" style="background-color: rgb(250, 245, 234);">
 		<div class="title-row">
@@ -290,7 +290,7 @@
 				<div class="star">&#9733;</div>
 				<div class="about-sub" id="bottom-sub">Come visit us and see for yourself!</div>
 			</div>
-			
+
 			<div class="title-row-staff">
 				<div class="staff-title-inner">
 					<div class="title-line-staff"></div>
@@ -298,9 +298,9 @@
 					<div class="title-line-staff"></div>
 				</div>
 			</div>
-			
 
-		
+
+
 			<div class="staff-container">
 				<div class="staff-inner-top">
 					<div class="staffer-top">
@@ -330,19 +330,19 @@
 						<div class="staff-title-bottom">CARLY HOGAN</div>
 						<div class="staff-caption-bottom">LASER ENGRAVER <br> EXTRAORDINARE</div>
 					</div>
-					
+
 				</div>
 			</div>
-				
-				
-			
-		
-			<div class="cart-row">
-				
-			</div>
-			
 
-		
+
+
+
+			<div class="cart-row">
+
+			</div>
+
+
+
 
 
 			<div class="sweet-sound">THE SWEET SOUND OF A HOMEWOOD BAT<sup>&#174;</sup></div>
@@ -401,12 +401,12 @@
 	<div class="footer">
 
 		<div class="footer-icons">
-			<a href="https://www.instagram.com/homewoodbat/"><div id="instagram" class="nav-icon"></div></a>
-			<a href="https://www.facebook.com/homewoodbat/"><div id="facebook" class="nav-icon"></div></a>
-			<div id="twitter" class="nav-icon"></div>
+			<a href="https://www.instagram.com/homewoodbat/" target="_blank"><div id="instagram" class="nav-icon"></div></a>
+			<a href="https://www.facebook.com/homewoodbat/" target="_blank"><div id="facebook" class="nav-icon"></div></a>
+			<a href="https://twitter.com/HomewoodBat/" target="_blank"><div id="twitter" class="nav-icon"></div></a>
 		</div>
 		<div class="footer-text">HOMEWOOD BAT CO | 17845 BRETZ DRIVE | HOMEWOOD IL 60430 | 708.713.8000 | INFO@HOMEWOODBAT.COM | &copy;2016 ALL RIGHTS RESERVED</div>
 	</div>
-	
+
 </body>
 </html>

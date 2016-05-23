@@ -1,5 +1,5 @@
 /*
-colors: 
+colors:
 
 cream: rgb(250, 245, 234);
 dark blue: rgb(24, 53, 80);
@@ -29,14 +29,14 @@ ul a {
 }
 
 .cart {
-	
+
 	width: 30px;
 	height: 30px;
 	float: right;
 	margin-top: 47px;
 	margin-right: 20px;
 
-	
+
 }
 
 .cart-icon {
@@ -44,7 +44,7 @@ ul a {
 	height: 30px;
 	background-size: 30px 30px;
 	background-image: url("assets/cart2.png");
-	
+
 }
 
 .spacer {
@@ -62,9 +62,9 @@ ul a {
 .main-image {
 	width: 100%;
 	height: 400px;
-	
+
 	}
-	
+
 #sec1 {
 	height: auto;
 	overflow: hidden;
@@ -106,8 +106,8 @@ ul a {
 	left: 0;
 	right: 0;
 
-	
-	
+
+
 }
 
 .notify {
@@ -197,9 +197,9 @@ ul a {
 	padding-right: 10px;
 	cursor: pointer;
 
-	
+
 	transition:
-				
+
 				color 0.3s linear;
 }
 
@@ -211,13 +211,13 @@ ul a {
 
 #sec2 {
 	height: auto;
-	
+
 
 }
 .section {
 	width: 100%;
 	height: 600px;
-	
+
 }
 
 .shop-inner {
@@ -255,8 +255,8 @@ ul a {
 	height: 100px;
 	margin-left: auto;
 	margin-right: auto;
-	
-	
+
+
 }
 .section-titleB {
 	padding-top: 10px;
@@ -281,8 +281,8 @@ ul a {
 	height: 70px;
 	margin-left: auto;
 	margin-right: auto;
-	
-	
+
+
 }
 
 
@@ -290,7 +290,7 @@ ul a {
 	padding-top: 300px;
 	font-size: 50px;
 	text-align: center;
-	
+
 
 }
 
@@ -335,7 +335,7 @@ ul a {
 
 
 .button {
-	transition: 
+	transition:
 				background-color 0.5s linear,
 				color 0.5s linear;
 	width: 150px;
@@ -371,7 +371,7 @@ ul a {
 .disable {
 	background-color: maroon;
 	color: black;
-	pointer-events: none; 
+	pointer-events: none;
 
 }
 
@@ -394,7 +394,7 @@ ul a {
 .button:hover {
 	background-color: rgb(252, 116, 44);
 	color: rgb(24, 53, 80);
-	
+
 }
 
 
@@ -418,7 +418,7 @@ ul a {
 
 #s1 {
 	float: left;
-	
+
 }
 
 #s2 {
@@ -542,7 +542,7 @@ ul a {
 	width: 100%;
 	height: auto;
 	border-top: solid;
-	
+
 	border-color: black;
 	border-width: 1px;
 	padding-top: 10px;
@@ -575,7 +575,7 @@ ul a {
 	font-size: 30px;
 	float: left;
 	text-align: right;
-	
+
 }
 
 .cart-col {
@@ -635,7 +635,7 @@ sup {
 
 .bat-general {
 	width: 550px;
-	
+
 	color: rgb(24, 53, 80);
 	font-family: secondFont;
 	padding-top: 10px;
@@ -728,7 +728,7 @@ sup {
 	transition:	border-color 0.5s linear,
 				background-color 0.5s linear,
 				color 0.5s linear;
-	
+
 }
 
 .details-list-items:hover {
@@ -777,7 +777,7 @@ sup {
 	width: 900px;
 	margin-right: auto;
 	margin-left: auto;
-	
+
 }
 
 .customize-image-left {
@@ -785,7 +785,7 @@ sup {
 	height: 100px;
 	float: left;
 	background-image: url("assets/proHandles/prohunfin.png");
-	
+
 }
 .customize-image-right {
 	width: 450px;
@@ -802,7 +802,7 @@ sup {
 
 #optional-title {
 	padding-top: 10px;
-	
+
 }
 
 .cart-col3 {
@@ -864,7 +864,7 @@ sup {
 	line-height: 50px;
 	vertical-align: middle;
 	cursor: pointer;
-	
+
 }
 
 .colorX {
@@ -922,7 +922,7 @@ sup {
 	float: left;
 	margin-right: 10px;
 	margin-left: 10px;
-	
+
 	line-height: 50px;
 	vertical-align: middle;
 
@@ -969,7 +969,7 @@ sup {
 .model-select {
 	background-color: rgb(252, 116, 44);
 	color: rgb(24, 53, 80);
-	
+
 }
 
 .map {
@@ -1104,7 +1104,7 @@ sup {
 	width: 200px;
 	height: 275px;
 	background-color: black;
-	
+
 	margin-right: 50px;
 	margin-left: 50px;
 }
@@ -1126,7 +1126,7 @@ sup {
 	width: 300px;
 	text-align: center;
 	font-size: 25px;
-	 
+
 }
 .staff-caption-top {
 	width: 300px;
@@ -1153,7 +1153,7 @@ sup {
 	width: 280px;
 	text-align: center;
 	font-size: 25px;
-	 
+
 }
 .staff-caption-bottom {
 	width: 280px;
@@ -1283,7 +1283,7 @@ sup {
 	font-weight: bold;
 	color: rgb(53, 95, 106);
 	padding-right: 20px;
-	
+
 }
 
 .promo-contact {
@@ -1395,7 +1395,7 @@ option {
 	background-image: url("assets/fiveshop.png");
 	margin-left: auto;
 	margin-right: auto;
-	
+
 }
 
 .select-area {
@@ -1421,7 +1421,7 @@ option {
 	vertical-align: middle;
 }
 .section-title-staff {
-	
+
 	font-size: 30px;
 	color: rgb(24, 53, 80);
 	width: 300px;
@@ -1429,7 +1429,7 @@ option {
 	float: left;
 	margin-right: 40px;
 	margin-left: 40px;
-	
+
 	}
 
 .title-line-staff {
@@ -1446,10 +1446,10 @@ option {
 	height: 150px;
 	margin-left: auto;
 	margin-right: auto;
-	
+
 	overflow: hidden;
-	
-	
+
+
 }
 .staff-title-inner {
 	width: 800px;
@@ -1549,6 +1549,7 @@ option {
 }
 
 #cart-button {
+
 	width: 90%;
 	height: 65%;
 	margin-left: auto;
@@ -1563,13 +1564,19 @@ option {
 	vertical-align: middle;
 	color: rgb(250, 245, 234);
 	cursor: pointer;
-	-webkit-user-select: none;  
-    -moz-user-select: none;     
-    -ms-user-select: none; 
+	-webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
     transition:
 				background-color 0.8s ease;
 
 }
+
+.check-a {
+	text-decoration: none;
+}
+
+
 .remove-button {
 	background-color: red;
 }
@@ -1580,9 +1587,9 @@ option {
 	border-bottom: solid;
 	border-width: 1px;
 	border-color: rgb(229, 229, 229);
-	-webkit-user-select: none;  
-    -moz-user-select: none;     
-    -ms-user-select: none;  
+	-webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 .prod-active {
@@ -1628,7 +1635,7 @@ option {
 
 #cart-check {
 	height: 100%;
-	
+
 }
 
 
@@ -1674,6 +1681,27 @@ option {
 	background-color: red;
 }
 
+.bottom-popup {
+	width: 100%;
+	height: 0;
+	max-height: 75px;
+	background-color: rgba(255, 0, 0, 0.8);
+	position: fixed;
+	z-index: 1000;
+	bottom: 0;
+	font-size: 17px;
+	font-family: secondFont;
+	font-weight: bold;
+}
+.dismiss-popup {
+	height: 75px;
+	width: 50px;
+	float: right;
+	color: black;
+	text-decoration: underline;
+	font-size: 17px;
+}
+
 
 
 
@@ -1708,8 +1736,8 @@ option {
 	height: 50px;
 	margin-left: auto;
 	margin-right: auto;
-	
-	
+
+
 }
 
 a[href^="tel"]{
@@ -1753,12 +1781,12 @@ a[href^="tel"]{
 }
 
 .hamburger {
-	
+
 	width: 50px;
 	height: 75px;
 
 	float: left;
-	
+
 }
 
 #desk-cart {
@@ -1834,8 +1862,8 @@ a[href^="tel"]{
 	overflow: hidden;
 	margin-right: auto;
 	margin-left: auto;
-	
-	
+
+
 }
 
 .mobile-item-title {
@@ -1861,7 +1889,7 @@ a[href^="tel"]{
 }
 
 #gc {
-	
+
 }
 
 #sec3 {
@@ -1920,7 +1948,7 @@ a[href^="tel"]{
 	width: 300px;
 	margin-right: auto;
 	margin-left: auto;
-	
+
 }
 
 #sec5 {
@@ -1965,14 +1993,14 @@ a[href^="tel"]{
 	height: 32px;
 	margin-top: 23px;
 	margin-right: 5px;
-	
+
 
 }
 
 .cart-icon {
 	width: 32px;
 	height: 32px;
-	
+
 	background-size: 32px 32px;
 	background-image: url("assets/cart.png");
 }
@@ -2132,7 +2160,7 @@ a {
 	transition:	border-color 0.5s linear,
 				background-color 0.5s linear,
 				color 0.5s linear;
-	
+
 }
 
 .models-select {
@@ -2216,7 +2244,7 @@ a {
 	float: left;
 	margin-right: 0;
 	margin-left: 0;
-	
+
 	line-height: 20px;
 	vertical-align: middle;
 
@@ -2259,7 +2287,7 @@ a {
 .disable {
 	background-color: maroon;
 	color: black;
-	pointer-events: none; 
+	pointer-events: none;
 
 }
 
@@ -2377,7 +2405,7 @@ a {
 .bat-image-m {
 	height: 175px;
 	width: 37px;
-	
+
 	margin-left: 45px;
 }
 
@@ -2437,12 +2465,12 @@ a[href^="tel"]{
 }
 
 .hamburger {
-	
+
 	width: 50px;
 	height: 75px;
 
 	float: left;
-	
+
 }
 
 #desk-cart {
@@ -2518,8 +2546,8 @@ a[href^="tel"]{
 	overflow: hidden;
 	margin-right: auto;
 	margin-left: auto;
-	
-	
+
+
 }
 
 .mobile-item-title {
@@ -2545,7 +2573,7 @@ a[href^="tel"]{
 }
 
 #gc {
-	
+
 }
 
 #sec3 {
@@ -2600,7 +2628,7 @@ a[href^="tel"]{
 	width: 400px;
 	margin-right: auto;
 	margin-left: auto;
-	
+
 }
 
 #sec5 {
@@ -2645,14 +2673,14 @@ a[href^="tel"]{
 	height: 32px;
 	margin-top: 23px;
 	margin-right: 5px;
-	
+
 
 }
 
 .cart-icon {
 	width: 32px;
 	height: 32px;
-	
+
 	background-size: 32px 32px;
 	background-image: url("assets/cart.png");
 }
@@ -2812,7 +2840,7 @@ a {
 	transition:	border-color 0.5s linear,
 				background-color 0.5s linear,
 				color 0.5s linear;
-	
+
 }
 
 .models-select {
@@ -2896,7 +2924,7 @@ a {
 	float: left;
 	margin-right: 0;
 	margin-left: 0;
-	
+
 	line-height: 20px;
 	vertical-align: middle;
 
@@ -2939,7 +2967,7 @@ a {
 .disable {
 	background-color: maroon;
 	color: black;
-	pointer-events: none; 
+	pointer-events: none;
 
 }
 
@@ -3057,7 +3085,7 @@ a {
 .bat-image-m {
 	height: 175px;
 	width: 37px;
-	
+
 	margin-left: 45px;
 }
 

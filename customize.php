@@ -71,18 +71,18 @@
 			$showPromo = true;
 
 			break;
-		
+
 		default:
 			# code...
 			break;
 	}
 ?>
-<html> 
+<html>
 <head>
 	<title>Homewood Bat</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="styles.css">
-	
+
 	<script type="text/javascript" src="jquery.js"></script>
 	<script type="text/javascript" src="script.js"></script>
 	<script type="text/javascript" src="customize.js"></script>
@@ -91,8 +91,10 @@
 	<script type="text/javascript" src="cart.js"></script>
 
 
+
 </head>
 <body>
+
 	<div class="side-cart">
 
 		<div class="cart-top">
@@ -101,8 +103,8 @@
 		</div>
 
 		<div class="cart-mid">
-			
-			
+
+
 		</div>
 
 		<div class="cart-bot">
@@ -118,17 +120,23 @@
 			<div id="cart-confirm">
 				<div class="cart-ask-txt">Are you sure?</div>
 				<div class="ask-cont">
-					<div id="yes-button" class="ask-button">Yes</div> 
-					<div id="no-button" class="ask-button">No</div> 
+					<div id="yes-button" class="ask-button">Yes</div>
+					<div id="no-button" class="ask-button">No</div>
 				</div>
-				
+
 			</div>
 		</div>
 
   	</div>
+
+		<div class="bottom-popup">
+			<div class="popup-text"></div>
+			<div class="dismiss-popup">Ok</div>
+		</div>
+
 	<div class="navbar">
 		<div class="logo"></div>
-		
+
 		<ul class="navbar-items">
 			<a href="index.php"><li id="home">HOME</li></a>
 		</ul>
@@ -144,7 +152,7 @@
 			</div>
 		</div>
 
-		
+
 		<div id="desk-cart" class="cart">
 			<div class="notify" style="display: none">2</div>
 			<img class="cart-icon" src="assets/cart.png">
@@ -156,9 +164,9 @@
 			<div id="twitter" class="nav-icon"></div>
 		</div>
 
-		
 
-		
+
+
 
 	</div>
 	<div class="navbar-spacer"></div>
@@ -168,22 +176,22 @@
 		<div id="mnews" class="slide-option">NEWS</div>
 		<div id="mcontact" class="slide-option">CONTACT</div>
 		<div id="mabout" class="slide-option">ABOUT</div>
-		
+
 
 
 	</div>
 
-	
+
 	<div class="section" id="customize-sec">
 		<div id="desktop-custom">
 			<div class="display-bat">
 				<div class="cart-spec">
 				<div class="cart-col col-spec">
-					
+
 						<div class="bat-image desktop-bat-img"></div>
-			
-					
-					
+
+
+
 				</div>
 				<div class="cart-col">
 					<div class="col-inner">
@@ -218,8 +226,8 @@
 						<br>
 						<br>
 						</div>
-						
-						
+
+
 
 						<div class="bat-details">
 						<?php
@@ -228,14 +236,14 @@
 									echo '<div class="details-title">Models</div>';
 								}
 								echo '<ul class="details-list">';
-								
+
 									$index = 0;
 									foreach ($models as $value) {
 
 										echo "<li><div class='details-container'><div class='details-list-items' id=$value>$value</div><div class='details-text'>$desc[$value]</div></div></li>";
 										$index += 1;
 									}
-								
+
 								echo '</ul>';
 							}
 							else{
@@ -243,7 +251,7 @@
 							}
 
 						?>
-							
+
 
 						</div>
 						<?php
@@ -256,7 +264,7 @@
 							}
 						}
 						else{
-							
+
 						}
 
 					?>
@@ -283,11 +291,11 @@
 							echo '<div class="details-title">MODELS:</div>';
 							echo '<select id="models-select"class="models-select">';
 								echo '<option selected="selected">Choose</option>';
-							
+
 									foreach ($models as $value) {
 										echo "<option id=$value value=$value>$value</option>";
 									}
-								
+
 							echo '</select>';
 							echo '<div id="barrel"></div>';
 							echo '<div id="handle"></div>';
@@ -335,17 +343,17 @@
 
 						<div class="color-title">WOOD TYPE</div>
 						<div id="woodList" class="color-cont">
-							
+
 						</div>
-						
+
 				</div>
 
 				<div class="cart-row">
 						<div class="color-title">BAT COLOR</div>
 						<div class="color-cont">
-							
-							   
-							
+
+
+
 							<div id="bc1" title="Unfinished" class="color"></div>
 							<div id="bc2" title="Natural" class="color"></div>
 							<div id="bc3" title="Black" class="color"></div>
@@ -374,7 +382,7 @@
 									</div>
 							</div>
 						</div>
-					</div>			
+					</div>
 					<div class="cart-row">
 						<div class="cart-col">
 							<div class="color-title">LOGO & ENGRAVING</div>
@@ -399,7 +407,7 @@
 						<div id="lengthList" class="color-cont">
 						</div>
 					</div>
-				
+
 				<!-- <?php
 					if($showWeight == false){
 
@@ -409,13 +417,7 @@
 					}
 				?> -->
 
-				<div class="cart-row">
-						<div class="color-title">END CUP</div>
-						<div class="color-cont">
-							<div id="e1" class="color">YES</div>
-							<div id="e2" class="color">NO</div>
-						</div>
-				</div>
+
 
 				<div class="cart-row">
 						<div class="color-title">CUSTOM ENGRAVING LETTERING STYLE</div>
@@ -454,16 +456,16 @@
 					<div class="button-title">ONLINE STORE COMING SOON! PLEASE CALL 708.713.8000 TO ORDER</div>
 				</div>
 
-				
-				
-				
+
+
+
 			</div>
 		</div>
 
 
 	</div>
 	<div id="mobile-bat" class="customize-bat">
-		
+
 			<div class="customize-model"></div>
 			<div class="customize-image"></div>
 			<div class="options-cont">
@@ -519,9 +521,9 @@
 								</div>
 							</div>
 						</div>
-					</div>			
+					</div>
 					<div class="cart-row">
-						
+
 							<div class="color-title">LOGO & ENGRAVING</div>
 								<div class="styled-select">
 								   <select id="wood-select">
@@ -532,7 +534,7 @@
 								     <option id="lc4">White</option>
 								   </select>
 								</div>
-					
+
 						<div class="cart-row">
 							<div class="color-title">FINISH</div>
 								<div class="styled-select">
@@ -553,7 +555,7 @@
 						   </select>
 						</div>
 					</div>
-				
+
 				<?php
 					if($showWeight == false){
 
@@ -564,16 +566,7 @@
 					}
 				?>
 
-				<div class="cart-row">
-						<div class="color-title">END CUP</div>
-						<div class="styled-select">
-						   <select>
-						     <option selected="selected">Choose</option>
-						     <option>YES</option>
-						     <option>NO</option>
-						   </select>
-						</div>
-				</div>
+				
 
 				<div class="cart-row">
 						<div class="color-title">CUSTOM ENGRAVING LETTERING STYLE</div>
@@ -612,20 +605,20 @@
 
 				<div class="cart-row">
 					<div class="button" id="add">ADD TO CART</div>
-					
+
 				</div>
 
 				<div class="cart-row">
-					
+
 					<div class="button-title">ONLINE STORE COMING SOON! PLEASE CALL 708.713.8000 TO ORDER</div>
 				</div>
 
-			
 
-				
-				
-				
-			
+
+
+
+
+
 		</div>
 
 
