@@ -186,8 +186,7 @@ function requireDesktop() {
   var $sBarrel = false;
   var $sLogo = false;
   var $sLength = false;
-  var $sEngStyle = false;
-  var $sEng = false;
+  
   var $sAgree = false;
   var $sQuant = false;
   var $readyToSubmit = false;
@@ -224,18 +223,8 @@ function requireDesktop() {
   else{
     $fix += "Bat Length, ";
   }
-  if($batEngravingStyle != ''){
-    $sEngStyle = true;
-  }
-  else{
-    $fix += "Engraving Style, ";
-  }
-  if($batEngraving != ''){
-    $sEng = true;
-  }
-  else{
-    $fix += "Engraving, ";
-  }
+
+
   if($('#ack-checked').is(':visible')){
     $sAgree = true;
   }
