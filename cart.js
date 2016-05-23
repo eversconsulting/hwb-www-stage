@@ -26,20 +26,7 @@ $(document).ready(function(){
       });
   });
 
-  $(".cart-prod").click(function() {
-    if($(this).hasClass("prod-active")){
-      $(this).removeClass("prod-active");
-      checkProds();
 
-    }
-
-    else{
-      $(this).addClass("prod-active");
-      checkProds();
-
-
-    }
-  });
 
   $("#cart-button").click(function() {
     if($("#cart-button").hasClass("remove-button")){
@@ -50,6 +37,17 @@ $(document).ready(function(){
 
       $("#cart-check").hide();
       $("#cart-confirm").show();
+    }
+  });
+  $(".cart-prod").click(function() {
+    if($(this).hasClass("prod-active")){
+      $(this).removeClass("prod-active");
+      checkProds();
+
+    }
+    else{
+      $(this).addClass("prod-active");
+      checkProds();
     }
   });
 
@@ -155,6 +153,7 @@ $(document).ready(function(){
               var productToAdd = '<div class="cart-prod"><div class="prod-row"><div class="prod-title">'+$bat+' BAT</div><div class="prod-quant">'+$batQuantity+'</div></div><div class="prod-row"><div class="prod-col"><div class="prod-wood">'+item.properties.wood+'</div><div class="prod-hand">'+item.properties.handle+' Handle</div><div class="prod-barr">'+item.properties.barrel+' Barrel</div><div class="prod-logo">'+item.properties.logo+' Logo</div></div><div class="prod-col"><div class="prod-leng">'+item.properties.length+'"</div><div class="prod-finish">'+item.properties.finish+' Finish</div><div class="prod-eng-style">'+item.properties.engravingStyle+'</div><div class="prod-eng">"'+item.properties.engraving+'"</div></div></div></div>'
 
               $(".cart-mid").append(productToAdd);
+
             }
             var locUrl = cart.checkoutUrl;
             $(".check-a").attr("href", locUrl);
@@ -186,7 +185,7 @@ function requireDesktop() {
   var $sBarrel = false;
   var $sLogo = false;
   var $sLength = false;
-  
+
   var $sAgree = false;
   var $sQuant = false;
   var $readyToSubmit = false;
@@ -238,7 +237,7 @@ function requireDesktop() {
     $fix += "Quantity, ";
   }
 
-  if($sWood && $sHandle && $sBarrel && $sLogo && $sLength && $sEngStyle && $sEng && $sAgree && $sQuant){
+  if($sWood && $sHandle && $sBarrel && $sLogo && $sLength && $sAgree && $sQuant){
     $readyToSubmit = true;
     return $readyToSubmit;
   }
