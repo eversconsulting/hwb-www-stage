@@ -4,14 +4,15 @@
 	<title>Homewood Bat</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="styles.css">
-	<link rel="stylesheet" type="text/css" href="cartstyles.css">
+
 	<script type="text/javascript" src="jquery.js"></script>
 	<script type="text/javascript" src="script.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/shopify-cartjs/0.4.0/cart.min.js"></script>
 	<script src="http://sdks.shopifycdn.com/js-buy-sdk/latest/shopify-buy.polyfilled.globals.min.js"></script>
-	<script type="text/javascript" src="shop.js"></script>
+
 	<script type="text/javascript" src="cart.js"></script>
 	<script type="text/javascript" src="jquery-ui.js"></script>
+
 </head>
 <body>
 	<div class="side-cart">

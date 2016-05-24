@@ -2,29 +2,36 @@
 
 
 $(document).ready(function(){
+  if(sessionStorage.getItem("bats") == null){
+    $bats = [];
+    sessionStorage.setItem("bats", JSON.stringify($bats));
 
-
-
-  //---------Shopify Start------------
-  var shopClient = ShopifyBuy.buildClient({
-      apiKey: 'a8ca2115ba8bf2a471b32d2ee821ffca',
-      myShopifyDomain: 'homewood-bat-co',
-      appId: '6'
-    });
-
-
+  }
+  else{
+    $myArray = JSON.parse(sessionStorage.getItem("bats"));
+    console.log($myArray);
+  }
 
    $("#desk-cart").click(function() {
+     $(".cart-mid").empty();
+
+     $data = JSON.parse(sessionStorage.getItem("bats"));
+
+     for(var x = 0; x < $data.length; x++){
+       var productToAdd = '<div class="cart-prod"><div class="prod-row"><div class="prod-title">'+$data[x].type+' BAT</div><div class="prod-quant">'+$data[x].quantity+'</div></div><div class="prod-row"><div class="prod-col"><div class="prod-wood">'+$data[x].wood+'</div><div class="prod-hand">'+$data[x].handle+' Handle</div><div class="prod-barr">'+$data[x].barrel+' Barrel</div><div class="prod-logo">'+$data[x].logo+' Logo</div></div><div class="prod-col"><div class="prod-leng">'+$data[x].length+'"</div><div class="prod-finish">'+$data[x].finish+' Finish</div><div class="prod-eng-style">'+$data[x].engravingStyle+'</div><div class="prod-eng">"'+$data[x].engraving+'"</div></div></div></div>'
+
+       $(".cart-mid").append(productToAdd);
+
+     }
+
+     shopifyActivate();
+
     $(".side-cart").animate({
         width: 400
       });
   });
 
-  $(".side-cart").mouseleave(function(){
-    $(".side-cart").animate({
-        width: 0
-      });
-  });
+
 
 
 
@@ -90,81 +97,57 @@ $(document).ready(function(){
    });
 
 
-  shopClient.createCart().then(function(newCart){
-    var cart = newCart;
-
-    shopClient.fetchProduct(6052966209).then(function(product){
-
-      shopClient.fetchCart(cart.id).then(cart => {
-        console.log(cart); // The retrieved cart
-        var items = cart.lineItems;
-        for (index = 0; index < items.length; ++ index){
-          var item = items[index];
-          var productToAdd = '<div class="cart-prod"><div class="prod-row"><div class="prod-title">Pro Bat</div><div class="prod-quant">1</div></div><div class="prod-row"><div class="prod-col"><div class="prod-wood">'+item.properties.wood+'</div><div class="prod-hand">'+item.properties.handle+' Handle</div><div class="prod-barr">'+item.properties.barrel+' Barrel</div><div class="prod-logo">'+item.properties.logo+' Logo</div></div><div class="prod-col"><div class="prod-leng">'+item.properties.length+'"</div><div class="prod-finish">'+item.properties.finish+' Finish</div><div class="prod-eng-style">'+item.properties.engravingStyle+'</div><div class="prod-eng">"'+item.properties.engraving+'"</div></div></div></div>'
-
-          $(".cart-mid").append(productToAdd);
-        }
-        var locUrl = cart.checkoutUrl;
-        $(".check-a").attr("href", locUrl);
-      });
-    });
-  });
-
-
   $("#add1").click(function(){
     if(requireDesktop()){
-      $batEngraving = $('#engraving1').val();
-      $batQuantity = $('#q1').val();
-      $agree = $('#ack-checked').is(':visible');
-
-      $batWood = $batWood.substring(0, 1).toUpperCase() + $batWood.substring(1);
-      $bat = $bat.toUpperCase();
-      $batTwoHandle = $batTwoHandle.substring(0, 1).toUpperCase() + $batTwoHandle.substring(1);
-      $batTwoBarrel = $batTwoBarrel.substring(0, 1).toUpperCase() + $batTwoBarrel.substring(1);
-      $batLogoColor = $batLogoColor.substring(0, 1).toUpperCase() + $batLogoColor.substring(1);
-      $batFinish = $batFinish.substring(0, 1).toUpperCase() + $batFinish.substring(1);
-      $batLength = $batLength.substring(0, 1).toUpperCase() + $batLength.substring(1);
-
-      $batEngravingStyle = $batEngravingStyle.substring(0, 1).toUpperCase() + $batEngravingStyle.substring(1);
+      	$batEngraving = $('#engraving1').val();
+      	$batQuantity = $('#q1').val();
+      	$agree = $('#ack-checked').is(':visible');
 
 
-      shopClient.createCart().then(function(newCart){
-        var cart = newCart;
-        var batNum;
-        switch($bat){
-          case 'PRO':
-            $batNum = 6052966209;
-          break;
+      	$batArray = JSON.parse(sessionStorage.getItem("bats"));
 
-          case 'GAME':
-            $batNum = 5656595905;
+          $newBat = new Object();
+          $newBat.type = $bat.toUpperCase();
+          $newBat.wood = $batWood.charAt(0).toUpperCase()+ $batWood.slice(1);
+          $newBat.handle = $batTwoHandle.charAt(0).toUpperCase()+ $batTwoHandle.slice(1);
+          $newBat.barrel = $batTwoBarrel.charAt(0).toUpperCase()+ $batTwoBarrel.slice(1);
+          $newBat.logo = $batLogoColor.charAt(0).toUpperCase()+ $batLogoColor.slice(1);
+          $newBat.finish = $batFinish.charAt(0).toUpperCase()+ $batFinish.slice(1);
+          $newBat.length = $batLength;
+          $newBat.engravingStyle = $batEngravingStyle.charAt(0).toUpperCase()+ $batEngravingStyle.slice(1);
+          if($batEngraving != ''){
+            $newBat.engraving = $batEngraving;
+          }
+          else{
+            $newBat.engraving = "No Engraving."
+          }
+          $newBat.quantity = $batQuantity;
+          $newBat.agree = $agree;
+          $newBat.model = $currentModel;
 
-          default:
 
-          break;
+
+      	$batArray.push($newBat);
+
+        sessionStorage.setItem("bats", JSON.stringify($batArray));
+
+        //var productToAdd = '<div class="cart-prod"><div class="prod-row"><div class="prod-title">'+$newBat.type+' BAT</div><div class="prod-quant">'+$newBat.quantity+'</div></div><div class="prod-row"><div class="prod-col"><div class="prod-wood">'+$newBat.wood+'</div><div class="prod-hand">'+$newBat.handle+' Handle</div><div class="prod-barr">'+$newBat.barrel+' Barrel</div><div class="prod-logo">'+$newBat.logo+' Logo</div></div><div class="prod-col"><div class="prod-leng">'+$newBat.length+'"</div><div class="prod-finish">'+$newBat.finish+' Finish</div><div class="prod-eng-style">'+$newBat.engravingStyle+'</div><div class="prod-eng">"'+$newBat.engraving+'"</div></div></div></div>'
+
+        //$(".cart-mid").append(productToAdd);
+        $(".cart-mid").empty();
+
+        $data = JSON.parse(sessionStorage.getItem("bats"));
+
+        for(var x = 0; x < $data.length; x++){
+          var productToAdd = '<div class="cart-prod"><div class="prod-row"><div class="prod-title">'+$data[x].type+' BAT</div><div class="prod-quant">'+$data[x].quantity+'</div></div><div class="prod-row"><div class="prod-col"><div class="prod-wood">'+$data[x].wood+'</div><div class="prod-hand">'+$data[x].handle+' Handle</div><div class="prod-barr">'+$data[x].barrel+' Barrel</div><div class="prod-logo">'+$data[x].logo+' Logo</div></div><div class="prod-col"><div class="prod-leng">'+$data[x].length+'"</div><div class="prod-finish">'+$data[x].finish+' Finish</div><div class="prod-eng-style">'+$data[x].engravingStyle+'</div><div class="prod-eng">"'+$data[x].engraving+'"</div></div></div></div>'
+
+          $(".cart-mid").append(productToAdd);
+
         }
 
-        shopClient.fetchProduct($batNum).then(function(product){
-          var v = product.variants[0];
-          cart.addVariants({variant: v , quantity: 1, properties: { 'wood' : $batWood, 'handle' : $batTwoHandle, 'barrel' : $batTwoBarrel, 'logo' : $batLogoColor, 'length' : $batLength, 'finish' : $batFinish, 'engravingStyle' : $batEngravingStyle, 'engraving' : $batEngraving} });
-          shopClient.fetchCart(cart.id).then(cart => {
-            console.log(cart); // The retrieved cart
-            var items = cart.lineItems;
-            for (index = 0; index < items.length; ++ index){
-              var item = items[index];
-              var productToAdd = '<div class="cart-prod"><div class="prod-row"><div class="prod-title">'+$bat+' BAT</div><div class="prod-quant">'+$batQuantity+'</div></div><div class="prod-row"><div class="prod-col"><div class="prod-wood">'+item.properties.wood+'</div><div class="prod-hand">'+item.properties.handle+' Handle</div><div class="prod-barr">'+item.properties.barrel+' Barrel</div><div class="prod-logo">'+item.properties.logo+' Logo</div></div><div class="prod-col"><div class="prod-leng">'+item.properties.length+'"</div><div class="prod-finish">'+item.properties.finish+' Finish</div><div class="prod-eng-style">'+item.properties.engravingStyle+'</div><div class="prod-eng">"'+item.properties.engraving+'"</div></div></div></div>'
-
-              $(".cart-mid").append(productToAdd);
-
-            }
-            var locUrl = cart.checkoutUrl;
-            $(".check-a").attr("href", locUrl);
-          });
-        });
         $(".side-cart").animate({
             width: 400
-        });
-      });
+          });
     }
     else {
       requireDesktop();
@@ -173,9 +156,6 @@ $(document).ready(function(){
 
 
   });
-
-
-
 
 
 });
@@ -254,4 +234,47 @@ function requireDesktop() {
     $('.popup-text').show();
     return $readyToSubmit;
   }
+}
+
+function shopifyActivate() {
+
+  var shopClient = ShopifyBuy.buildClient({
+    apiKey: 'a8ca2115ba8bf2a471b32d2ee821ffca',
+    myShopifyDomain: 'homewood-bat-co',
+    appId: '6'
+  });
+  shopClient.createCart().then(function(cart){
+    $batArrs = JSON.parse(sessionStorage.getItem("bats"));
+
+    for(x = 0; x < $batArrs.length; x++){
+      var $batNum = 0;
+
+      switch($batArrs[x].type){
+        case 'PRO':
+          $batNum = 6052966209;
+          break;
+        case 'GAME':
+          $batNum = 5656595905;
+          break;
+        default:
+
+          break;
+      }
+
+
+
+       shopClient.fetchProduct($batNum).then(function(product){
+         console.log("here");
+          var v = product.variants[0];
+          $batArray = JSON.parse(sessionStorage.getItem("bats"));
+          cart.addVariants({variant: v , quantity: $batArray[0].quantity, properties: { 'model' : $batArray[0].model, 'wood' : $batArray[0].wood, 'handle' : $batArray[0].handle, 'barrel' : $batArray[0].barrel, 'logo' : $batArray[0].logo, 'length' : $batArray[0].length, 'finish' : $batArray[0].finish, 'engraving-style' : $batArray[0].engravingStyle, 'engraving' : $batArray[0].engraving} });
+       });
+
+       $batArrs.splice(1, 0);
+       sessionStorage.setItem("bats", JSON.stringify($batArrs));
+       console.log($batArrs);
+    }
+  });
+
+
 }

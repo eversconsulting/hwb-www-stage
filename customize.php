@@ -89,6 +89,7 @@
 	<script src="http://sdks.shopifycdn.com/js-buy-sdk/latest/shopify-buy.polyfilled.globals.min.js"></script>
 	<script type="text/javascript" src="jquery-ui.js"></script>
 	<script type="text/javascript" src="cart.js"></script>
+	
 
 
 

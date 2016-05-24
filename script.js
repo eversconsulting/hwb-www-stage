@@ -3,25 +3,13 @@ $(document).ready(function(){
   $batNum = 0;
   $prodsActive = false;
 
-  if(sessionStorage.getItem("bats") == null){
-    $bats = [];
-    sessionStorage.setItem("bats", JSON.stringify($bats));
-    $batNum = 0;
-    $(".notify").text($batNum);
-  }
-  else{
-    $myArray = JSON.parse(sessionStorage.getItem("bats"));
-    for ($i=0; $i<$myArray.length; $i++){
-        $batNum += 1;
-    }
-    $(".notify").text($batNum);
-  }
+
 
   $("#cart-c").click(function() {
-    
+
 
   });
- 
+
 
 
    $("#shop").click(function() {
@@ -63,22 +51,22 @@ $(document).ready(function(){
       $(".slide-menu").slideUp("fast");
    });
 
-   
 
-   
 
-   $("#cartShow").click(function() {
-   		
-   		$batData = sessionStorage.getItem("bats");
 
-		$bats = JSON.parse($batData);
 
-		console.log($bats);
+  //  $("#cartShow").click(function() {
+  //
+  //  		$batData = sessionStorage.getItem("bats");
+	 //
+	// 	$bats = JSON.parse($batData);
+	 //
+	// 	console.log($bats);
+	 //
+  //  });
 
-   });
 
-   
-}); 
+});
 
 $.fn.scrollView = function () {
   return this.each(function () {
