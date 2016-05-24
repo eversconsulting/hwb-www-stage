@@ -134,8 +134,10 @@ $(document).ready(function(){
         switch($bat){
           case 'PRO':
             $batNum = 6052966209;
-
           break;
+
+          case 'GAME':
+            $batNum = 5656595905;
 
           default:
 
