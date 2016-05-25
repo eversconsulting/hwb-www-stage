@@ -124,6 +124,7 @@ $(document).ready(function(){
           $newBat.quantity = $batQuantity;
           $newBat.agree = $agree;
           $newBat.model = $currentModel;
+          $newBat.customColor = $batTwoOption;
 
 
 
@@ -167,7 +168,7 @@ function requireDesktop() {
   var $sBarrel = false;
   var $sLogo = false;
   var $sLength = false;
-
+  var $sFinish = false;
   var $sAgree = false;
   var $sQuant = false;
   var $readyToSubmit = false;
@@ -178,6 +179,13 @@ function requireDesktop() {
   }
   else{
     $fix += "Wood Type, ";
+
+  }
+  if($batFinish != ''){
+    $sFinish = true;
+  }
+  else{
+    $fix += "Bat Finish, ";
 
   }
   if($batTwoHandle != ''){
@@ -247,49 +255,148 @@ function shopifyActivate() {
   });
 
   shopClient.createCart().then(function(cart){
-    shopClient.fetchProduct(6372409473).then(function(product){
-      var v = product.variants[0];
+    $batArray = JSON.parse(sessionStorage.getItem("bats"));
+    for(var x = 0; x < $batArray.length; x++){
+      switch ($batArray[x].type) {
+        case 'PRO':
+          $batArray = JSON.parse(sessionStorage.getItem("bats"));
+          shopClient.fetchProduct(6052966209).then(function(product){
+            if($batArray[0].wood == 'Maple'){
+              if($batArray[0].customColor == true){
+                var v = product.variants[0];
+              }
+              else{
+                var v = product.variants[1];
+              }
+            }
+            else if($batArray[0].wood == 'Birch'){
+              if($batArray[0].customColor == true){
+                var v = product.variants[2];
+              }
+              else{
+                var v = product.variants[3];
+              }
+            }
+            else{
+              if($batArray[0].customColor == true){
+                var v = product.variants[4];
+              }
+              else{
+                var v = product.variants[5];
+              }
+            }
 
-      console.log(v);
 
-      // shopClient.fetchCart(cart.id).then(cart => {
-        $batArray = JSON.parse(sessionStorage.getItem("bats"));
-        for(x = 0; x < $batArray.length; x++){
-          var $batNum = '';
+            cart.addVariants({variant: v , quantity: $batArray[0].quantity, properties: { 'model' : $batArray[0].model, 'wood' : $batArray[0].wood, 'handle' : $batArray[0].handle, 'barrel' : $batArray[0].barrel, 'logo' : $batArray[0].logo, 'length' : $batArray[0].length, 'finish' : $batArray[0].finish, 'engraving-style' : $batArray[0].engravingStyle, 'engraving' : $batArray[0].engraving} });
+            $batArray.shift();
+            var locUrl = cart.checkoutUrl;
+            console.log(locUrl);
+          });
+          break;
+        case 'GAME':
+          $batArray = JSON.parse(sessionStorage.getItem("bats"));
+          shopClient.fetchProduct(6373157313).then(function(product){
+            if($batArray[0].wood == 'Maple'){
+              if($batArray[0].customColor == true){
+                var v = product.variants[0];
+              }
+              else{
+                var v = product.variants[1];
+              }
+            }
+            else if($batArray[0].wood == 'Birch'){
+              if($batArray[0].customColor == true){
+                var v = product.variants[2];
+              }
+              else{
+                var v = product.variants[3];
+              }
+            }
+            else{
+              if($batArray[0].customColor == true){
+                var v = product.variants[4];
+              }
+              else{
+                var v = product.variants[5];
+              }
+            }
+            cart.addVariants({variant: v , quantity: $batArray[0].quantity, properties: { 'model' : $batArray[0].model, 'wood' : $batArray[0].wood, 'handle' : $batArray[0].handle, 'barrel' : $batArray[0].barrel, 'logo' : $batArray[0].logo, 'length' : $batArray[0].length, 'finish' : $batArray[0].finish, 'engraving-style' : $batArray[0].engravingStyle, 'engraving' : $batArray[0].engraving} });
+            $batArray.shift();
+            var locUrl = cart.checkoutUrl;
+            console.log(locUrl);
+          });
+          break;
+          case 'FUNGO':
+            $batArray = JSON.parse(sessionStorage.getItem("bats"));
+            shopClient.fetchProduct(6373486081).then(function(product){
+              if($batArray[0].wood == 'Maple'){
+                if($batArray[0].customColor == true){
+                  var v = product.variants[0];
+                }
+                else{
+                  var v = product.variants[1];
+                }
+              }
 
-          switch($batArray[x]){
-            case 'PRO':
-              $batNum = 'Pro Bat'
+
+              cart.addVariants({variant: v , quantity: $batArray[0].quantity, properties: { 'model' : $batArray[0].model, 'wood' : $batArray[0].wood, 'handle' : $batArray[0].handle, 'barrel' : $batArray[0].barrel, 'logo' : $batArray[0].logo, 'length' : $batArray[0].length, 'finish' : $batArray[0].finish, 'engraving-style' : $batArray[0].engravingStyle, 'engraving' : $batArray[0].engraving} });
+              $batArray.shift();
+              var locUrl = cart.checkoutUrl;
+              console.log(locUrl);
+            });
+            break;
+            case 'YOUTH':
+              $batArray = JSON.parse(sessionStorage.getItem("bats"));
+              shopClient.fetchProduct(5656695425).then(function(product){
+                console.log("here");
+                if($batArray[0].wood == 'Birch'){
+                  if($batArray[0].customColor == true){
+                    var v = product.variants[0];
+                  }
+                  else{
+                    var v = product.variants[1];
+                    console.log("variant");
+                  }
+                }
+                else{
+                  if($batArray[0].customColor == true){
+                    var v = product.variants[2];
+                  }
+                  else{
+                    var v = product.variants[3];
+                  }
+                }
+                cart.addVariants({variant: v , quantity: $batArray[0].quantity, properties: { 'model' : $batArray[0].model, 'wood' : $batArray[0].wood, 'handle' : $batArray[0].handle, 'barrel' : $batArray[0].barrel, 'logo' : $batArray[0].logo, 'length' : $batArray[0].length, 'finish' : $batArray[0].finish, 'engraving-style' : $batArray[0].engravingStyle, 'engraving' : $batArray[0].engraving} });
+                $batArray.shift();
+                var locUrl = cart.checkoutUrl;
+                console.log(locUrl);
+              });
               break;
-            case 'GAME':
-              $batNum = 'Game Bat';
-              break;
-            default:
+        default:
 
-              break;
-          }
-
-          cart.addVariants({variant: v , quantity: $batArray[x].quantity, properties: { 'model' : $batArray[x].model, 'wood' : $batArray[x].wood, 'handle' : $batArray[x].handle, 'barrel' : $batArray[x].barrel, 'logo' : $batArray[x].logo, 'length' : $batArray[x].length, 'finish' : $batArray[x].finish, 'engraving-style' : $batArray[x].engravingStyle, 'engraving' : $batArray[x].engraving} });
-          console.log(cart);
-
-        }
-
-      // });
+      }
 
 
+    }
 
-    });
-    // $batArrs = JSON.parse(sessionStorage.getItem("bats"));
-    //
 
-    //
-    //
-    //
-    //
-    //
-    //
-    // }
   });
+
+  // shopClient.createCart().then(function(cart){
+  //   shopClient.fetchProduct(6372409473).then(function(product){
+  //     var v = product.variants[0];
+  //
+  //     $batArray = JSON.parse(sessionStorage.getItem("bats"));
+  //     for(x = 0; x < $batArray.length; x++){
+  //       cart.addVariants({variant: v , quantity: $batArray[x].quantity, properties: { 'model' : $batArray[x].model, 'wood' : $batArray[x].wood, 'handle' : $batArray[x].handle, 'barrel' : $batArray[x].barrel, 'logo' : $batArray[x].logo, 'length' : $batArray[x].length, 'finish' : $batArray[x].finish, 'engraving-style' : $batArray[x].engravingStyle, 'engraving' : $batArray[x].engraving} });
+  //       console.log(cart);
+  //     }
+  //
+  //     var locUrl = cart.checkoutUrl;
+  //     console.log(locUrl);
+  //
+  //   });
+  // });
 
 
 }
