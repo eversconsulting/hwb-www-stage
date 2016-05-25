@@ -149,6 +149,8 @@ $(document).ready(function(){
         $(".side-cart").animate({
             width: 400
           });
+
+          shopifyActivate();
     }
     else {
       requireDesktop();
@@ -290,7 +292,7 @@ function shopifyActivate() {
             cart.addVariants({variant: v , quantity: $batArray[0].quantity, properties: { 'model' : $batArray[0].model, 'wood' : $batArray[0].wood, 'handle' : $batArray[0].handle, 'barrel' : $batArray[0].barrel, 'logo' : $batArray[0].logo, 'length' : $batArray[0].length, 'finish' : $batArray[0].finish, 'engraving-style' : $batArray[0].engravingStyle, 'engraving' : $batArray[0].engraving} });
             $batArray.shift();
             var locUrl = cart.checkoutUrl;
-            console.log(locUrl);
+            $('.check-a').attr('href', locUrl);
           });
           break;
         case 'GAME':
@@ -323,7 +325,7 @@ function shopifyActivate() {
             cart.addVariants({variant: v , quantity: $batArray[0].quantity, properties: { 'model' : $batArray[0].model, 'wood' : $batArray[0].wood, 'handle' : $batArray[0].handle, 'barrel' : $batArray[0].barrel, 'logo' : $batArray[0].logo, 'length' : $batArray[0].length, 'finish' : $batArray[0].finish, 'engraving-style' : $batArray[0].engravingStyle, 'engraving' : $batArray[0].engraving} });
             $batArray.shift();
             var locUrl = cart.checkoutUrl;
-            console.log(locUrl);
+            $('.check-a').attr('href', locUrl);
           });
           break;
           case 'FUNGO':
@@ -342,7 +344,7 @@ function shopifyActivate() {
               cart.addVariants({variant: v , quantity: $batArray[0].quantity, properties: { 'model' : $batArray[0].model, 'wood' : $batArray[0].wood, 'handle' : $batArray[0].handle, 'barrel' : $batArray[0].barrel, 'logo' : $batArray[0].logo, 'length' : $batArray[0].length, 'finish' : $batArray[0].finish, 'engraving-style' : $batArray[0].engravingStyle, 'engraving' : $batArray[0].engraving} });
               $batArray.shift();
               var locUrl = cart.checkoutUrl;
-              console.log(locUrl);
+              $('.check-a').attr('href', locUrl);
             });
             break;
             case 'YOUTH':
@@ -369,7 +371,7 @@ function shopifyActivate() {
                 cart.addVariants({variant: v , quantity: $batArray[0].quantity, properties: { 'model' : $batArray[0].model, 'wood' : $batArray[0].wood, 'handle' : $batArray[0].handle, 'barrel' : $batArray[0].barrel, 'logo' : $batArray[0].logo, 'length' : $batArray[0].length, 'finish' : $batArray[0].finish, 'engraving-style' : $batArray[0].engravingStyle, 'engraving' : $batArray[0].engraving} });
                 $batArray.shift();
                 var locUrl = cart.checkoutUrl;
-                console.log(locUrl);
+                $('.check-a').attr('href', locUrl);
               });
               break;
         default:
