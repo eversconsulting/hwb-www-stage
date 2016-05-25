@@ -238,42 +238,57 @@ function requireDesktop() {
 
 function shopifyActivate() {
 
+
+
   var shopClient = ShopifyBuy.buildClient({
     apiKey: 'a8ca2115ba8bf2a471b32d2ee821ffca',
     myShopifyDomain: 'homewood-bat-co',
     appId: '6'
   });
+
   shopClient.createCart().then(function(cart){
-    $batArrs = JSON.parse(sessionStorage.getItem("bats"));
+    shopClient.fetchProduct(6372409473).then(function(product){
+      var v = product.variants[0];
 
-    for(x = 0; x < $batArrs.length; x++){
-      var $batNum = 0;
+      console.log(v);
 
-      switch($batArrs[x].type){
-        case 'PRO':
-          $batNum = 6052966209;
-          break;
-        case 'GAME':
-          $batNum = 5656595905;
-          break;
-        default:
+      // shopClient.fetchCart(cart.id).then(cart => {
+        $batArray = JSON.parse(sessionStorage.getItem("bats"));
+        for(x = 0; x < $batArray.length; x++){
+          var $batNum = '';
 
-          break;
-      }
+          switch($batArray[x]){
+            case 'PRO':
+              $batNum = 'Pro Bat'
+              break;
+            case 'GAME':
+              $batNum = 'Game Bat';
+              break;
+            default:
+
+              break;
+          }
+
+          cart.addVariants({variant: v , quantity: $batArray[x].quantity, properties: { 'model' : $batArray[x].model, 'wood' : $batArray[x].wood, 'handle' : $batArray[x].handle, 'barrel' : $batArray[x].barrel, 'logo' : $batArray[x].logo, 'length' : $batArray[x].length, 'finish' : $batArray[x].finish, 'engraving-style' : $batArray[x].engravingStyle, 'engraving' : $batArray[x].engraving} });
+          console.log(cart);
+
+        }
+
+      // });
 
 
 
-       shopClient.fetchProduct($batNum).then(function(product){
-         console.log("here");
-          var v = product.variants[0];
-          $batArray = JSON.parse(sessionStorage.getItem("bats"));
-          cart.addVariants({variant: v , quantity: $batArray[0].quantity, properties: { 'model' : $batArray[0].model, 'wood' : $batArray[0].wood, 'handle' : $batArray[0].handle, 'barrel' : $batArray[0].barrel, 'logo' : $batArray[0].logo, 'length' : $batArray[0].length, 'finish' : $batArray[0].finish, 'engraving-style' : $batArray[0].engravingStyle, 'engraving' : $batArray[0].engraving} });
-       });
+    });
+    // $batArrs = JSON.parse(sessionStorage.getItem("bats"));
+    //
 
-       $batArrs.splice(1, 0);
-       sessionStorage.setItem("bats", JSON.stringify($batArrs));
-       console.log($batArrs);
-    }
+    //
+    //
+    //
+    //
+    //
+    //
+    // }
   });
 
 
