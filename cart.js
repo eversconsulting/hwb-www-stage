@@ -2,6 +2,7 @@
 
 
 $(document).ready(function(){
+
   if(sessionStorage.getItem("bats") == null){
     $bats = [];
     sessionStorage.setItem("bats", JSON.stringify($bats));
@@ -36,43 +37,98 @@ $(document).ready(function(){
 
 
   $("#cart-button").click(function() {
-    if($("#cart-button").hasClass("remove-button")){
+    $(".cart-item-display").hide(200);
+    $(".cart-email-display").show();
 
-      if($(".cart-prod").hasClass("prod-active")){
-        $(".cart-prod").css("pointer-events", "none");
+  });
+
+  $(".finish-button").click(function() {
+    var goodEmail = validateEmail($(".email-prompt").val());
+    if(goodEmail){
+      var url = sessionStorage.getItem('loc');
+      var win = window.open(url, '_blank');
+      if(win){
+          //Browser has allowed it to be opened
+          win.focus();
+      }else{
+          //Broswer has blocked it
+          alert('Please allow popups for this site');
       }
 
-      $("#cart-check").hide();
-      $("#cart-confirm").show();
-    }
-  });
-  $(".cart-prod").click(function() {
-    if($(this).hasClass("prod-active")){
-      $(this).removeClass("prod-active");
-      checkProds();
+      sessionStorage.removeItem("bats");
+      window.location= 'index.php';
+
 
     }
     else{
-      $(this).addClass("prod-active");
-      checkProds();
+      $(".email-prompt").css("border-color", "red");
+      $(".email-prompt").animate({
+        height: 30
+      });
+      $(".email-prompt").animate({
+        height: 25
+      });
+      $(".email-prompt").animate({
+        height: 30
+      });
+      $(".email-prompt").animate({
+        height: 25
+      });
+
+
     }
   });
 
-  $("#yes-button").click(function() {
-    $("#cart-confirm").hide();
-    $("#cart-check").show();
-    $(".prod-active").remove();
-    checkProds();
-    $(".cart-prod").css("pointer-events", "auto");
+  $(document).on('click', '#continue-shop', function(){
+    window.location = 'index.php';
   });
 
-  $("#no-button").click(function() {
-    $("#cart-confirm").hide();
-    $("#cart-check").show();
-    $(".cart-prod").removeClass("prod-active");
-    checkProds();
-    $(".cart-prod").css("pointer-events", "auto");
+  var actives = [];
+  $(document).on("click", '.cart-prod',function(){
+    $(this).toggleClass("prod-active");
+
+    actives = [];
+    var els = document.getElementsByClassName('cart-prod');
+    for (var i = 0; i < els.length; ++i) {
+      if($(els[i]).hasClass('prod-active')){
+        actives.push(i);
+      }
+    }
+
+
+
+
+    if(checkProds()){
+      $(".cart-top-close").hide();
+      $(".cart-top-remove").show();
+    }
+    else{
+      $(".cart-top-remove").hide();
+      $(".cart-top-close").show();
+    }
   });
+
+  $(document).on("click", '.cart-top-remove', function() {
+    $('.prod-active').remove();
+
+    for(var x = 0; x < actives.length; x++){
+      var bats = JSON.parse(sessionStorage.getItem('bats'));
+      for(var y = 0; y < bats.length; y++){
+        if(actives[x] == y){
+          bats.splice(y, 1);
+        }
+      }
+      sessionStorage.setItem("bats", JSON.stringify(bats));
+    }
+
+    $(".cart-top-remove").hide();
+    $(".cart-top-close").show();
+    shopifyActivate();
+
+  });
+
+
+
 
    $(".hamburger").click(function() {
       $slideVisible = $('.slide-menu').is(':visible');
@@ -151,6 +207,8 @@ $(document).ready(function(){
           });
 
           shopifyActivate();
+
+
     }
     else {
       requireDesktop();
@@ -292,7 +350,10 @@ function shopifyActivate() {
             cart.addVariants({variant: v , quantity: $batArray[0].quantity, properties: { 'model' : $batArray[0].model, 'wood' : $batArray[0].wood, 'handle' : $batArray[0].handle, 'barrel' : $batArray[0].barrel, 'logo' : $batArray[0].logo, 'length' : $batArray[0].length, 'finish' : $batArray[0].finish, 'engraving-style' : $batArray[0].engravingStyle, 'engraving' : $batArray[0].engraving} });
             $batArray.shift();
             var locUrl = cart.checkoutUrl;
-            $('.check-a').attr('href', locUrl);
+            sessionStorage.setItem('loc', locUrl);
+            $(".cart-bot-amt").text("$"+cart.subtotal);
+
+
           });
           break;
         case 'GAME':
@@ -325,7 +386,8 @@ function shopifyActivate() {
             cart.addVariants({variant: v , quantity: $batArray[0].quantity, properties: { 'model' : $batArray[0].model, 'wood' : $batArray[0].wood, 'handle' : $batArray[0].handle, 'barrel' : $batArray[0].barrel, 'logo' : $batArray[0].logo, 'length' : $batArray[0].length, 'finish' : $batArray[0].finish, 'engraving-style' : $batArray[0].engravingStyle, 'engraving' : $batArray[0].engraving} });
             $batArray.shift();
             var locUrl = cart.checkoutUrl;
-            $('.check-a').attr('href', locUrl);
+            sessionStorage.setItem('loc', locUrl);
+            $(".cart-bot-amt").text("$"+cart.subtotal);
           });
           break;
           case 'FUNGO':
@@ -344,7 +406,8 @@ function shopifyActivate() {
               cart.addVariants({variant: v , quantity: $batArray[0].quantity, properties: { 'model' : $batArray[0].model, 'wood' : $batArray[0].wood, 'handle' : $batArray[0].handle, 'barrel' : $batArray[0].barrel, 'logo' : $batArray[0].logo, 'length' : $batArray[0].length, 'finish' : $batArray[0].finish, 'engraving-style' : $batArray[0].engravingStyle, 'engraving' : $batArray[0].engraving} });
               $batArray.shift();
               var locUrl = cart.checkoutUrl;
-              $('.check-a').attr('href', locUrl);
+              sessionStorage.setItem('loc', locUrl);
+              $(".cart-bot-amt").text("$"+cart.subtotal);
             });
             break;
             case 'YOUTH':
@@ -371,7 +434,8 @@ function shopifyActivate() {
                 cart.addVariants({variant: v , quantity: $batArray[0].quantity, properties: { 'model' : $batArray[0].model, 'wood' : $batArray[0].wood, 'handle' : $batArray[0].handle, 'barrel' : $batArray[0].barrel, 'logo' : $batArray[0].logo, 'length' : $batArray[0].length, 'finish' : $batArray[0].finish, 'engraving-style' : $batArray[0].engravingStyle, 'engraving' : $batArray[0].engraving} });
                 $batArray.shift();
                 var locUrl = cart.checkoutUrl;
-                $('.check-a').attr('href', locUrl);
+                sessionStorage.setItem('loc', locUrl);
+                $(".cart-bot-amt").text("$"+cart.subtotal);
               });
               break;
         default:
@@ -379,7 +443,12 @@ function shopifyActivate() {
       }
 
 
+
     }
+          $(".cart-bot-amt").text("$"+cart.subtotal);
+
+
+
 
 
   });
@@ -401,4 +470,21 @@ function shopifyActivate() {
   // });
 
 
+}
+
+function checkProds(){
+  if($(".cart-prod").hasClass("prod-active")){
+    return true;
+  }
+  else {
+    return false;
+  }
+}
+
+
+
+function validateEmail(email)
+{
+    var re = /\S+@\S+\.\S+/;
+    return re.test(email);
 }

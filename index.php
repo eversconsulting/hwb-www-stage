@@ -15,39 +15,41 @@
 
 </head>
 <body>
+
 	<div class="side-cart">
-
-		<div class="cart-top">
-			<div class="cart-top-text">Your Cart</div>
-			<div class="cart-top-close">&#10006;</div>
-		</div>
-
-		<div class="cart-mid">
-
-		</div>
-
-		<div class="cart-bot">
-			<div id="cart-check">
-				<div class="cart-bot-total">
-					<div class="cart-bot-text">Total</div>
-					<div class="cart-bot-amt">$0</div>
-				</div>
-				<div class="cart-bot-checkout">
-					<a class="check-a" href=""><div id="cart-button" class="check-button">Checkout</div></a>
-				</div>
+		<div class="cart-item-display">
+			<div class="cart-top">
+				<div class="cart-top-text">Your Cart</div>
+				<div class="cart-top-close">&#10006;</div>
+				<div class="cart-top-remove">remove</div>
 			</div>
-			<div id="cart-confirm">
-				<div class="cart-ask-txt">Are you sure?</div>
-				<div class="ask-cont">
-					<div id="yes-button" class="ask-button">Yes</div>
-					<div id="no-button" class="ask-button">No</div>
-				</div>
+
+			<div class="cart-mid">
 
 			</div>
+
+			<div class="cart-bot">
+					<div class="cart-bot-text">
+						<div class="cart-bot-total">Total:</div>
+						<div class="cart-bot-amt"></div>
+					</div>
+					<sup>*before tax and shipping</sup>
+					<div id="cart-button">Checkout</div>
+					<p>- OR -</p>
+					<div id="continue-shop">Continue Shopping</div>
+			</div>
 		</div>
+		<div class="cart-email-display">
+			<div class="prompt-cont">
+				<div class="prompt">Please enter your email so we can keep track of your order!</div>
+			<div class="email-cont">
+				<input class="email-prompt" type="text" pattern='/.+@.+/' autofocus="true">
+			</div>
+				<div class="finish-button">FINISH</div>
+			</div>
 
   	</div>
-
+	</div>
 	<div class="navbar">
 		<div class="logo"></div>
 
@@ -122,6 +124,7 @@
 		<div class="spacer">THE SWEET SOUND OF A HOMEWOOD BAT<sup>&#174;</sup></div>
 
 	</div>
+
 	<div class="section" id="sec2" style="background-color: rgb(250, 245, 234);">
 			<div class="title-rowB">
 				<div class="title-lineB"></div>
