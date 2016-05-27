@@ -102,7 +102,7 @@
 				<div class="cart-top-text">Your Cart</div>
 				<div class="cart-top-close">&#10006;</div>
 				<div class="cart-top-remove">remove</div>
-				<sup class="supCart">(Select product to edit your cart)</sup>
+				<sup class="supCart">(SELECT PRODUCT TO EDIT YOUR CART)</sup>
 			</div>
 
 			<div class="cart-mid">
@@ -114,10 +114,10 @@
 						<div class="cart-bot-total">Total:</div>
 						<div class="cart-bot-amt"></div>
 					</div>
-					<sup>*before tax and shipping</sup>
-					<div id="cart-button">Checkout</div>
+					<sup>*BEFORE TAX AND SHIPPING</sup>
+					<div id="cart-button">CHECKOUT</div>
 					<p>- OR -</p>
-					<div id="continue-shop">Continue Shopping</div>
+					<div id="continue-shop">CONTINUE SHOPPING</div>
 			</div>
 		</div>
 		<div class="cart-email-display">
