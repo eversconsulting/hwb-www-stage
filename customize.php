@@ -102,6 +102,7 @@
 				<div class="cart-top-text">Your Cart</div>
 				<div class="cart-top-close">&#10006;</div>
 				<div class="cart-top-remove">remove</div>
+				<sup class="supCart">(Select product to edit your cart)</sup>
 			</div>
 
 			<div class="cart-mid">
