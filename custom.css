@@ -1,0 +1,725 @@
+body {
+  background-color: rgb(250, 245, 234);
+}
+
+.body-inner {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+}
+.title-cont {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 10px;
+}
+.title {
+  text-align: center;
+  font-size: 18px;
+  width: 50%;
+  height: 100%;
+  float: left;
+  color: rgb(24, 53, 80);
+}
+
+.line {
+  width: 25%;
+  height: 2px;
+  background-color: rgb(24, 53, 80);
+  margin-top: 15px;
+}
+
+.line-left {
+  float: left;
+}
+
+.line-right {
+  float: right;
+}
+
+.section {
+  width: 100%;
+  height: auto;
+}
+
+.sec-image-cont {
+  width: 100%;
+  height: auto;
+}
+
+.sec-image {
+  width: 220px;
+  height: 200px;
+  background-size: 220px 200px;
+
+  border: solid;
+  border-width: 2px;
+  border-color: rgb(252, 116, 44);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.map-size {
+  width: 220px;
+  height: 200px;
+}
+
+.sec-body-cont {
+  width: 100%;
+  height: auto;
+}
+
+.sec-body {
+  width: 90%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.head {
+  color: rgb(252, 116, 44);
+  font-size: 18px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.head1{
+  color: rgb(24, 53, 80);
+  font-size: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.head2 {
+  color: rgb(24, 53, 80);
+  font-size: 16px;
+  font-family: mainFont;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.mail-to {
+  color: rgb(252, 116, 44);
+  font-size: 16px;
+  font-family: mainFont;
+}
+
+.copy {
+  color: rgb(24, 53, 80);
+  font-size: 16px;
+  font-family: secondFont;
+}
+
+.sec-spacer {
+  width: 100%;
+  height: 25px;
+}
+
+.full {
+  width: 100%;
+  float: none;
+}
+
+.star {
+  width: 100%;
+  height: auto;
+  font-size: 20px;
+  color: rgb(24, 53, 80);
+  text-align: center;
+}
+
+.staffer {
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  float: none;
+}
+
+.staffer-img {
+  width: 150px;
+  height: 200px;
+  border: solid;
+  border-width: 2px;
+  border-color: rgb(24, 53, 80);
+  margin-left: auto;
+  margin-right: auto;
+  background-size: 150px 200px;
+}
+
+.staffer-title {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  font-size: 20px;
+  color: rgb(24, 53, 80);
+}
+.staffer-sub {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  font-size: 16px;
+  color: rgb(24, 53, 80);
+}
+
+.head3 {
+  width: 100%;
+  text-align: center;
+  color: rgb(24, 53, 80);
+  font-size: 22px;
+}
+
+.footer {
+  width: 100%;
+  height: 150px;
+  background-color: rgb(24, 53, 80);
+}
+
+.footer-icons {
+  width: 100%;
+  height: 50px;
+
+}
+
+.footer-icons-cont {
+  width: 200px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-icon {
+  width: 40px;
+  height: 40px;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.fIcon {
+  width: 40px;
+  height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  background-size: 40px 40px;
+}
+
+.footer-text {
+  width: 100%;
+  height: 50px;
+  font-size: 14px;
+  color: rgb(250, 245, 234);
+  text-align: center;
+
+}
+
+.product {
+  width: 90%;
+  height: 50px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.product-cont {
+  width: 100%;
+  height: auto;
+
+}
+
+.product-title {
+  width: 90%;
+  height: 50px;
+  line-height: 50px;
+  vertical-align: middle;
+  font-size: 24px;
+  float: left;
+  color: rgb(24, 53, 80);
+}
+
+.product-arrow {
+  width: 10%;
+  height: 50px;
+  line-height: 50px;
+  vertical-align: middle;
+  font-size: 24px;
+  float: left;
+  color: rgb(252, 116, 44);
+}
+.acc-cont {
+  display: none;
+}
+
+.img-big {
+  width: 100%;
+  height: 150px;
+  background-color: green;
+  background-image: url("assets/baseball2.png");
+  background-size: auto 150px;;
+}
+
+.img-big-text {
+  width: 100%;
+  height: 50px;
+  font-size: 20px;
+  color: rgb(250, 245, 234);
+  background-color: rgb(24, 53, 80);
+  text-align: center;
+}
+
+.our-staff {
+    width: 100%;
+    height: auto;
+    font-size: 20px;
+    text-align: center;
+    color: rgb(24, 53, 80);
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+@media only screen and (min-device-width : 350px) {
+  .img-big {
+    width: 100%;
+    height: 200px;
+    background-color: green;
+    background-image: url("assets/baseball2.png");
+    background-size: auto 200px;;
+  }
+
+  .img-big-text {
+    width: 100%;
+    height: 60px;
+    font-size: 20px;
+    color: rgb(250, 245, 234);
+    background-color: rgb(24, 53, 80);
+    text-align: center;
+  }
+}
+@media only screen and (min-device-width : 470px) {
+  .img-big {
+    width: 100%;
+    height: 200px;
+    background-color: green;
+    background-image: url("assets/baseball2.png");
+
+    background-size: cover;
+  }
+
+  .img-big-text {
+    width: 100%;
+    height: 60px;
+    font-size: 20px;
+    line-height: 60px;
+    vertical-align: middle;
+    color: rgb(250, 245, 234);
+    background-color: rgb(24, 53, 80);
+    text-align: center;
+  }
+}
+@media only screen and (min-device-width : 620px) {
+  .img-big {
+    width: 100%;
+    height: 250px;
+    background-color: green;
+    background-image: url("assets/baseball2.png");
+
+    background-size: cover;
+  }
+
+  .img-big-text {
+    width: 100%;
+    height: 60px;
+    font-size: 20px;
+    line-height: 60px;
+    vertical-align: middle;
+    color: rgb(250, 245, 234);
+    background-color: rgb(24, 53, 80);
+    text-align: center;
+  }
+}
+@media only screen and (min-device-width : 710px) {
+  .img-big {
+    width: 100%;
+    height: 275px;
+    background-color: green;
+    background-image: url("assets/baseball2.png");
+
+    background-size: cover;
+  }
+
+  .img-big-text {
+    width: 100%;
+    height: 60px;
+    font-size: 24px;
+    line-height: 60px;
+    vertical-align: middle;
+    color: rgb(250, 245, 234);
+    background-color: rgb(24, 53, 80);
+    text-align: center;
+  }
+}
+@media only screen and (min-device-width : 850px) {
+  .img-big {
+    width: 100%;
+    height: 300px;
+    background-color: green;
+    background-image: url("assets/baseball2.png");
+
+    background-size: cover;
+  }
+
+  .img-big-text {
+    width: 100%;
+    height: 60px;
+    font-size: 20px;
+    color: rgb(250, 245, 234);
+    background-color: rgb(24, 53, 80);
+    text-align: center;
+  }
+}
+@media only screen and (min-device-width : 930px) {
+  .img-big {
+    width: 100%;
+    height: 400px;
+    background-color: green;
+    background-image: url("assets/baseball2.png");
+
+    background-size: cover;
+  }
+
+  .img-big-text {
+    width: 100%;
+    height: 80px;
+    font-size: 30px;
+    line-height: 80px;
+    vertical-align: middle;
+    color: rgb(250, 245, 234);
+    background-color: rgb(24, 53, 80);
+    text-align: center;
+  }
+}
+@media only screen and (min-device-width : 1200px) {
+  .img-big {
+    width: 100%;
+    height: 500px;
+    background-color: green;
+    background-image: url("assets/baseball2.png");
+
+    background-size: cover;
+  }
+
+  .img-big-text {
+    width: 100%;
+    height: 80px;
+    font-size: 30px;
+    line-height: 80px;
+    vertical-align: middle;
+    color: rgb(250, 245, 234);
+    background-color: rgb(24, 53, 80);
+    text-align: center;
+  }
+}
+
+
+
+@media only screen and (min-device-width : 675px) and (max-device-width : 1024px) {
+  .sec-image {
+    width: 220px;
+    height: 200px;
+    background-size: 220px 200px;
+  }
+  .map-size {
+    width: 220px;
+    height: 200px;
+  }
+  .body-inner {
+    width: 80%;
+  }
+
+  .sec-body-cont{
+    width: 50%;
+    float: left;
+  }
+  .sec-image-cont{
+    width: 50%;
+    float: left;
+  }
+
+  .section {
+    overflow: hidden;
+  }
+  .head {
+    margin-top: 0;
+    font-size: 22px;
+  }
+
+  .staffer {
+    width: 50%;
+    float: left;
+  }
+
+
+  .staffer-img {
+    width: 150px;
+    height: 200px;
+    border: solid;
+    border-width: 2px;
+    border-color: rgb(24, 53, 80);
+    margin-left: auto;
+    margin-right: auto;
+    background-size: 150px 200px;
+  }
+
+  .staffer-title {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 20px;
+    color: rgb(24, 53, 80);
+  }
+  .staffer-sub {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 16px;
+    color: rgb(24, 53, 80);
+  }
+
+
+  .head1{
+    color: rgb(24, 53, 80);
+    font-size: 23px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  .head2 {
+    color: rgb(24, 53, 80);
+    font-size: 20px;
+    font-family: mainFont;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .mail-to {
+    color: rgb(252, 116, 44);
+    font-size: 20px;
+    font-family: mainFont;
+  }
+
+  .copy {
+    color: rgb(24, 53, 80);
+    font-size: 18px;
+    font-family: secondFont;
+  }
+  .head3 {
+    width: 100%;
+    text-align: center;
+    color: rgb(24, 53, 80);
+    font-size: 26px;
+  }
+
+  .title {
+    font-size: 24px;
+
+  }
+
+  .our-staff {
+    font-size: 24px;
+  }
+
+}
+
+
+@media only screen and (min-device-width : 1024px) {
+  .product-cont {
+    display: none;
+  }
+  .sec-image {
+    width: 320px;
+    height: 300px;
+    background-size: 320px 300px;
+
+  }
+  .map-size {
+    width: 320px;
+    height: 300px;
+  }
+  .body-inner {
+    width: 80%;
+  }
+
+  .sec-body-cont{
+    width: 50%;
+    float: left;
+  }
+  .sec-image-cont{
+    width: 50%;
+    float: left;
+  }
+
+  .section {
+    overflow: hidden;
+  }
+  .head {
+    margin-top: 0;
+    font-size: 24px;
+  }
+  .staffer {
+    width: 50%;
+    float: left;
+  }
+
+
+  .staffer-img {
+    width: 250px;
+    height: 300px;
+    border: solid;
+    border-width: 2px;
+    border-color: rgb(24, 53, 80);
+    margin-left: auto;
+    margin-right: auto;
+    background-size: 250px 300px;
+  }
+
+  .staffer-title {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 20px;
+    color: rgb(24, 53, 80);
+  }
+  .staffer-sub {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 16px;
+    color: rgb(24, 53, 80);
+  }
+
+  .footer-icons {
+    display: none;
+  }
+  .head1{
+    color: rgb(24, 53, 80);
+    font-size: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  .head2 {
+    color: rgb(24, 53, 80);
+    font-size: 24px;
+    font-family: mainFont;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .mail-to {
+    color: rgb(252, 116, 44);
+    font-size: 24px;
+    font-family: mainFont;
+  }
+
+  .copy {
+    color: rgb(24, 53, 80);
+    font-size: 22px;
+    font-family: secondFont;
+  }
+  .head3 {
+    width: 100%;
+    text-align: center;
+    color: rgb(24, 53, 80);
+    font-size: 30px;
+  }
+  .footer {
+    height: 100px;
+  }
+  .footer-text {
+    height: 100px;
+    line-height: 100px;
+    vertical-align: middle;
+    font-size: 12px;
+  }
+
+  .title {
+    font-size: 34px;
+
+  }
+
+  .line {
+    margin-top: 17px;
+  }
+
+  .shop {
+    width: 900px;
+    height: 800px;
+    background-image: url("assets/fiveshop.png");
+    background-size: 900px 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .acc-cont  {
+    width: 100%;
+    height: auto;
+    display: inline;
+  }
+  .acc {
+    width: 33%;
+    height: auto;
+    float: left;
+  }
+  .acc-img {
+    width: 250px;
+    height: 270px;
+    border: solid;
+    border-width: 2px;
+    border-color: rgb(24, 53, 80);
+    margin-left: auto;
+    margin-right: auto;
+    background-size: 250px 270px;
+    margin-bottom: 10px;
+  }
+  .acc-title {
+    width: 100%;
+    height: auto;
+    font-size: 20px;
+    text-align: center;
+    color: rgb(24, 53, 80);
+  }
+
+  .sec-spacer {
+    width: 100%;
+    height: 50px;
+  }
+
+  .center {
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    height: auto;
+  }
+
+  .our-staff {
+    font-size: 30px;
+  }
+
+  .footer-icons-cont {
+    display: none;
+  }
+
+  .click {
+    width: 100px;
+    height: 100%;
+    float: left;
+  }
+
+}
