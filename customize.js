@@ -211,7 +211,20 @@ $(document).ready(function() {
 
 		$customAreaShown = $("#desktop-bat").is(":visible");
 
-		loadBatColor("unfinished", "unfinished", $logoColor, $bat, "birch");
+
+
+		loadBatColor("unfinished", "unfinished", $logoColor, $bat, "maple");
+
+
+
+		$batWood = 'maple';
+		$("#bc1").css("border-color", "rgb(252, 116, 44)");
+		$("#bc2").css("border-color", "rgb(24, 53, 80)");
+		$("#bc3").css("border-color", "rgb(24, 53, 80)");
+		$("#bc4").css("border-color", "rgb(24, 53, 80)");
+		$batTwoHandle = 'unfinished';
+		$batTwoBarrel = 'unfinished';
+
 
 
 
@@ -318,18 +331,21 @@ $(document).ready(function() {
 				$("#ASH").css("border-color", "rgb(24, 53, 80)");
 				$("#BIRCH").css("border-color", "rgb(24, 53, 80)");
 				$batWood = 'maple';
+				loadBatColor($batTwoHandle, $batTwoBarrel, $logoColor, $bat, $batWood);
 			});
 			$("#BIRCH").click(function() {
 				$(this).css("border-color", "rgb(252, 116, 44)");
 				$("#MAPLE").css("border-color", "rgb(24, 53, 80)");
 				$("#ASH").css("border-color", "rgb(24, 53, 80)");
 				$batWood = 'birch';
+				loadBatColor($batTwoHandle, $batTwoBarrel, $logoColor, $bat, $batWood);
 			});
 			$("#ASH").click(function() {
 				$(this).css("border-color", "rgb(252, 116, 44)");
 				$("#MAPLE").css("border-color", "rgb(24, 53, 80)");
 				$("#BIRCH").css("border-color", "rgb(24, 53, 80)");
 				$batWood = 'ash';
+				loadBatColor($batTwoHandle, $batTwoBarrel, $logoColor, $bat, $batWood);
 			});
 			$("#bc1").click(function() {
 				$(this).css("border-color", "rgb(252, 116, 44)");
@@ -672,19 +688,39 @@ $(document).ready(function() {
 });
 
 function loadBatColor(handle, barrel, logo, type, wood) {
-	switch (wood) {
-		case 'birch':
-			$("#custom-bat").css("background-image", "url('assets/birch/"+type+handle+barrel+".png')");
-			break;
-		case 'ash':
-			$("#custom-bat").css("background-image", "url('assets/ash/"+type+handle+barrel+".png')");
-			break;
-		case 'maple':
-			$("#custom-bat").css("background-image", "url('assets/maple/"+type+handle+barrel+".png')");
-			break;
-		default:
-			$("#custom-bat").css("background-image", "url('assets/maple/"+type+handle+barrel+".png')");
-			break;
+	console.log(type);
+	if (type == 'game'){
+		console.log("H");
+		switch (wood) {
+			case 'birch':
+				$("#custom-bat").css("background-image", "url('assets/birch/"+"pro"+handle+barrel+".png')");
+				break;
+			case 'ash':
+				$("#custom-bat").css("background-image", "url('assets/ash/"+"pro"+handle+barrel+".png')");
+				break;
+			case 'maple':
+				$("#custom-bat").css("background-image", "url('assets/maple/"+"pro"+handle+barrel+".png')");
+				break;
+			default:
+				$("#custom-bat").css("background-image", "url('assets/maple/"+"pro"+handle+barrel+".png')");
+				break;
+		}
+	}
+	else{
+		switch (wood) {
+			case 'birch':
+				$("#custom-bat").css("background-image", "url('assets/birch/"+type+handle+barrel+".png')");
+				break;
+			case 'ash':
+				$("#custom-bat").css("background-image", "url('assets/ash/"+type+handle+barrel+".png')");
+				break;
+			case 'maple':
+				$("#custom-bat").css("background-image", "url('assets/maple/"+type+handle+barrel+".png')");
+				break;
+			default:
+				$("#custom-bat").css("background-image", "url('assets/maple/"+type+handle+barrel+".png')");
+				break;
+		}
 	}
 
 	$("#logo-overlay").css("background-image", "url('assets/"+type+"logos/"+logo+".png')");
