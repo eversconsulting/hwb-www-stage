@@ -361,6 +361,7 @@
 							<div id="bc2" title="Natural" class="color"></div>
 							<div id="bc3" title="Black" class="color"></div>
 							<div id="bc4" title="Gray" class="color"></div>
+							<div id="bc5" title="Gray" class="color"></div>
 						</div>
 				</div>
 					<div class="cart-row">
@@ -373,6 +374,7 @@
 									<div id="hc2" title="Natural" class="color"></div>
 									<div id="hc3" title="Black" class="color"></div>
 									<div id="hc4" title="Gray" class="color"></div>
+									<div id="hc5" title="Merlot" class="color"></div>
 								</div>
 							</div>
 							<div class="cart-col">
@@ -382,6 +384,7 @@
 										<div id="brc2" title="Natural" class="color"></div>
 										<div id="brc3" title="Black" class="color"></div>
 										<div id="brc4" title="Gray" class="color"></div>
+										<div id="brc5" title="Merlot" class="color"></div>
 									</div>
 							</div>
 						</div>

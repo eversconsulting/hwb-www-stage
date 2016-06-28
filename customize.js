@@ -383,6 +383,17 @@ $(document).ready(function() {
 				$batTwoHandle = 'gray';
 				loadBatColor("gray", "gray", $logoColor, $bat, $batWood);
 			});
+
+			$("#bc5").click(function() {
+				$(this).css("border-color", "rgb(252, 116, 44)");
+				$("#bc2").css("border-color", "rgb(24, 53, 80)");
+				$("#bc3").css("border-color", "rgb(24, 53, 80)");
+				$("#bc4").css("border-color", "rgb(24, 53, 80)");
+				$("#bc1").css("border-color", "rgb(24, 53, 80)");
+				$batTwoBarrel = 'mer';
+				$batTwoHandle = 'mer';
+				loadBatColor("mer", "mer", $logoColor, $bat, $batWood);
+			});
 			$("#hc1").click(function() {
 				$(this).css("border-color", "rgb(252, 116, 44)");
 				$("#hc2").css("border-color", "rgb(24, 53, 80)");
@@ -437,6 +448,21 @@ $(document).ready(function() {
 				$batTwoHandle = 'gray';
 				loadBatColor("gray", $batTwoBarrel, $logoColor, $bat, $batWood);
 			});
+
+			$("#hc5").click(function() {
+				$(this).css("border-color", "rgb(252, 116, 44)");
+				$("#hc2").css("border-color", "rgb(24, 53, 80)");
+				$("#hc3").css("border-color", "rgb(24, 53, 80)");
+				$("#hc4").css("border-color", "rgb(24, 53, 80)");
+				$("#hc1").css("border-color", "rgb(24, 53, 80)");
+				$("#bc1").css("border-color", "rgb(24, 53, 80)");
+				$("#bc2").css("border-color", "rgb(24, 53, 80)");
+				$("#bc3").css("border-color", "rgb(24, 53, 80)");
+				$("#bc4").css("border-color", "rgb(24, 53, 80)");
+				$batTwoOption = true;
+				$batTwoHandle = 'mer';
+				loadBatColor("mer", $batTwoBarrel, $logoColor, $bat, $batWood);
+			});
 			$("#brc1").click(function() {
 				$(this).css("border-color", "rgb(252, 116, 44)");
 				$("#brc2").css("border-color", "rgb(24, 53, 80)");
@@ -490,6 +516,23 @@ $(document).ready(function() {
 				$batTwoBarrel = 'gray';
 				loadBatColor($batTwoHandle, "gray", $logoColor, $bat, $batWood);
 			});
+
+			$("#brc5").click(function() {
+				$(this).css("border-color", "rgb(252, 116, 44)");
+				$("#brc2").css("border-color", "rgb(24, 53, 80)");
+				$("#brc3").css("border-color", "rgb(24, 53, 80)");
+				$("#brc4").css("border-color", "rgb(24, 53, 80)");
+				$("#brc1").css("border-color", "rgb(24, 53, 80)");
+				$("#bc1").css("border-color", "rgb(24, 53, 80)");
+				$("#bc2").css("border-color", "rgb(24, 53, 80)");
+				$("#bc3").css("border-color", "rgb(24, 53, 80)");
+				$("#bc4").css("border-color", "rgb(24, 53, 80)");
+				$batTwoOption = true;
+				$batTwoBarrel = 'mer';
+				loadBatColor($batTwoHandle, "mer", $logoColor, $bat, $batWood);
+			});
+
+
 			$("#lc1").click(function() {
 				$(this).css("border-color", "rgb(252, 116, 44)");
 				$("#lc2").css("border-color", "rgb(24, 53, 80)");
