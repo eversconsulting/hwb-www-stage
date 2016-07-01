@@ -399,8 +399,7 @@
 									<div id="lc1" class="colorX">BLACK</div>
 									<div id="lc2" class="colorX">SILVER</div>
 									<div id="lc3" class="colorX">GOLD</div>
-									<div id="lc4" class="colorX">MERLOT</div>
-									<div id="lc5" class="colorX">WHITE</div>
+									<div id="lc4" class="colorX">WHITE</div>
 								</div>
 						</div>
 						<div class="cart-col">
@@ -463,7 +462,7 @@
 
 				<div class="cart-row">
 					<div class="button" id="add1">ADD TO CART</div>
-					
+
 				</div>
 
 
