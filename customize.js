@@ -185,14 +185,12 @@ $(document).ready(function() {
 			}
 			$(".customize-model").text($text);
 
+			$("#length-select").empty();
 			jQuery.each( $lengths, function(i, val)  {
 				$("#length-select").append('<option class="option-select" id='+val+'>'+val+'</div>');
 			});
 
-			jQuery.each( $weights, function(i, val)  {
-				$("#weight-select").append("<option class='option-select' id="+val+">"+val+"</div>");
-			});
-
+			$("#wood-select").empty();
 			jQuery.each( $woods, function(i, val)  {
 				$("#wood-select").append("<option class='option-select' id="+val+">"+val+"</div>");
 			});

@@ -350,7 +350,7 @@ function requireMobile() {
   else{
     $fix += "Barrel Color, ";
   }
-  if($batLogoColor != '' && $batLogoColor != ''){
+  if($batLogoColor != '' && $batLogoColor != 'Choose'){
     $sLogo = true;
   }
   else{

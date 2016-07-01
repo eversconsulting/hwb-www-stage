@@ -476,7 +476,6 @@
 
 	</div>
 	<div id="mobile-bat" class="customize-bat">
-
 			<div class="customize-model"></div>
 			<div class="customize-image"></div>
 			<div class="options-cont">
