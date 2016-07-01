@@ -82,6 +82,20 @@ $(document).ready(function() {
 
 
 	$("#cb-mobile").click(function() {
+		$batWood = '';
+		$batColor = '';
+		$batTwoOption = false;
+		$batTwoHandle = '';
+		$batTwoBarrel = '';
+		$batLogoColor = '';
+		$batFinish = '';
+		$batLength = '';
+		$batWeight = '';
+		$batEndCup = false;
+		$batEngravingStyle = '';
+		$batEngraving = '';
+		$batQuantity = '';
+
 		$customAreaShownM = $("#mobile-bat").is(":visible");
 
 
@@ -100,7 +114,7 @@ $(document).ready(function() {
 
 					$lengths = ["32", "32.5", "33", "33.5", "34", "34.5"];
 					$weights = ["-3", "-2", "-1", "0"];
-					$woods = ["MAPLE | $120", "ASH | $100", "BIRCH | $100"];
+					$woods = ["Maple","Ash", "Birch"];
 					$desc = ["Medium / large barrel diameter, Medium / long barrel, thin handle, flared knob", "Medium barrel diameter, long barrel, thick handle, regular knob", "Medium barrel diameter, long barrel, thin handle, regular knob", "Large barrel diameter, long barrel , medium handle, regular knob", "Medium barrel diameter, Tapered barrel, medium handle, flared knob"];
 					$customTitle = "PRO BAT";
 					$price = "$120";
@@ -111,7 +125,7 @@ $(document).ready(function() {
 
 					$lengths = ["31", "32", "32.5", "33", "33.5", "34", "34.5"];
 					$weights = ["-3", "-2", "-1", "0"];
-					$woods = ["MAPLE","ASH", "BIRCH"];
+					$woods = ["Maple","Ash", "Birch"];
 					$desc = ["Medium / large barrel diameter, Medium / long barrel, thin handle, flared knob", "Medium barrel diameter, long barrel, thick handle, regular knob", "Medium barrel diameter, long barrel, thin handle, regular knob", "Large barrel diameter, long barrel , medium handle, regular knob", "Medium barrel diameter, Tapered barrel, medium handle, flared knob"];
 					$customTitle = "GAME BAT";
 					$price = "$70";
@@ -121,7 +135,7 @@ $(document).ready(function() {
 				case 'youth':
 					$lengths = ["26", "27", "28", "29", "30"];
 					$weights = ["-3", "-2", "-1", "0"];
-					$woods = ["ASH", "BIRCH"];
+					$woods = ["Ash", "Birch"];
 					$customTitle = "GAME BAT";
 					$price = "$40";
 					$unFin = "assets/unfinished-m.png";
@@ -130,7 +144,7 @@ $(document).ready(function() {
 				case 'fungo':
 					$lengths = ["34", "35", "35.5", "36"];
 					$weights = ["-3", "-2", "-1", "0"];
-					$woods = ["MAPLE"];
+					$woods = ["Maple"];
 					$customTitle = "GAME BAT";
 					$price = "$65";
 					$unFin = "assets/unfinished-m.png";
@@ -139,7 +153,7 @@ $(document).ready(function() {
 				case 'promo':
 					$lengths = ["34", "35", "35.5", "36"];
 					$weights = ["-3", "-2", "-1", "0"];
-					$woods = ["MAPLE"];
+					$woods = ["Maple"];
 					$unFin = "assets/unfinished-m.png";
 
 					break;
@@ -149,7 +163,11 @@ $(document).ready(function() {
 					break;
 			}
 
-			$(".customize-image").css("background-image", "url("+$unFin+")");
+			$(".customize-image").css("background-image", "url(assets/maple/"+$bat+"unfinishedunfinished.png)");
+			$batWood = "Maple";
+			$batColor = "unfinished";
+			$batTwoHandle = "unfinished";
+			$batTwoBarrel = "unfinished";
 
 			switch($customTitle){
 				case 'FUNGO BAT':
@@ -168,7 +186,7 @@ $(document).ready(function() {
 			$(".customize-model").text($text);
 
 			jQuery.each( $lengths, function(i, val)  {
-				$("#length-select").append('<option class="option-select" id='+val+'>'+val+'"</div>');
+				$("#length-select").append('<option class="option-select" id='+val+'>'+val+'</div>');
 			});
 
 			jQuery.each( $weights, function(i, val)  {
@@ -179,6 +197,39 @@ $(document).ready(function() {
 				$("#wood-select").append("<option class='option-select' id="+val+">"+val+"</div>");
 			});
 	   	}
+
+			$('#wood-select').on('change', function() {
+			  	$batWood = $(this).val();
+
+			});
+			$('#batColor-select').on('change', function() {
+					$batColor = $(this).val();
+					$batTwoHandle = $(this).val();
+					$batTwoBarrel = $(this).val();
+					$batTwoOption = false;
+			});
+			$('#handle-select').on('change', function() {
+				$batTwoHandle = $(this).val();
+				$batTwoOption = true;
+			});
+			$('#barrel-select').on('change', function() {
+				$batTwoBarrel = $(this).val();
+				$batTwoOption = true;
+
+			});
+			$('#logo-select').on('change', function() {
+				$logoColor = $(this).val();
+			});
+			$('#finish-select').on('change', function() {
+				$batFinish = $(this).val();
+			});
+			$('#length-select').on('change', function() {
+				$batLength = $(this).val();
+			});
+			$('#engraving-select').on('change', function() {
+				$batEngravingStyle = $(this).val();
+			});
+
 	});
 
 
@@ -304,7 +355,6 @@ $(document).ready(function() {
 				break;
 			}
 
-			//$(".customize-image").css("background-image", "url("+$unFin+")");
 
 
 			$(".customize-model").text($text);
@@ -325,6 +375,8 @@ $(document).ready(function() {
 			jQuery.each( $woods, function(i, val)  {
 				$("#woodList").append("<div class='colorX' id="+val+">"+val+"</div>");
 			});
+			$("#MAPLE").css("border-color", "rgb(252, 116, 44)");
+
 	   	}
 	   		$("#MAPLE").click(function() {
 				$(this).css("border-color", "rgb(252, 116, 44)");
@@ -390,9 +442,9 @@ $(document).ready(function() {
 				$("#bc3").css("border-color", "rgb(24, 53, 80)");
 				$("#bc4").css("border-color", "rgb(24, 53, 80)");
 				$("#bc1").css("border-color", "rgb(24, 53, 80)");
-				$batTwoBarrel = 'mer';
-				$batTwoHandle = 'mer';
-				loadBatColor("mer", "mer", $logoColor, $bat, $batWood);
+				$batTwoBarrel = 'merlot';
+				$batTwoHandle = 'merlot';
+				loadBatColor("merlot", "merlot", $logoColor, $bat, $batWood);
 			});
 			$("#hc1").click(function() {
 				$(this).css("border-color", "rgb(252, 116, 44)");
@@ -460,8 +512,8 @@ $(document).ready(function() {
 				$("#bc3").css("border-color", "rgb(24, 53, 80)");
 				$("#bc4").css("border-color", "rgb(24, 53, 80)");
 				$batTwoOption = true;
-				$batTwoHandle = 'mer';
-				loadBatColor("mer", $batTwoBarrel, $logoColor, $bat, $batWood);
+				$batTwoHandle = 'merlot';
+				loadBatColor("merlot", $batTwoBarrel, $logoColor, $bat, $batWood);
 			});
 			$("#brc1").click(function() {
 				$(this).css("border-color", "rgb(252, 116, 44)");
@@ -528,8 +580,8 @@ $(document).ready(function() {
 				$("#bc3").css("border-color", "rgb(24, 53, 80)");
 				$("#bc4").css("border-color", "rgb(24, 53, 80)");
 				$batTwoOption = true;
-				$batTwoBarrel = 'mer';
-				loadBatColor($batTwoHandle, "mer", $logoColor, $bat, $batWood);
+				$batTwoBarrel = 'merlot';
+				loadBatColor($batTwoHandle, "merlot", $logoColor, $bat, $batWood);
 			});
 
 
@@ -538,6 +590,7 @@ $(document).ready(function() {
 				$("#lc2").css("border-color", "rgb(24, 53, 80)");
 				$("#lc3").css("border-color", "rgb(24, 53, 80)");
 				$("#lc4").css("border-color", "rgb(24, 53, 80)");
+				$("#lc5").css("border-color", "rgb(24, 53, 80)");
 				$batLogoColor = 'black';
 				$logoColor = 'black';
 				$("#logo-overlay").css("background-image", "url('assets/"+$bat+"logos/"+$logoColor+".png')");
@@ -551,6 +604,7 @@ $(document).ready(function() {
 				$("#lc1").css("border-color", "rgb(24, 53, 80)");
 				$("#lc3").css("border-color", "rgb(24, 53, 80)");
 				$("#lc4").css("border-color", "rgb(24, 53, 80)");
+				$("#lc5").css("border-color", "rgb(24, 53, 80)");
 				$batLogoColor = 'gray';
 				$logoColor = 'gray';
 				$("#logo-overlay").css("background-image", "url('assets/"+$bat+"logos/"+$logoColor+".png')");
@@ -560,6 +614,7 @@ $(document).ready(function() {
 				$("#lc2").css("border-color", "rgb(24, 53, 80)");
 				$("#lc1").css("border-color", "rgb(24, 53, 80)");
 				$("#lc4").css("border-color", "rgb(24, 53, 80)");
+				$("#lc5").css("border-color", "rgb(24, 53, 80)");
 				$batLogoColor = 'gold';
 				$logoColor = 'gold';
 				$("#logo-overlay").css("background-image", "url('assets/"+$bat+"logos/"+$logoColor+".png')");
@@ -569,8 +624,19 @@ $(document).ready(function() {
 				$("#lc2").css("border-color", "rgb(24, 53, 80)");
 				$("#lc3").css("border-color", "rgb(24, 53, 80)");
 				$("#lc1").css("border-color", "rgb(24, 53, 80)");
+				$("#lc5").css("border-color", "rgb(24, 53, 80)");
 				$batLogoColor = 'white';
 				$logoColor = 'white';
+				$("#logo-overlay").css("background-image", "url('assets/"+$bat+"logos/"+$logoColor+".png')");
+			});
+			$("#lc5").click(function() {
+				$(this).css("border-color", "rgb(252, 116, 44)");
+				$("#lc2").css("border-color", "rgb(24, 53, 80)");
+				$("#lc3").css("border-color", "rgb(24, 53, 80)");
+				$("#lc1").css("border-color", "rgb(24, 53, 80)");
+				$("#lc4").css("border-color", "rgb(24, 53, 80)");
+				$batLogoColor = 'Merlot';
+				$logoColor = 'Merlot';
 				$("#logo-overlay").css("background-image", "url('assets/"+$bat+"logos/"+$logoColor+".png')");
 			});
 			$("#fc1").click(function() {
@@ -618,15 +684,6 @@ $(document).ready(function() {
 
 
 
-	$('#handleSelect').on('change', function() {
-	  	$handleColor = $(this).val();
-	  	checkCustom();
-	});
-
-	$('#batSelect').on('change', function() {
-	  	$batColor = $(this).val();
-	  	checkCustom();
-	});
 
 	// $("#add").click(function() {
 	// 	$batEngraving = $('#engraving1').val();
@@ -771,11 +828,11 @@ function loadBatColor(handle, barrel, logo, type, wood) {
 
 }
 
-function checkCustom() {
-	if(($handleColor != "none") && ($batColor != "none")){
-		$("#add").removeClass("disable");
-	}
-}
+// function checkCustom() {
+// 	if(($handleColor != "none") && ($batColor != "none")){
+// 		$("#add").removeClass("disable");
+// 	}
+// }
 
 function sendBat(handle, bat) {
 	$h = 'none';

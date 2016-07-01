@@ -81,7 +81,10 @@
 <head>
 	<title>Homewood Bat</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="custom.css">
+
 
 	<script type="text/javascript" src="jquery.js"></script>
 	<script type="text/javascript" src="script.js"></script>
@@ -149,7 +152,7 @@
 				<div id="ham2" class="hamburger-line"></div>
 				<div id="ham3" class="hamburger-line"></div>
 			</div>
-			<div class="cart">
+			<div id="mobile-cart" class="cart">
 				<div class="notify" style="display: none"></div>
 				<img class="cart-icon" src="assets/cart.png">
 			</div>
@@ -357,11 +360,11 @@
 
 
 
-							<div id="bc1" title="Unfinished" class="color"></div>
-							<div id="bc2" title="Natural" class="color"></div>
-							<div id="bc3" title="Black" class="color"></div>
-							<div id="bc4" title="Gray" class="color"></div>
-							<div id="bc5" title="Gray" class="color"></div>
+							<div id="bc1" title="Unfinished" class="colorX">UNFINISHED</div>
+							<div id="bc2" title="Natural" class="colorX">NATURAL</div>
+							<div id="bc3" title="Black" class="colorX">BLACK</div>
+							<div id="bc4" title="Gray" class="colorX">GRAY</div>
+							<div id="bc5" title="Merlot" class="colorX">MERLOT</div>
 						</div>
 				</div>
 					<div class="cart-row">
@@ -393,10 +396,11 @@
 						<div class="cart-col">
 							<div class="color-title">LOGO & ENGRAVING</div>
 								<div class="color-cont">
-									<div id="lc1" class="color"></div>
-									<div id="lc2" class="color"></div>
-									<div id="lc3" class="color"></div>
-									<div id="lc4" class="color"></div>
+									<div id="lc1" class="colorX">BLACK</div>
+									<div id="lc2" class="colorX">SILVER</div>
+									<div id="lc3" class="colorX">GOLD</div>
+									<div id="lc4" class="colorX">MERLOT</div>
+									<div id="lc5" class="colorX">WHITE</div>
 								</div>
 						</div>
 						<div class="cart-col">
@@ -480,7 +484,7 @@
 						<div class="color-title">WOOD TYPE</div>
 						<div class="styled-select">
 						   <select id="wood-select">
-						     <option selected="selected">Choose</option>
+
 						   </select>
 						</div>
 				</div>
@@ -488,12 +492,11 @@
 				<div class="cart-row">
 						<div class="color-title">BAT COLOR</div>
 						<div class="styled-select">
-						   <select>
-						     <option selected="selected">Choose</option>
-						     <option id="bc1">Maple</option>
-						     <option id="bc2">Birch</option>
-						     <option style="color: rgb(250, 245, 234);" id="bc3">Black</option>
-						     <option style="color: rgb(250, 245, 234);" id="bc4">Gray</option>
+						   <select id="batColor-select">
+						     <option>Maple</option>
+						     <option>Birch</option>
+						     <option>Black</option>
+						     <option>Gray</option>
 						   </select>
 						</div>
 				</div>
@@ -504,7 +507,7 @@
 								<div class="cart-row">
 									<div class="color-title">HANDLE</div>
 										<div class="styled-select">
-										   <select>
+										   <select id="handle-select">
 										     <option selected="selected">Choose</option>
 										     <option id="bc1">Maple</option>
 										     <option id="bc2">Birch</option>
@@ -516,7 +519,7 @@
 								<div class="cart-row">
 									<div class="color-title">BARREL</div>
 										<div class="styled-select">
-										   <select>
+										   <select id="barrel-select">
 										     <option selected="selected">Choose</option>
 										     <option id="bc1">Maple</option>
 										     <option id="bc2">Birch</option>
@@ -532,19 +535,20 @@
 
 							<div class="color-title">LOGO & ENGRAVING</div>
 								<div class="styled-select">
-								   <select id="wood-select">
+								   <select id="logo-select">
 								     <option selected="selected">Choose</option>
-								     <option id="lc1" style="color: rgb(250, 245, 234);">Black</option>
-								     <option id="lc2">Silver</option>
-								     <option id="lc3">Gold</option>
-								     <option id="lc4">White</option>
+								     <option val="Black">Black</option>
+								     <option val="Silver">Silver</option>
+								     <option val="Gold">Gold</option>
+								     <option val="White">White</option>
+										 <option val="Merlot">Merlot</option>
 								   </select>
 								</div>
 
 						<div class="cart-row">
 							<div class="color-title">FINISH</div>
 								<div class="styled-select">
-								   <select id="wood-select">
+								   <select id="finish-select">
 								     <option selected="selected">Choose</option>
 								     <option id="fc1" style="color: rgb(250, 245, 234);">Glossy</option>
 								     <option id="fc2" style="color: rgb(250, 245, 234);">Matte</option>
@@ -562,22 +566,14 @@
 						</div>
 					</div>
 
-				<?php
-					if($showWeight == false){
 
-					}
-					else {
-
-						echo '<div class="cart-row"><div class="color-title">BAT WEIGHT</div><div class="styled-select"><select id="weight-select"><option selected="selected">Choose</option></select></div></div>';
-					}
-				?>
 
 
 
 				<div class="cart-row">
 						<div class="color-title">CUSTOM ENGRAVING LETTERING STYLE</div>
 						<div class="styled-select">
-						   <select>
+						   <select id="engraving-select">
 						     <option selected="selected">Choose</option>
 						     <option class="gothic-option">BANK GOTHIC</option>
 						     <option class="brush-option">Brush Script</option>
@@ -587,7 +583,7 @@
 				<div class="cart-row">
 						<div class="color-title">CUSTOM ENGRAVING (UP TO 25 CHARACTERS)</div>
 						<div class="color-cont">
-							<input class="engraving" type="text" maxlength="25">
+							<input id="meng" class="engraving" type="text" maxlength="25">
 						</div>
 				</div>
 
@@ -605,7 +601,7 @@
 				<div class="cart-row">
 						<div class="color-title">QUANTITY</div>
 						<div class="color-cont">
-							<input class="quantity" type="number" min="1">
+							<input id="mq" class="quantity" type="number" min="1">
 						</div>
 				</div>
 
@@ -614,10 +610,7 @@
 
 				</div>
 
-				<div class="cart-row">
 
-					<div class="button-title">ONLINE STORE COMING SOON! PLEASE CALL 708.713.8000 TO ORDER</div>
-				</div>
 
 
 

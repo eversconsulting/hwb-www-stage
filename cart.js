@@ -32,6 +32,25 @@ $(document).ready(function(){
       });
   });
 
+  $("#mobile-cart").click(function() {
+    $(".cart-mid").empty();
+
+    $data = JSON.parse(sessionStorage.getItem("bats"));
+
+    for(var x = 0; x < $data.length; x++){
+      var productToAdd = '<div class="cart-prod"><div class="prod-row"><div class="prod-title">'+$data[x].type+' BAT</div><div class="prod-quant">'+$data[x].quantity+'</div></div><div class="prod-row"><div class="prod-col"><div class="prod-wood">'+$data[x].wood+'</div><div class="prod-hand">'+$data[x].handle+' Handle</div><div class="prod-barr">'+$data[x].barrel+' Barrel</div><div class="prod-logo">'+$data[x].logo+' Logo</div></div><div class="prod-col"><div class="prod-leng">'+$data[x].length+'"</div><div class="prod-finish">'+$data[x].finish+' Finish</div><div class="prod-eng-style">'+$data[x].engravingStyle+'</div><div class="prod-eng">"'+$data[x].engraving+'"</div></div></div></div>'
+
+      $(".cart-mid").append(productToAdd);
+
+    }
+
+    shopifyActivate();
+
+   $(".side-cart").animate({
+       width: 300
+     });
+ });
+
 
 
 
@@ -153,6 +172,70 @@ $(document).ready(function(){
    });
 
 
+  $("#add").click(function(){
+
+    if(requireMobile()){
+      	$batEngraving = $('#meng').val();
+      	$batQuantity = $('#mq').val();
+      	$agree = $('#ack-checked').is(':visible');
+
+
+      	$batArray = JSON.parse(sessionStorage.getItem("bats"));
+
+          $newBat = new Object();
+          $newBat.type = $bat.toUpperCase();
+          $newBat.wood = $batWood.charAt(0).toUpperCase()+ $batWood.slice(1);
+          $newBat.handle = $batTwoHandle.charAt(0).toUpperCase()+ $batTwoHandle.slice(1);
+          $newBat.barrel = $batTwoBarrel.charAt(0).toUpperCase()+ $batTwoBarrel.slice(1);
+          $newBat.logo = $batLogoColor.charAt(0).toUpperCase()+ $batLogoColor.slice(1);
+          $newBat.finish = $batFinish.charAt(0).toUpperCase()+ $batFinish.slice(1);
+          $newBat.length = $batLength;
+          $newBat.engravingStyle = $batEngravingStyle.charAt(0).toUpperCase()+ $batEngravingStyle.slice(1);
+          if($batEngraving != ''){
+            $newBat.engraving = $batEngraving;
+          }
+          else{
+            $newBat.engraving = "No Engraving."
+          }
+          $newBat.quantity = $batQuantity;
+          $newBat.agree = $agree;
+          $newBat.model = $currentModel;
+          $newBat.customColor = $batTwoOption;
+
+
+
+      	$batArray.push($newBat);
+
+        sessionStorage.setItem("bats", JSON.stringify($batArray));
+
+        //var productToAdd = '<div class="cart-prod"><div class="prod-row"><div class="prod-title">'+$newBat.type+' BAT</div><div class="prod-quant">'+$newBat.quantity+'</div></div><div class="prod-row"><div class="prod-col"><div class="prod-wood">'+$newBat.wood+'</div><div class="prod-hand">'+$newBat.handle+' Handle</div><div class="prod-barr">'+$newBat.barrel+' Barrel</div><div class="prod-logo">'+$newBat.logo+' Logo</div></div><div class="prod-col"><div class="prod-leng">'+$newBat.length+'"</div><div class="prod-finish">'+$newBat.finish+' Finish</div><div class="prod-eng-style">'+$newBat.engravingStyle+'</div><div class="prod-eng">"'+$newBat.engraving+'"</div></div></div></div>'
+
+        //$(".cart-mid").append(productToAdd);
+        $(".cart-mid").empty();
+
+        $data = JSON.parse(sessionStorage.getItem("bats"));
+
+        for(var x = 0; x < $data.length; x++){
+          var productToAdd = '<div class="cart-prod"><div class="prod-row"><div class="prod-title">'+$data[x].type+' BAT</div><div class="prod-quant">'+$data[x].quantity+'</div></div><div class="prod-row"><div class="prod-col"><div class="prod-wood">'+$data[x].wood+'</div><div class="prod-hand">'+$data[x].handle+' Handle</div><div class="prod-barr">'+$data[x].barrel+' Barrel</div><div class="prod-logo">'+$data[x].logo+' Logo</div></div><div class="prod-col"><div class="prod-leng">'+$data[x].length+'"</div><div class="prod-finish">'+$data[x].finish+' Finish</div><div class="prod-eng-style">'+$data[x].engravingStyle+'</div><div class="prod-eng">"'+$data[x].engraving+'"</div></div></div></div>'
+
+          $(".cart-mid").append(productToAdd);
+
+        }
+
+        $(".side-cart").animate({
+            width: 300
+          });
+
+          shopifyActivate();
+
+
+    }
+    else {
+      requireMobile();
+    }
+
+  });
+
   $("#add1").click(function(){
     if(requireDesktop()){
       	$batEngraving = $('#engraving1').val();
@@ -220,6 +303,97 @@ $(document).ready(function(){
 
 
 });
+
+function requireMobile() {
+
+  $batWood = $("#wood-select").val();
+
+  $logoColor = $('#logo-select').val();
+  $batLogoColor = $('#logo-select').val();
+  $batFinish = $('#finish-select').val();
+  $batLength = $('#length-select').val();
+
+  var $sWood = false;
+  var $sHandle = false;
+  var $sBarrel = false;
+  var $sLogo = false;
+  var $sLength = false;
+  var $sFinish = false;
+  var $sAgree = false;
+  var $sQuant = false;
+  var $readyToSubmit = false;
+  var $fix = 'Sorry, you still need to tell us about the ';
+
+  if($batWood != ''){
+    $sWood = true;
+  }
+  else{
+    $fix += "Wood Type, ";
+
+  }
+  if($batFinish != ''){
+    $sFinish = true;
+  }
+  else{
+    $fix += "Bat Finish, ";
+
+  }
+  if($batTwoHandle != ''){
+    $sHandle = true;
+  }
+  else{
+    $fix += "Handle Color, ";
+  }
+  if($batTwoBarrel != ''){
+    $sBarrel = true;
+  }
+  else{
+    $fix += "Barrel Color, ";
+  }
+  if($batLogoColor != ''){
+    $sLogo = true;
+  }
+  else{
+    $fix += "Logo Color, ";
+  }
+  if($batLength != '' && $batLength != 'Choose'){
+    $sLength = true;
+  }
+  else{
+    $fix += "Bat Length, ";
+  }
+
+
+  if($('.ack-checked').is(':visible')){
+
+    $sAgree = true;
+  }
+  else{
+    $fix += "Agree Checkbox, ";
+  }
+  if($('#mq').val() != ''){
+    $sQuant = true;
+  }
+  else{
+    $fix += "Quantity, ";
+  }
+
+  if($sWood && $sHandle && $sBarrel && $sLogo && $sLength && $sAgree && $sQuant){
+    $readyToSubmit = true;
+    return $readyToSubmit;
+  }
+  else{
+    $readyToSubmit = false;
+    $fix = $fix.substring(0, $fix.length - 2);
+    $fix += ".";
+    $('.popup-text').text($fix);
+    $('.bottom-popup').animate({
+      height: 150
+    });
+    $('.popup-text').show();
+    return $readyToSubmit;
+  }
+}
 
 function requireDesktop() {
   $batEngraving = $('#engraving1').val();

@@ -312,6 +312,9 @@ ul a {
 }
 
 
+
+
+
 .button {
 	transition:
 				background-color 0.5s linear,
@@ -847,7 +850,7 @@ sup {
 
 .colorX {
 	font-size: 18px;
-	width: 150px;
+	width: 125px;
 	height: 50px;
 	background-color: white;
 	border: solid;
@@ -1151,19 +1154,19 @@ sup {
 }
 
 #dan {
-	background-image: url("assets/dan.jpg");
+	background-image: url("assets/dan.png");
 }
 #todd {
-	background-image: url("assets/todd.jpg");
+	background-image: url("assets/todd.png");
 }
 #carly {
 	background-image: url("assets/carly.png");
 }
 #craig {
-	background-image: url("assets/craig.jpg");
+	background-image: url("assets/craig.png");
 }
 #pam {
-
+	background-image: url("assets/pam.png");
 }
 
 #desktop-custom {
@@ -1284,10 +1287,15 @@ option {
 	background-image: url("assets/birch.jpg");
 }
 #bc3 {
-	background-color: black;
+	background-color: rgb(35, 38, 45);
+	color: rgb(250, 245, 234);
 }
 #bc4 {
 	background-image: url("assets/gray.jpg");
+}
+#bc5 {
+	background-color: rgb(77, 42, 44);
+	color: rgb(250, 245, 234);
 }
 #hc1 {
 	background-image: url("assets/maple.jpg");
@@ -1296,10 +1304,14 @@ option {
 	background-image: url("assets/birch.jpg");
 }
 #hc3 {
-	background-color: black;
+	background-color: rgb(35, 38, 45);
 }
 #hc4 {
 	background-image: url("assets/gray.jpg");
+}
+#hc5 {
+	background-color: rgb(77, 42, 44);
+	color: rgb(250, 245, 234);
 }
 #brc1 {
 	background-image: url("assets/maple.jpg");
@@ -1308,25 +1320,40 @@ option {
 	background-image: url("assets/birch.jpg");
 }
 #brc3 {
-	background-color: black;
+	background-color: rgb(35, 38, 45);
 }
 #brc4 {
 	background-image: url("assets/gray.jpg");
 }
+#brc5 {
+	background-color: rgb(77, 42, 44);
+	color: rgb(250, 245, 234);
+}
 #lc1 {
-	background-color: black;
+	background-color: rgb(35, 38, 45);
+	color: rgb(250, 245, 234);
+	margin-bottom: 5px;
+	margin-top: 5px;
 }
 #lc2 {
 	background-color: rgb(181, 190, 179);
+	margin-bottom: 5px;
+	margin-top: 5px;
 }
 #lc3 {
 	background-color: rgb(199, 167, 88);
+	margin-bottom: 5px;
+	margin-top: 5px;
 }
 #lc4 {
-	background-color: white;
+	background-color: rgb(77, 42, 44);
+	color: rgb(250, 245, 234);
+	margin-bottom: 5px;
+	margin-top: 5px;
 }
+
 #fc1{
-	background-color: black;
+	background-color: rgb(35, 38, 45);
 	color: rgb(250, 245, 234);
 }
 #fc2{
@@ -1682,7 +1709,6 @@ option {
 .bottom-popup {
 	width: 100%;
 	height: 0;
-	max-height: 75px;
 	background-color: rgba(255, 0, 0, 0.8);
 	position: fixed;
 	z-index: 1000;
@@ -1834,7 +1860,7 @@ orange: rgb(252, 116, 44);
 
 
 /*Phone*/
-@media only screen and (max-device-width : 480px) {
+@media only screen and (max-width : 480px) {
 .section-titleB {
 	padding-top: 10px;
 	font-size: 20px;
@@ -2308,8 +2334,8 @@ a {
 }
 .customize-image {
 	width: 300px;
-	height: 100px;
-	background-color: white;
+	height: 40px;
+	background-size: contain;
 	border: solid;
 	border-color: rgb(24, 53, 80);
 	border-width: 2px;
@@ -2538,6 +2564,13 @@ a {
 	margin-right: auto;
 }
 
+.popup-text {
+	font-size: 15px;
+}
+.bottom-popup{
+	height: 0;
+}
+
 
 
 
@@ -2547,7 +2580,7 @@ a {
 
 
 /*Tablet */
-@media only screen and (min-device-width : 481px) and (max-device-width : 1024px) {
+@media only screen and (min-width : 481px) and (max-width : 1024px) {
 
 a[href^="tel"]{
     color:inherit;

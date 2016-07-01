@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Homewood Bat</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width" />
 	<link rel="stylesheet" type="text/css" href="styles.css">
 
 	<link rel="stylesheet" type="text/css" href="custom.css">
@@ -157,6 +157,8 @@
 				</div>
 			</div>
 		</div>
+		<div class="acc-warn">PLEASE COME VISIT US OR GIVE US A CALL TO ORDER ACCESSORIES 708-713-8000</div>
+
 		<div class="sec-spacer"></div>
 		<div id="sec3" class="title-cont">
 			<div class="line line-left"></div>
@@ -171,8 +173,8 @@
 			</div>
 			<div class="sec-body-cont">
 				<div class="sec-body">
-					<div class="head">PRO SHOP NOW OPEN</div>
-					<div class="head2">MONDAY-FRIDAY: 11-5<br><br>CALL FOR EVENING AND WEEKEND HOURS!</div>
+					<div class="head">PRO SHOP HOURS</div>
+					<div class="head2">MONDAY-FRIDAY: 9-5<br>SATURDAYS IN JULY: 9-2<br><br>CALL FOR EVENING HOURS!</div>
 				</div>
 			</div>
 		</div>
