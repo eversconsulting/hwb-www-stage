@@ -80,7 +80,9 @@
 <html>
 <head>
 	<title>Homewood Bat</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<link rel="stylesheet" type="text/css" href="custom.css">
@@ -493,8 +495,8 @@
 						<div class="styled-select">
 						   <select id="batColor-select">
 
-								<option value="maple">Maple</option>
-								<option value="birch">Birch</option>
+								<option value="unfinished">Unfinished</option>
+								<option value="natural">Natural</option>
 								<option value="black">Black</option>
 								<option value="gray">Gray</option>
 								<option value="merlot">Merlot</option>
@@ -510,11 +512,11 @@
 										<div class="styled-select">
 										   <select id="handle-select">
 										     <option selected="selected">Choose</option>
-												 <option value="maple">Maple</option>
-										     <option value="birch">Birch</option>
-										     <option value="black">Black</option>
-										     <option value="gray">Gray</option>
-												 <option value="merlot">Merlot</option>
+												 <option value="unfinished">Unfinished</option>
+				 								<option value="natural">Natural</option>
+				 								<option value="black">Black</option>
+				 								<option value="gray">Gray</option>
+				 								<option value="merlot">Merlot</option>
 										   </select>
 										</div>
 								</div>
@@ -523,8 +525,8 @@
 										<div class="styled-select">
 										   <select id="barrel-select">
 												 <option selected="selected">Choose</option>
- 												<option value="maple">Maple</option>
- 												<option value="birch">Birch</option>
+												 <option value="unfinished">Unfinished</option>
+ 												<option value="natural">Natural</option>
  												<option value="black">Black</option>
  												<option value="gray">Gray</option>
  												<option value="merlot">Merlot</option>
@@ -544,7 +546,7 @@
 								     <option value="silver">Silver</option>
 								     <option value="gold">Gold</option>
 								     <option value="white">White</option>
-										 <option value="merlot">Merlot</option>
+										
 								   </select>
 								</div>
 

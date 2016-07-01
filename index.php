@@ -2,7 +2,8 @@
 <html>
 <head>
 	<title>Homewood Bat</title>
-	<meta name="viewport" content="width=device-width" />
+	 <meta charset="UTF-8">
+
 	<link rel="stylesheet" type="text/css" href="styles.css">
 
 	<link rel="stylesheet" type="text/css" href="custom.css">
@@ -141,6 +142,7 @@
 				<a href="customize.php?id=promo"><div class="click"></div></a>
 				<a href="customize.php?id=promo"><div class="click"></div></a>
 				<a href="customize.php?id=youth"><div class="click"></div></a>
+				<p class="accm">TO ORDER HATS, SHIRTS, ETC. GIVE US A CALL 708-713-8000</p>
 			</div>
 			<div class="acc-cont">
 				<div class="acc">

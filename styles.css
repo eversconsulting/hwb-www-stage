@@ -944,7 +944,14 @@ sup {
 }
 
 
-
+.accm {
+	width: 90%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	color: rgb(24, 53, 80);
+}
 
 
 .model-select {

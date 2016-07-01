@@ -135,7 +135,7 @@ $(document).ready(function() {
 				case 'youth':
 					$lengths = ["26", "27", "28", "29", "30"];
 					$weights = ["-3", "-2", "-1", "0"];
-					$woods = ["Ash", "Birch"];
+					$woods = ["Maple","Ash", "Birch"];
 					$customTitle = "GAME BAT";
 					$price = "$40";
 					$unFin = "assets/unfinished-m.png";
@@ -144,7 +144,7 @@ $(document).ready(function() {
 				case 'fungo':
 					$lengths = ["34", "35", "35.5", "36"];
 					$weights = ["-3", "-2", "-1", "0"];
-					$woods = ["Maple"];
+					$woods = ["Maple","Ash", "Birch"];
 					$customTitle = "GAME BAT";
 					$price = "$65";
 					$unFin = "assets/unfinished-m.png";
