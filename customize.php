@@ -143,7 +143,7 @@
 		</div>
 
 	<div class="navbar">
-		<div class="logo"></div>
+		<a href="index.php"><div class="logo"></div></a>
 
 		<ul class="navbar-items">
 			<a href="index.php"><li id="home">HOME</li></a>
@@ -370,7 +370,7 @@
 						</div>
 				</div>
 					<div class="cart-row">
-						<div id="optional-title" class="color-titleO">OPTIONAL TWO COLOR + $10</div>
+						<div id="optional-title" class="color-titleO">OPTIONAL TWO COLOR - ADDITIONAL $10</div>
 						<div class="cart-row" id="optional-row">
 							<div class="cart-col">
 								<div class="color-title">HANDLE</div>
@@ -396,7 +396,7 @@
 					</div>
 					<div class="cart-row">
 						<div class="cart-col">
-							<div class="color-title">LOGO & ENGRAVING</div>
+							<div class="color-title">LOGO & ENGRAVING COLOR</div>
 								<div class="color-cont">
 									<div id="lc1" class="colorX">BLACK</div>
 									<div id="lc2" class="colorX">SILVER</div>
@@ -405,7 +405,7 @@
 								</div>
 						</div>
 						<div class="cart-col">
-							<div class="color-title">FINISH</div>
+							<div class="color-title">BAT FINISH</div>
 								<div class="color-cont">
 									<div id="fc1" class="colorX">GLOSSY</div>
 									<div id="fc2" class="colorX">MATTE</div>
@@ -504,7 +504,7 @@
 						</div>
 				</div>
 					<div class="cart-row">
-						<div id="optional-title" class="color-titleO">OPTIONAL TWO COLOR + $10</div>
+						<div id="optional-title" class="color-titleO">OPTIONAL TWO COLOR - ADDT'L $10</div>
 						<div class="optional-box">
 							<div class="optional-box-inner">
 								<div class="cart-row">
@@ -538,7 +538,7 @@
 					</div>
 					<div class="cart-row">
 
-							<div class="color-title">LOGO & ENGRAVING</div>
+							<div class="color-title">LOGO & ENGRAVING COLOR</div>
 								<div class="styled-select">
 								   <select id="logo-select">
 								     <option selected="selected">Choose</option>
@@ -546,12 +546,12 @@
 								     <option value="silver">Silver</option>
 								     <option value="gold">Gold</option>
 								     <option value="white">White</option>
-										
+
 								   </select>
 								</div>
 
 						<div class="cart-row">
-							<div class="color-title">FINISH</div>
+							<div class="color-title">BAT FINISH</div>
 								<div class="styled-select">
 								   <select id="finish-select">
 								     <option selected="selected">Choose</option>

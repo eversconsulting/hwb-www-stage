@@ -56,7 +56,7 @@
   	</div>
 	</div>
 	<div class="navbar">
-		<div class="logo"></div>
+		<a href="index.php"><div class="logo"></div></a>
 
 		<ul class="navbar-items">
 			<li id="home">HOME</li>
@@ -142,7 +142,7 @@
 				<a href="customize.php?id=promo"><div class="click"></div></a>
 				<a href="customize.php?id=promo"><div class="click"></div></a>
 				<a href="customize.php?id=youth"><div class="click"></div></a>
-				<p class="accm">TO ORDER HATS, SHIRTS, ETC. GIVE US A CALL 708-713-8000</p>
+				<p class="accm">TO ORDER HATS, SHIRTS, ETC. GIVE US A CALL 708.713.8000</p>
 			</div>
 			<div class="acc-cont">
 				<div class="acc">
@@ -159,7 +159,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="acc-warn">PLEASE COME VISIT US OR GIVE US A CALL TO ORDER ACCESSORIES 708-713-8000</div>
+		<div class="acc-warn">PLEASE COME VISIT US OR GIVE US A CALL TO ORDER ACCESSORIES 708.713.8000</div>
 
 		<div class="sec-spacer"></div>
 		<div id="sec3" class="title-cont">
@@ -259,11 +259,12 @@
 		</div>
 		<div class="sec-spacer"></div>
 		<div class="section">
-			<div class="head3">THE SWEET SOUND OF A HOMEWOOD BAT</div>
+			<div class="head3">THE SWEET SOUND OF A HOMEWOOD BAT<sup>&#xae;</sup></div>
 		</div>
 		<div class="sec-spacer"></div>
 	</div>
 	<div class="footer">
+		<br>
 		<div class="footer-icons-cont">
 			<div class="footer-icons">
 				<div class="footer-icon">
@@ -277,6 +278,7 @@
 				</div>
 			</div>
 		</div>
+		<br>
 		<div class="footer-text">HOMEWOOD BAT CO | 17845 BRETZ DRIVE | HOMEWOOD IL 60430 | 708.713.8000 | INFO@HOMEWOODBAT.COM | ©2016 ALL RIGHTS RESERVED</div>
 	</div>
 
