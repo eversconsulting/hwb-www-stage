@@ -164,7 +164,7 @@ $(document).ready(function() {
 			}
 
 			$(".customize-image").css("background-image", "url(assets/maple/"+$bat+"unfinishedunfinished.png)");
-			$batWood = "Maple";
+			$batWood = "maple";
 			$batColor = "unfinished";
 			$batTwoHandle = "unfinished";
 			$batTwoBarrel = "unfinished";
@@ -200,21 +200,25 @@ $(document).ready(function() {
 
 			$('#wood-select').on('change', function() {
 			  	$batWood = $(this).val();
-
+					loadBatColorM($batTwoHandle, $batTwoBarrel, $logoColor, $bat, $batWood);
 			});
 			$('#batColor-select').on('change', function() {
 					$batColor = $(this).val();
 					$batTwoHandle = $(this).val();
 					$batTwoBarrel = $(this).val();
 					$batTwoOption = false;
+					loadBatColorM($batTwoHandle, $batTwoBarrel, $logoColor, $bat, $batWood);
 			});
 			$('#handle-select').on('change', function() {
+
 				$batTwoHandle = $(this).val();
 				$batTwoOption = true;
+				loadBatColorM($batTwoHandle, $batTwoBarrel, $logoColor, $bat, $batWood);
 			});
 			$('#barrel-select').on('change', function() {
 				$batTwoBarrel = $(this).val();
 				$batTwoOption = true;
+				loadBatColorM($batTwoHandle, $batTwoBarrel, $logoColor, $bat, $batWood);
 
 			});
 			$('#logo-select').on('change', function() {
@@ -786,6 +790,46 @@ $(document).ready(function() {
 
 
 });
+
+function loadBatColorM(handle, barrel, logo, type, wood) {
+	console.log(type);
+	if (type == 'game'){
+		switch (wood) {
+			case 'Birch':
+				$(".customize-image").css("background-image", "url('assets/birch/"+"pro"+handle+barrel+".png')");
+				break;
+			case 'Ash':
+				$(".customize-image").css("background-image", "url('assets/ash/"+"pro"+handle+barrel+".png')");
+				break;
+			case 'Maple':
+				$(".customize-image").css("background-image", "url('assets/maple/"+"pro"+handle+barrel+".png')");
+				break;
+			default:
+				$(".customize-image").css("background-image", "url('assets/maple/"+"pro"+handle+barrel+".png')");
+				break;
+		}
+	}
+	else{
+		switch (wood) {
+			case 'Birch':
+				$(".customize-image").css("background-image", "url('assets/birch/"+type+handle+barrel+".png')");
+				break;
+			case 'Ash':
+				$(".customize-image").css("background-image", "url('assets/ash/"+type+handle+barrel+".png')");
+				break;
+			case 'Maple':
+				$(".customize-image").css("background-image", "url('assets/maple/"+type+handle+barrel+".png')");
+				break;
+			default:
+				$(".customize-image").css("background-image", "url('assets/maple/"+type+handle+barrel+".png')");
+				break;
+		}
+	}
+
+
+
+
+}
 
 function loadBatColor(handle, barrel, logo, type, wood) {
 	console.log(type);

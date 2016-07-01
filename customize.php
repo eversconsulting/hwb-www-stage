@@ -463,7 +463,7 @@
 
 				<div class="cart-row">
 					<div class="button" id="add1">ADD TO CART</div>
-					<div class="button-title">ONLINE STORE COMING SOON! PLEASE CALL 708.713.8000 TO ORDER</div>
+					
 				</div>
 
 
@@ -493,10 +493,12 @@
 						<div class="color-title">BAT COLOR</div>
 						<div class="styled-select">
 						   <select id="batColor-select">
-						     <option>Maple</option>
-						     <option>Birch</option>
-						     <option>Black</option>
-						     <option>Gray</option>
+
+								<option value="maple">Maple</option>
+								<option value="birch">Birch</option>
+								<option value="black">Black</option>
+								<option value="gray">Gray</option>
+								<option value="merlot">Merlot</option>
 						   </select>
 						</div>
 				</div>
@@ -509,10 +511,11 @@
 										<div class="styled-select">
 										   <select id="handle-select">
 										     <option selected="selected">Choose</option>
-										     <option id="bc1">Maple</option>
-										     <option id="bc2">Birch</option>
-										     <option style="color: rgb(250, 245, 234);" id="bc3">Black</option>
-										     <option style="color: rgb(250, 245, 234);" id="bc4">Gray</option>
+												 <option value="maple">Maple</option>
+										     <option value="birch">Birch</option>
+										     <option value="black">Black</option>
+										     <option value="gray">Gray</option>
+												 <option value="merlot">Merlot</option>
 										   </select>
 										</div>
 								</div>
@@ -520,11 +523,12 @@
 									<div class="color-title">BARREL</div>
 										<div class="styled-select">
 										   <select id="barrel-select">
-										     <option selected="selected">Choose</option>
-										     <option id="bc1">Maple</option>
-										     <option id="bc2">Birch</option>
-										     <option style="color: rgb(250, 245, 234);" id="bc3">Black</option>
-										     <option style="color: rgb(250, 245, 234);" id="bc4">Gray</option>
+												 <option selected="selected">Choose</option>
+ 												<option value="maple">Maple</option>
+ 												<option value="birch">Birch</option>
+ 												<option value="black">Black</option>
+ 												<option value="gray">Gray</option>
+ 												<option value="merlot">Merlot</option>
 										   </select>
 										</div>
 								</div>
@@ -537,11 +541,11 @@
 								<div class="styled-select">
 								   <select id="logo-select">
 								     <option selected="selected">Choose</option>
-								     <option val="Black">Black</option>
-								     <option val="Silver">Silver</option>
-								     <option val="Gold">Gold</option>
-								     <option val="White">White</option>
-										 <option val="Merlot">Merlot</option>
+								     <option value="black">Black</option>
+								     <option value="silver">Silver</option>
+								     <option value="gold">Gold</option>
+								     <option value="white">White</option>
+										 <option value="merlot">Merlot</option>
 								   </select>
 								</div>
 
@@ -550,8 +554,8 @@
 								<div class="styled-select">
 								   <select id="finish-select">
 								     <option selected="selected">Choose</option>
-								     <option id="fc1" style="color: rgb(250, 245, 234);">Glossy</option>
-								     <option id="fc2" style="color: rgb(250, 245, 234);">Matte</option>
+								     <option>Glossy</option>
+								     <option>Matte</option>
 								   </select>
 								</div>
 						</div>

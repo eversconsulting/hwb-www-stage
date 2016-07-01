@@ -70,7 +70,7 @@
 				<div id="ham2" class="hamburger-line"></div>
 				<div id="ham3" class="hamburger-line"></div>
 			</div>
-			<div id="cart-c" class="cart">
+			<div id="mobile-cart" class="cart">
 				<div class="notify" style="display: none;"></div>
 				<img class="cart-icon" src="assets/cart.png">
 			</div>
