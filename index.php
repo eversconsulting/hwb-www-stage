@@ -254,7 +254,7 @@
 				<div class="staffer staffer-spec">
 					<div class="staffer-img" id="pam"></div>
 					<div class="staffer-title">PAMELA PALS</div>
-					<div class="staffer-sub">THE BOSS</div>
+					<div class="staffer-sub"></div>
 				</div>
 			</div>
 		</div>
