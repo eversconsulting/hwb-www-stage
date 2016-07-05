@@ -69,6 +69,18 @@ $(document).ready(function(){
       if(win){
           //Browser has allowed it to be opened
           win.focus();
+          $someBats = JSON.parse(sessionStorage.getItem("bats"));
+
+      		$toSend = JSON.stringify($someBats);
+
+
+      		$dc = $(".email-prompt").val();
+
+      		$.ajax({
+      				url: 'sendOrder.php',
+      				type: 'POST',
+      				data: {'myData': $toSend, 'customer': $dc}
+      		});
       }else{
           //Broswer has blocked it
           alert('Please allow popups for this site');

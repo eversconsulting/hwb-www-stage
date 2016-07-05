@@ -951,6 +951,7 @@ sup {
 	margin-right: auto;
 	text-align: center;
 	color: rgb(24, 53, 80);
+	display: none;
 }
 
 
@@ -1868,6 +1869,10 @@ orange: rgb(252, 116, 44);
 
 /*Phone*/
 @media only screen and (max-width : 480px) {
+
+.accm {
+	display: block;
+}
 .section-titleB {
 	padding-top: 10px;
 	font-size: 20px;
@@ -2588,6 +2593,10 @@ a {
 
 /*Tablet */
 @media only screen and (min-width : 481px) and (max-width : 1024px) {
+
+.accm {
+	display: block;
+}
 
 a[href^="tel"]{
     color:inherit;

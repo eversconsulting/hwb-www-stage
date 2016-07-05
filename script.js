@@ -10,6 +10,11 @@ $(document).ready(function(){
 
   });
 
+	$(".navbar").click(function() {
+
+		
+	});
+
 
 
    $("#shop").click(function() {

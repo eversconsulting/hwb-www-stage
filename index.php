@@ -115,6 +115,7 @@
 		</div>
 
 		<div class="section">
+			<div class="acc-warn">CLICK ON A BAT TO CUSTOMIZE</div>
 			<div class="product-cont">
 				<a href="customize.php?id=pro"><div class="product">
 					<div class="product-title">PRO BAT</div>
@@ -142,7 +143,7 @@
 				<a href="customize.php?id=promo"><div class="click"></div></a>
 				<a href="customize.php?id=promo"><div class="click"></div></a>
 				<a href="customize.php?id=youth"><div class="click"></div></a>
-				<p class="accm">TO ORDER HATS, SHIRTS, ETC. GIVE US A CALL 708.713.8000</p>
+				<p class="accm">PLEASE GIVE US A CALL TO ORDER ACCESSORIES 708.713.8000</p>
 			</div>
 			<div class="acc-cont">
 				<div class="acc">
@@ -264,7 +265,7 @@
 		<div class="sec-spacer"></div>
 	</div>
 	<div class="footer">
-		<br>
+
 		<div class="footer-icons-cont">
 			<div class="footer-icons">
 				<div class="footer-icon">
@@ -278,7 +279,7 @@
 				</div>
 			</div>
 		</div>
-		<br>
+
 		<div class="footer-text">HOMEWOOD BAT CO | 17845 BRETZ DRIVE | HOMEWOOD IL 60430 | 708.713.8000 | INFO@HOMEWOODBAT.COM | ©2016 ALL RIGHTS RESERVED</div>
 	</div>
 

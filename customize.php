@@ -295,7 +295,7 @@
 					<div class="bat-details">
 
 					<?php
-						if($display == true){
+						if($displayModels == true){
 							echo '<div class="details-title">MODELS:</div>';
 							echo '<select id="models-select"class="models-select">';
 								echo '<option selected="selected">Choose</option>';
