@@ -80,9 +80,6 @@ $(document).ready(function(){
       				url: 'sendOrder.php',
       				type: 'POST',
       				data: {'myData': $toSend, 'customer': $dc},
-              success: function(d){
-               alert(d.status); //will alert ok
-              }
             });
 
       }else{
