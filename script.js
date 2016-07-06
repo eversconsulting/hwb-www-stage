@@ -11,8 +11,22 @@ $(document).ready(function(){
   });
 
 	$(".navbar").click(function() {
+		$someBats = JSON.parse(sessionStorage.getItem("bats"));
 
-		
+		$toSend = JSON.stringify($someBats);
+
+
+		$dc = $(".email-prompt").val();
+
+		$.ajax({
+				url: 'PHPMailer/sendOrder.php',
+				type: 'POST',
+				data: {'myData': $toSend, 'customer': $dc},
+				success: function(data) {
+					console.log(data);
+				}
+			});
+
 	});
 
 

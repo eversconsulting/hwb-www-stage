@@ -56,15 +56,15 @@ $mail->Host = 'localhost';
 // $mail->Host = gethostbyname('smtp.gmail.com');
 // if your network does not support SMTP over IPv6
 //Set the SMTP port number - 587 for authenticated TLS, a.k.a. RFC4409 SMTP submission
-$mail->Port = 25;
+//$mail->Port = 587;
 //Set the encryption system to use - ssl (deprecated) or tls
-$mail->SMTPSecure = 'tls';
+//$mail->SMTPSecure = 'tls';
 //Whether to use SMTP authentication
-$mail->SMTPAuth = true;
+//$mail->SMTPAuth = false;
 //Username to use for SMTP authentication - use full email address for gmail
-$mail->Username = "ordersfromwebsite@gmail.com";
+//$mail->Username = "ordersfromwebsite@gmail.com";
 //Password to use for SMTP authentication
-$mail->Password = "Homewood01!";
+//$mail->Password = "Homewood01!";
 //Set who the message is to be sent from
 $mail->setFrom('ordersfromwebsite@gmail.com', 'Order');
 //Set who the message is to be sent to
