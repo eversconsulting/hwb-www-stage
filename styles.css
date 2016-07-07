@@ -1244,7 +1244,7 @@ sup {
 }
 
 .wood-prices {
-	width: 700px;
+	width: auto;
 	height: auto;
 	font-family: mainFont;
 	font-size: 25px;
