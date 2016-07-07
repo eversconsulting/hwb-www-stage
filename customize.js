@@ -267,18 +267,31 @@ $(document).ready(function() {
 		$customAreaShown = $("#desktop-bat").is(":visible");
 
 
+		if($bat == 'youth'){
+			loadBatColor("unfinished", "unfinished", $logoColor, $bat, "ash");
+			$batWood = 'ash';
+			$("#bc1").css("border-color", "rgb(252, 116, 44)");
+			$("#bc2").css("border-color", "rgb(24, 53, 80)");
+			$("#bc3").css("border-color", "rgb(24, 53, 80)");
+			$("#bc4").css("border-color", "rgb(24, 53, 80)");
+			$batTwoHandle = 'unfinished';
+			$batTwoBarrel = 'unfinished';
+		}
+		else{
+			loadBatColor("unfinished", "unfinished", $logoColor, $bat, "maple");
+			$batWood = 'maple';
+			$("#bc1").css("border-color", "rgb(252, 116, 44)");
+			$("#bc2").css("border-color", "rgb(24, 53, 80)");
+			$("#bc3").css("border-color", "rgb(24, 53, 80)");
+			$("#bc4").css("border-color", "rgb(24, 53, 80)");
+			$batTwoHandle = 'unfinished';
+			$batTwoBarrel = 'unfinished';
+		}
 
-		loadBatColor("unfinished", "unfinished", $logoColor, $bat, "maple");
 
 
 
-		$batWood = 'maple';
-		$("#bc1").css("border-color", "rgb(252, 116, 44)");
-		$("#bc2").css("border-color", "rgb(24, 53, 80)");
-		$("#bc3").css("border-color", "rgb(24, 53, 80)");
-		$("#bc4").css("border-color", "rgb(24, 53, 80)");
-		$batTwoHandle = 'unfinished';
-		$batTwoBarrel = 'unfinished';
+
 
 
 
@@ -379,7 +392,13 @@ $(document).ready(function() {
 			jQuery.each( $woods, function(i, val)  {
 				$("#woodList").append("<div class='colorX' id="+val+">"+val+"</div>");
 			});
-			$("#MAPLE").css("border-color", "rgb(252, 116, 44)");
+			if($bat == 'youth'){
+					$("#ASH").css("border-color", "rgb(252, 116, 44)");
+			}
+			else{
+					$("#MAPLE").css("border-color", "rgb(252, 116, 44)");
+			}
+
 
 	   	}
 	   		$("#MAPLE").click(function() {

@@ -590,26 +590,34 @@ function shopifyActivate() {
             shopClient.fetchProduct(6373486081).then(function(product){
               if($batArray[0].wood == 'Maple'){
                 if($batArray[0].customColor == true){
-                  var v = product.variants[0];
+                  var v = product.variants[5];
                 }
                 else{
-                  var v = product.variants[1];
+                  var v = product.variants[4];
                 }
               }
               else if($batArray[0].wood == 'Birch'){
                 if($batArray[0].customColor == true){
-                  var v = product.variants[2];
+                  var v = product.variants[3];
                 }
                 else{
-                  var v = product.variants[3];
+                  var v = product.variants[2];
+                }
+              }
+              else if($batArray[0].wood == 'Ash'){
+                if($batArray[0].customColor == true){
+                  var v = product.variants[1];
+                }
+                else{
+                  var v = product.variants[0];
                 }
               }
               else{
                 if($batArray[0].customColor == true){
-                  var v = product.variants[4];
+                  var v = product.variants[5];
                 }
                 else{
-                  var v = product.variants[5];
+                  var v = product.variants[4];
                 }
               }
               cart.addVariants({variant: v , quantity: $batArray[0].quantity, properties: { 'model' : $batArray[0].model, 'wood' : $batArray[0].wood, 'handle' : $batArray[0].handle, 'barrel' : $batArray[0].barrel, 'logo' : $batArray[0].logo, 'length' : $batArray[0].length, 'finish' : $batArray[0].finish, 'engraving-style' : $batArray[0].engravingStyle, 'engraving' : $batArray[0].engraving} });
