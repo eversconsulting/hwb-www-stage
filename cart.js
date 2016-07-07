@@ -64,31 +64,39 @@ $(document).ready(function(){
   $(".finish-button").click(function() {
     var goodEmail = validateEmail($(".email-prompt").val());
     if(goodEmail){
-      var url = sessionStorage.getItem('loc');
-      var win = window.open(url, '_blank');
-      if(win){
-          //Browser has allowed it to be opened
-          win.focus();
-          $someBats = JSON.parse(sessionStorage.getItem("bats"));
+      $someBats = JSON.parse(sessionStorage.getItem("bats"));
 
-      		$toSend = JSON.stringify($someBats);
+      $toSend = JSON.stringify($someBats);
 
 
-      		$dc = $(".email-prompt").val();
+      $dc = $(".email-prompt").val();
 
-      		$.ajax({
-      				url: 'sendOrder.php',
-      				type: 'POST',
-      				data: {'myData': $toSend, 'customer': $dc},
-            });
+      $.ajax({
+          url: 'writeOrder.php',
+          type: 'POST',
+          data: {'myData': $toSend, 'customer': $dc},
+          success: function(data){
+            console.log(data);
+            var url = sessionStorage.getItem('loc');
+            var win = window.open(url, '_blank');
+            if(win){
+                //Browser has allowed it to be opened
+                win.focus();
 
-      }else{
-          //Broswer has blocked it
-          alert('Please allow popups for this site');
-      }
 
-      sessionStorage.removeItem("bats");
-      window.location= 'index.php';
+            }else{
+                //Broswer has blocked it
+                alert('Please allow popups for this site');
+            }
+
+            sessionStorage.removeItem("bats");
+            window.location= 'index.php';
+          }
+        });
+
+
+
+
 
 
     }
@@ -588,8 +596,22 @@ function shopifyActivate() {
                   var v = product.variants[1];
                 }
               }
-
-
+              else if($batArray[0].wood == 'Birch'){
+                if($batArray[0].customColor == true){
+                  var v = product.variants[2];
+                }
+                else{
+                  var v = product.variants[3];
+                }
+              }
+              else{
+                if($batArray[0].customColor == true){
+                  var v = product.variants[4];
+                }
+                else{
+                  var v = product.variants[5];
+                }
+              }
               cart.addVariants({variant: v , quantity: $batArray[0].quantity, properties: { 'model' : $batArray[0].model, 'wood' : $batArray[0].wood, 'handle' : $batArray[0].handle, 'barrel' : $batArray[0].barrel, 'logo' : $batArray[0].logo, 'length' : $batArray[0].length, 'finish' : $batArray[0].finish, 'engraving-style' : $batArray[0].engravingStyle, 'engraving' : $batArray[0].engraving} });
               $batArray.shift();
               var locUrl = cart.checkoutUrl;

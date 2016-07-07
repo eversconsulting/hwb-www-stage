@@ -135,7 +135,7 @@ $(document).ready(function() {
 				case 'youth':
 					$lengths = ["26", "27", "28", "29", "30"];
 					$weights = ["-3", "-2", "-1", "0"];
-					$woods = ["Maple","Ash", "Birch"];
+					$woods = ["Ash", "Birch"];
 					$customTitle = "GAME BAT";
 					$price = "$40";
 					$unFin = "assets/unfinished-m.png";
