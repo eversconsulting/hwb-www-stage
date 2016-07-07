@@ -117,7 +117,7 @@ $(document).ready(function() {
 					$woods = ["Maple","Ash", "Birch"];
 					$desc = ["Medium / large barrel diameter, Medium / long barrel, thin handle, flared knob", "Medium barrel diameter, long barrel, thick handle, regular knob", "Medium barrel diameter, long barrel, thin handle, regular knob", "Large barrel diameter, long barrel , medium handle, regular knob", "Medium barrel diameter, Tapered barrel, medium handle, flared knob"];
 					$customTitle = "PRO BAT";
-					$price = "$120";
+
 					$unFin = "assets/unfinished-m.png";
 
 					break;
@@ -128,7 +128,7 @@ $(document).ready(function() {
 					$woods = ["Maple","Ash", "Birch"];
 					$desc = ["Medium / large barrel diameter, Medium / long barrel, thin handle, flared knob", "Medium barrel diameter, long barrel, thick handle, regular knob", "Medium barrel diameter, long barrel, thin handle, regular knob", "Large barrel diameter, long barrel , medium handle, regular knob", "Medium barrel diameter, Tapered barrel, medium handle, flared knob"];
 					$customTitle = "GAME BAT";
-					$price = "$70";
+
 					$unFin = "assets/unfinished-m.png";
 
 					break;
@@ -136,8 +136,8 @@ $(document).ready(function() {
 					$lengths = ["26", "27", "28", "29", "30"];
 					$weights = ["-3", "-2", "-1", "0"];
 					$woods = ["Ash", "Birch"];
-					$customTitle = "GAME BAT";
-					$price = "$40";
+					$customTitle = "YOUTH BAT";
+
 					$unFin = "assets/unfinished-m.png";
 
 					break;
@@ -145,8 +145,7 @@ $(document).ready(function() {
 					$lengths = ["34", "35", "35.5", "36"];
 					$weights = ["-3", "-2", "-1", "0"];
 					$woods = ["Maple","Ash", "Birch"];
-					$customTitle = "GAME BAT";
-					$price = "$65";
+					$customTitle = "FUNGO BAT";
 					$unFin = "assets/unfinished-m.png";
 
 					break;
@@ -171,16 +170,19 @@ $(document).ready(function() {
 
 			switch($customTitle){
 				case 'FUNGO BAT':
-					$text = $customTitle + " | " + $price;
+					$text = $customTitle;
 				break;
 				case 'YOUTH BAT':
-					$text = $customTitle + " | " + $price;
+					$text = $customTitle;
 				break;
 				case 'PRO BAT':
 					$text = $customTitle + " - MODEL #" + $currentModel;
 				break;
+				case 'GAME BAT':
+					$text = $customTitle + " - MODEL #" + $currentModel;
+				break;
 				default:
-					$text = $customTitle + " - MODEL #" + $currentModel + " | " + $price;
+					$text = $customTitle + " - MODEL #" + $currentModel;
 				break;
 			}
 			$(".customize-model").text($text);
@@ -298,7 +300,7 @@ $(document).ready(function() {
 					$woods = ["MAPLE", "ASH", "BIRCH"];
 					$desc = ["Medium / large barrel diameter, Medium / long barrel, thin handle, flared knob", "Medium barrel diameter, long barrel, thick handle, regular knob", "Medium barrel diameter, long barrel, thin handle, regular knob", "Large barrel diameter, long barrel , medium handle, regular knob", "Medium barrel diameter, Tapered barrel, medium handle, flared knob"];
 					$customTitle = "PRO BAT";
-					$price = "$120";
+
 					$unFin = "assets/unfinished.png";
 					$b = 'p';
 					break;
@@ -309,7 +311,6 @@ $(document).ready(function() {
 					$woods = ["MAPLE","ASH", "BIRCH"];
 					$desc = ["Medium / large barrel diameter, Medium / long barrel, thin handle, flared knob", "Medium barrel diameter, long barrel, thick handle, regular knob", "Medium barrel diameter, long barrel, thin handle, regular knob", "Large barrel diameter, long barrel , medium handle, regular knob", "Medium barrel diameter, Tapered barrel, medium handle, flared knob"];
 					$customTitle = "GAME BAT";
-					$price = "$70";
 					$unFin = "assets/unfinished.png";
 
 					break;
@@ -318,7 +319,6 @@ $(document).ready(function() {
 					$weights = ["-3", "-2", "-1", "0"];
 					$woods = ["ASH", "BIRCH"];
 					$customTitle = "YOUTH BAT";
-					$price = "$40";
 					$unFin = "assets/unfinished.png";
 					break;
 				case 'fungo':
@@ -326,7 +326,6 @@ $(document).ready(function() {
 					$weights = ["-3", "-2", "-1", "0"];
 					$woods = ["MAPLE","ASH", "BIRCH"];
 					$customTitle = "FUNGO BAT";
-					$price = "$65";
 					$unFin = "assets/unfinished.png";
 					break;
 				case 'promo':
@@ -344,16 +343,19 @@ $(document).ready(function() {
 
 			switch($customTitle){
 				case 'FUNGO BAT':
-					$text = $customTitle + " | " + $price;
+					$text = $customTitle;
 				break;
 				case 'YOUTH BAT':
-					$text = $customTitle + " | " + $price;
+					$text = $customTitle;
 				break;
 				case 'PRO BAT':
 					$text = $customTitle + " - MODEL #" + $currentModel;
 				break;
+				case 'GAME BAT':
+					$text = $customTitle + " - MODEL #" + $currentModel;
+				break;
 				default:
-					$text = $customTitle + " - MODEL #" + $currentModel + " | " + $price;
+					$text = $customTitle + " - MODEL #" + $currentModel;
 				break;
 			}
 

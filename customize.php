@@ -16,6 +16,8 @@
 			$imageM = "assets/prom.png";
 			$showPricesGame = false;
 			$showPromo = false;
+			$showPricesFungo = false;
+			$showPricesYouth = false;
 
 			break;
 		case 'game':
@@ -30,10 +32,13 @@
 			$showPricesGame = true;
 			$showPrices = false;
 			$showPromo = false;
+			$showPricesFungo = false;
+			$showPricesYouth = false;
+
 
 			break;
 		case 'youth':
-			$title = "YOUTH BAT | ";
+			$title = "YOUTH BAT";
 			$d = "This bat has a maximum barrel diameter of 2.25 inches as required by youth baseball organizations, and is available in Ash or Birch. The finished weight will be approximately 5 ounces less than the length.";
 			$price = "$40";
 			$models = array();
@@ -44,9 +49,12 @@
 			$showPrices = false;
 			$showPricesGame = false;
 			$showPromo = false;
+			$showPricesFungo = false;
+			$showPricesYouth = true;
+
 			break;
 		case 'fungo':
-			$title = "FUNGO BAT | ";
+			$title = "FUNGO BAT";
 			$d = "Provides great balance with good pop in the barrel, available in Ash, Birch and Maple. The finished weight will be approximately 12 ounces less than the length. ";
 			$price = "$65";
 			$models = array();
@@ -57,6 +65,9 @@
 			$showPrices = false;
 			$showPricesGame = false;
 			$showPromo = false;
+			$showPricesFungo = true;
+			$showPricesYouth = false;
+
 			break;
 		case 'promo':
 			$title = "PROMOTIONAL/AWARD BAT ";
@@ -69,6 +80,9 @@
 			$showPrices = false;
 			$showPricesGame = false;
 			$showPromo = true;
+			$showPricesYouth = false;
+			$showPricesFungo = false;
+
 
 			break;
 
@@ -207,7 +221,7 @@
 							<div class="bat-title"><?php echo $title; ?></div>
 
 							<?php
-								if(($showPrices == false) && ($showPricesGame == false) && ($showPromo == false)){
+								if(($showPrices == false) && ($showPricesGame == false) && ($showPromo == false) && ($showPricesFungo == false) && ($showPricesYouth == false)){
 									echo '<div class="bat-price">'.$price.'</div>';
 								}
 							?>
@@ -218,6 +232,12 @@
 						<br>
 
 						<?php
+							if($showPricesFungo == true){
+								echo '<div class="wood-prices">MAPLE | $75 <br />ASH & BIRCH | $65</div>';
+							}
+							if($showPricesYouth == true){
+								echo '<div class="wood-prices">ASH & BIRCH | $40</div>';
+							}
 							if($showPrices == true){
 								echo '<div class="wood-prices">MAPLE | $120 <br />ASH & BIRCH | $100</div>';
 							}
@@ -291,7 +311,6 @@
 				</div>
 				<div class="cart-col">
 					<div class="bat-title"><?php echo $title; ?></div>
-					<div class="bat-price"><?php echo $price; ?></div>
 					<div class="bat-details">
 
 					<?php
@@ -309,7 +328,27 @@
 							echo '<div id="handle"></div>';
 							echo '<div id="details-body" class="details-body"></div>';
 						}
+						echo '<br><br>';
+						if($showPricesFungo == true){
+							echo '<div class="wood-prices" style="font-size: 12px;">MAPLE | $75 <br />ASH & BIRCH | $65</div>';
+						}
+						if($showPricesYouth == true){
+							echo '<div class="wood-prices" style="font-size: 12px;">ASH & BIRCH | $40</div>';
+						}
+						if($showPrices == true){
+							echo '<div class="wood-prices" style="font-size: 12px;">MAPLE | $120 <br />ASH & BIRCH | $100</div>';
+						}
+						if($showPricesGame == true){
+							echo '<div class="wood-prices" style="font-size: 12px;">MAPLE | $95<br />ASH & BIRCH | $70</div>';
+						}
+						if($showPromo == true){
+							echo '<div class="wood-prices">PROMO BATS: $70 <sup>(includes artwok)</sup><br />ADDITIONAL BATS: $55 EACH <sup>(w/ same artwork)</sup></div>';
+							echo'<br><br>';
+							echo '<div class="promo-contact">INFO@HOMEWOODBAT.COM</div>';
+							echo '<div class="promo-contact">708.713.8000</div>';
+						}
 					?>
+
 					</div>
 				</div>
 			</div>
