@@ -161,8 +161,14 @@ $(document).ready(function() {
 
 					break;
 			}
+			if($bat == 'game'){
+				$(".customize-image").css("background-image", "url(assets/maple/prounfinishedunfinished.png)");
+			}
+			else {
+				$(".customize-image").css("background-image", "url(assets/maple/"+$bat+"unfinishedunfinished.png)");
+			}
 
-			$(".customize-image").css("background-image", "url(assets/maple/"+$bat+"unfinishedunfinished.png)");
+			
 			$batWood = "maple";
 			$batColor = "unfinished";
 			$batTwoHandle = "unfinished";
