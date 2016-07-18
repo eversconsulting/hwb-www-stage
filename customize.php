@@ -194,13 +194,6 @@
 	<div class="navbar-spacer"></div>
 	<div class="slide-menu">
 		<a href="index.php"><div id="mhome" class="slide-option">HOME</div></a>
-		<div id="mshop" class="slide-option">SHOP</div>
-		<div id="mnews" class="slide-option">NEWS</div>
-		<div id="mcontact" class="slide-option">CONTACT</div>
-		<div id="mabout" class="slide-option">ABOUT</div>
-
-
-
 	</div>
 
 

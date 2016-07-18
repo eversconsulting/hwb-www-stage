@@ -282,7 +282,7 @@
 		</div>
 
 		<div class="footer-text">HOMEWOOD BAT CO | 17845 BRETZ DRIVE | HOMEWOOD IL 60430 | 708.713.8000 | INFO@HOMEWOODBAT.COM | ©2016 ALL RIGHTS RESERVED</div>
-	</div>
+
 
 
 

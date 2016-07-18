@@ -1,0 +1,13 @@
+New Order! Here's the details: 
+Type: GAME Bat
+Wood: Maple
+Handle Color: Gray
+Barrel Color: Merlot
+Logo/Engraving Color: Gold
+Finish: Matte
+Length: 34
+Engraving Style: BANK GOTHIC
+Engraving: Scott
+Quantity: 2
+Model: 026
+

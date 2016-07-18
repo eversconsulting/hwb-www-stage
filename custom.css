@@ -176,38 +176,38 @@ body {
 
 .footer {
   width: 100%;
-  height: 150px;
+  height: auto;
   background-color: rgb(24, 53, 80);
 }
 
 .footer-icons {
-  width: 120px;
-  height: 20px;
+  width: 150px;
+  height: 30px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .footer-icons-cont {
-  width: 200px;
-  height: 20px;
+  width: 150px;
+  height: 30px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .footer-icon {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   float: left;
   margin-left: 10px;
   margin-right: 10px;
 }
 
 .fIcon {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   margin-left: auto;
   margin-right: auto;
-  background-size: 20px 20px;
+  background-size: 30px 30px;
 }
 
 .footer-text {
@@ -730,7 +730,7 @@ body {
     font-size: 30px;
   }
   .footer {
-    height: 100px;
+    height: auto;
   }
   .footer-text {
     height: 100px;

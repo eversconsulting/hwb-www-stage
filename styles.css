@@ -722,7 +722,7 @@ sup {
 
 #customize-sec {
 	height: 800px;
-	background-color: rgb(250, 245, 234);
+	background-color: white;
 }
 
 .customize-bat {
@@ -1455,7 +1455,7 @@ option {
 	width: 0;
 	max-width: 400px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	background-color: rgb(250, 245, 234);
+	background-color: rgb(250, 245, 234);;
 }
 
 .cart-top {
@@ -1870,6 +1870,24 @@ orange: rgb(252, 116, 44);
 /*Phone*/
 @media only screen and (max-width : 480px) {
 
+.footer-list {
+	color: rgb(250, 245, 234);
+	width: 100%;
+	height: auto;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.footer-list ul {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.footer-indent {
+	width: 100%;
+	height: 50px;
+}
+
 .accm {
 	display: block;
 }
@@ -2210,7 +2228,6 @@ a[href^="tel"]{
 .bat-image {
 	width: 125px;
 	height: 175px;
-	background-image: url("assets/turf.png");
 	border: solid;
 	border-color: rgb(24, 53, 80);
 	border-width: 2px;
@@ -2904,7 +2921,6 @@ a[href^="tel"]{
 .bat-image {
 	width: 125px;
 	height: 175px;
-	background-image: url("assets/turf.png");
 	border: solid;
 	border-color: rgb(24, 53, 80);
 	border-width: 2px;
@@ -3028,7 +3044,7 @@ a {
 
 #customize-sec {
 	height: 500px;
-	background-color: rgb(250, 245, 234);
+	background-color: white;
 }
 
 #custom-title {
